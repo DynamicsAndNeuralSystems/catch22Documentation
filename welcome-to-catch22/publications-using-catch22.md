@@ -91,6 +91,8 @@ _in addition to:_
 
 _in addition to:_
 
+* Profile how anesthesia changes brain dynamics across species, from nematodes to humans.
+  * [📗 <mark style="color:green;">Luppi et al.,</mark> _<mark style="color:green;">Nature Neuroscience</mark>_ <mark style="color:green;">(2026).</mark>](https://doi.org/10.1038/s41593-026-02460-4)
 * Characterize EEG dynamics during variable-intensity cycling exercise in Parkinson's disease.
   * [📗 <mark style="color:green;">Alizadeh et al.,</mark> _<mark style="color:green;">Frontiers in Human Neuroscience</mark>_ <mark style="color:green;">(2025).</mark>](https://doi.org/10.3389/fnhum.2025.1571106)
 
