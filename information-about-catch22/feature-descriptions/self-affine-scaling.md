@@ -68,7 +68,7 @@ Time series (the best approximation to two distinct scaling regimes: the first s
 
 <figure><img src="../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
-### **Feature output: `rs_range =`**<mark style="color:red;">**`0.200`**</mark>
+### **Feature output: `rs_range = 0.200`**&#x20;
 {% endtab %}
 
 {% tab title="Example 2" %}
