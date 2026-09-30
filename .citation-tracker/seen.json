@@ -1,0 +1,3781 @@
+{
+ "tool": "catch22",
+ "entries": {
+  "doi:10.1002/aisy.202401150": {
+   "doi": "10.1002/aisy.202401150",
+   "openalex": "W4411620463",
+   "title": "Highly Efficient Classification of Time‐Series Based on Resistive Switching Cluster‐Assembled Materials",
+   "year": 2025,
+   "authors": [
+    "Profumo",
+    "Borghi",
+    "Angì",
+    "Maschietto"
+   ],
+   "venue": "Advanced Intelligent Systems",
+   "type": "journal",
+   "pubdate": "2025-06-25",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1002/bit.28489": {
+   "doi": "10.1002/bit.28489",
+   "title": "Early dynamic changes in iPSC oxygen consumption rate predict future cardiomyocyte differentiation",
+   "year": 2023,
+   "authors": [
+    "Nikitina",
+    "Roysam",
+    "Kemp"
+   ],
+   "venue": "Biotechnology and Bioengineering",
+   "type": "journal",
+   "openalex": "W4383872131",
+   "pmid": "37431876",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1002/qre.70406": {
+   "doi": "10.1002/qre.70406",
+   "openalex": "W7213984793",
+   "title": "Time Series Extrinsic Regression for Smart Agriculture: Field‐Level Crop Yield Prediction From Multisource Agricultural Time Series",
+   "year": 2026,
+   "authors": [
+    "Vanacore",
+    "Ciardiello",
+    "Auricchio",
+    "Uccello"
+   ],
+   "venue": "Quality and Reliability Engineering International",
+   "type": "journal",
+   "pubdate": "2026-09-22",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-031-43427-3_19": {
+   "doi": "10.1007/978-3-031-43427-3_19",
+   "title": "An Examination of Wearable Sensors and Video Data Capture for Human Exercise Classification",
+   "year": 2023,
+   "authors": [
+    "Singh",
+    "Bevilacqua",
+    "Aderinola",
+    "Nguyen"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "openalex": "W4386798401",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1007/978-3-032-00652-3_6": {
+   "doi": "10.1007/978-3-032-00652-3_6",
+   "openalex": "W4413334915",
+   "title": "Ensemble Models for Real-Time Fetal Monitoring Using Discrete Segmentation of Cardiotocography",
+   "year": 2025,
+   "authors": [
+    "Faheem",
+    "Lapeer",
+    "Iglesia",
+    "Gore"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-08-20",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-02725-2_27": {
+   "doi": "10.1007/978-3-032-02725-2_27",
+   "openalex": "W4414720165",
+   "title": "Evaluating Higher-Level and Symbolic Features in Deep Learning on Time Series: Towards Simpler Explainability",
+   "year": 2025,
+   "authors": [
+    "Schwenke",
+    "Stückemann",
+    "Atzmueller"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-10-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-03711-4_6": {
+   "doi": "10.1007/978-3-032-03711-4_6",
+   "openalex": "W4415725488",
+   "title": "LoRa Device Identification: A Lightweight Alternative to CNN-Based Methods",
+   "year": 2025,
+   "authors": [
+    "Lima",
+    "Pellenz",
+    "Teixeira",
+    "Alberti"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-10-31",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'The method utilizes computationally efficient analytical metrics derived from the Catch22 library' (abstract)"
+  },
+  "doi:10.1007/978-3-032-04375-7_19": {
+   "doi": "10.1007/978-3-032-04375-7_19",
+   "openalex": "W4414144705",
+   "title": "From Shared Occupancy Patterns to Improved Forecasts: Behavioral Clustering and Selective Deployment in Urban Parking",
+   "year": 2025,
+   "authors": [
+    "Müller"
+   ],
+   "venue": "Lecture notes in business information processing",
+   "type": "journal",
+   "pubdate": "2025-09-09",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-05176-9_21": {
+   "doi": "10.1007/978-3-032-05176-9_21",
+   "openalex": "W4414314106",
+   "title": "Benchmarking Time Series Feature Extraction for Algorithm Selection",
+   "year": 2025,
+   "authors": [
+    "Santos",
+    "Cerqueira",
+    "Soares"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-09-15",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-05962-8_10": {
+   "doi": "10.1007/978-3-032-05962-8_10",
+   "openalex": "W4414789676",
+   "title": "RandomAD: A Random Kernel-Based Anomaly Detector for Time Series",
+   "year": 2025,
+   "authors": [
+    "Xi",
+    "Lin"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-10-03",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-12801-0_17": {
+   "doi": "10.1007/978-3-032-12801-0_17",
+   "openalex": "W7117983092",
+   "title": "Estimating Subjective Evaluation on Drinking Experiences Using fNIRS Sensing",
+   "year": 2026,
+   "authors": [
+    "Le",
+    "Minh",
+    "Amiya",
+    "Tezaki"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-15535-1_10": {
+   "doi": "10.1007/978-3-032-15535-1_10",
+   "openalex": "W7130660521",
+   "title": "Time Series Extrinsic Regression Algorithms for Forecasting Long Time Series with a Short Horizon",
+   "year": 2026,
+   "authors": [
+    "Banwell",
+    "Bagnall"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-15535-1_8": {
+   "doi": "10.1007/978-3-032-15535-1_8",
+   "openalex": "W7130651761",
+   "title": "Unsupervised Feature Construction for Time Series Anomaly Detection - An Evaluation",
+   "year": 2026,
+   "authors": [
+    "Hamon",
+    "Lemaire",
+    "Nair-Benrekia",
+    "Berlemont"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-15638-9_15": {
+   "doi": "10.1007/978-3-032-15638-9_15",
+   "openalex": "W7128516804",
+   "title": "Mechanistic Interpretability for Transformer-Based Time Series Classification",
+   "year": 2026,
+   "authors": [
+    "Kalnāre",
+    "Kitharidis",
+    "Bäck",
+    "Stein"
+   ],
+   "venue": "Communications in computer and information science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-15987-8_1": {
+   "doi": "10.1007/978-3-032-15987-8_1",
+   "openalex": "W7126043291",
+   "title": "A Categorical Kalman Filter for Human Activity Recognition",
+   "year": 2026,
+   "authors": [
+    "França",
+    "Pitombeira-Neto",
+    "Cruz",
+    "Macedo"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-16708-8_16": {
+   "doi": "10.1007/978-3-032-16708-8_16",
+   "openalex": "W7155218332",
+   "title": "Using Temporal Features to Improve Accuracy in Multivariate Pattern Analysis (MVPA) of M/EEG Data",
+   "year": 2026,
+   "authors": [
+    "Morgani",
+    "Goddard",
+    "Batista"
+   ],
+   "venue": "Communications in computer and information science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-16889-4_58": {
+   "doi": "10.1007/978-3-032-16889-4_58",
+   "openalex": "W7162259196",
+   "title": "Comparison of Feature Extraction Methods for Time Series Data in Fault Classification of Screw Connections",
+   "year": 2026,
+   "authors": [
+    "Henkies",
+    "West",
+    "Deuse"
+   ],
+   "venue": "Lecture notes in mechanical engineering",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'compares four feature extraction methods (PAA, PCA, catch22, tsfresh)'"
+  },
+  "doi:10.1007/978-3-032-25305-7_13": {
+   "doi": "10.1007/978-3-032-25305-7_13",
+   "openalex": "W7160611020",
+   "title": "Developing Human-Centric Machine Learning Models for Temporal Data",
+   "year": 2026,
+   "authors": [
+    "Kathirgamanathan",
+    "Cappuccio",
+    "Rinzivillo",
+    "Andrienko"
+   ],
+   "venue": "Communications in computer and information science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-27272-0_8": {
+   "doi": "10.1007/978-3-032-27272-0_8",
+   "openalex": "W7162954974",
+   "title": "Clustering Tactical Patterns in Football: Time Series Features from Tracking Data",
+   "year": 2026,
+   "authors": [
+    "Anurathan",
+    "Ritzer",
+    "Wengert",
+    "Koot"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-37676-3_32": {
+   "doi": "10.1007/978-3-032-37676-3_32",
+   "openalex": "W7210270788",
+   "title": "TS2TabPFN: Time Series Classification and Extrinsic Regression Through Feature Extraction and a Tabular Foundation Model",
+   "year": 2026,
+   "authors": [
+    "Merlin",
+    "Silva"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-09-06",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-662-72243-5_1": {
+   "doi": "10.1007/978-3-662-72243-5_1",
+   "openalex": "W4414781887",
+   "title": "An Empirical Evaluation of Foundation Models for Multivariate Time Series Classification",
+   "year": 2025,
+   "authors": [
+    "Isiacik",
+    "Nguyen",
+    "Aderinola",
+    "Ifrim"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-10-03",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-981-92-1947-6_28": {
+   "doi": "10.1007/978-981-92-1947-6_28",
+   "openalex": "W7165735959",
+   "title": "A Regime-Aware Fusion Framework for Time Series Classification",
+   "year": 2026,
+   "authors": [
+    "Chauhan",
+    "Abdallah"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-06-24",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-981-95-2382-5_21": {
+   "doi": "10.1007/978-981-95-2382-5_21",
+   "openalex": "W7116958712",
+   "title": "Classification of User Satisfaction in HRI with Social Signals in the Wild",
+   "year": 2025,
+   "authors": [
+    "Schiffmann",
+    "Jeschke",
+    "Richert"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-12-23",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-981-95-5012-8_18": {
+   "doi": "10.1007/978-981-95-5012-8_18",
+   "openalex": "W7118001055",
+   "title": "MOTSAD: Multi-objective Optimization for Time Series Anomaly Detection in Microservice",
+   "year": 2026,
+   "authors": [
+    "Tang",
+    "Tan",
+    "Chen"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/s00180-025-01703-5": {
+   "doi": "10.1007/s00180-025-01703-5",
+   "openalex": "W7130818192",
+   "title": "Enhancing univariate time series forecasting: a general tree-based model selection approach",
+   "year": 2026,
+   "authors": [
+    "Stroilă"
+   ],
+   "venue": "Computational Statistics",
+   "type": "journal",
+   "pubdate": "2026-02-21",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'input features derived from the catch22 library ... are integrated with these metrics. This integration forms the basis of a comprehensive framework employing a decision-tree based model'"
+  },
+  "doi:10.1007/s00778-024-00840-5": {
+   "doi": "10.1007/s00778-024-00840-5",
+   "title": "Time series data encoding in Apache IoTDB: comparative analysis and recommendation",
+   "year": 2024,
+   "authors": [
+    "Xia",
+    "Xiao",
+    "Huang",
+    "Hu"
+   ],
+   "venue": "The VLDB Journal",
+   "type": "journal",
+   "openalex": "W4391753263",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏛️ Finance and databases",
+   "page_line": 88,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1007/s00778-026-01007-0": {
+   "doi": "10.1007/s00778-026-01007-0",
+   "openalex": "W7214111211",
+   "title": "TFB-2: benchmarking and automated ensemble for time series forecasting",
+   "year": 2026,
+   "authors": [
+    "Li",
+    "Wu",
+    "Qiu",
+    "Hu"
+   ],
+   "venue": "The VLDB Journal",
+   "type": "journal",
+   "pubdate": "2026-09-23",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/s10115-024-02107-5": {
+   "doi": "10.1007/s10115-024-02107-5",
+   "title": "C22MP: the marriage of catch22 and the matrix profile creates a fast, efficient and interpretable anomaly detector",
+   "year": 2024,
+   "authors": [
+    "Tafazoli",
+    "Lu",
+    "Wu",
+    "Srinivas"
+   ],
+   "venue": "Knowledge and Information Systems",
+   "type": "journal",
+   "openalex": "W4396835449",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🖥️ Algorithms <a href=\"algs\" id=\"algs\"></a>",
+   "page_line": 25,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1007/s10489-025-06841-3": {
+   "doi": "10.1007/s10489-025-06841-3",
+   "openalex": "W4414329777",
+   "title": "A graph convolutional network for time series classification using recurrence plots",
+   "year": 2025,
+   "authors": [
+    "Kang",
+    "Lee",
+    "Lee"
+   ],
+   "venue": "Applied Intelligence",
+   "type": "journal",
+   "pubdate": "2025-09-18",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.1007/s10618-025-01098-3": {
+   "doi": "10.1007/s10618-025-01098-3",
+   "openalex": "W4409449339",
+   "title": "TSRF-Dist: a novel time series distance based on extremely randomized canonical interval forests",
+   "year": 2025,
+   "authors": [
+    "Azzari",
+    "Bicego",
+    "Combi",
+    "Cracco"
+   ],
+   "venue": "Data Mining and Knowledge Discovery",
+   "type": "journal",
+   "pubdate": "2025-04-15",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "Extremely randomized canonical interval features; 'for the first 22 ... measures' are catch22 features (derivative algorithm, CIF-style)"
+  },
+  "doi:10.1007/s10618-025-01132-4": {
+   "doi": "10.1007/s10618-025-01132-4",
+   "openalex": "W4413740476",
+   "title": "TSelect: selecting relevant and non-redundant channels for multivariate time series classification",
+   "year": 2025,
+   "authors": [
+    "Nuyts",
+    "Perini",
+    "Davis"
+   ],
+   "venue": "Data Mining and Knowledge Discovery",
+   "type": "journal",
+   "pubdate": "2025-08-27",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'We employ XGB_Catch22 because both the classifier and the feature extractor are fast' — one of five classifiers"
+  },
+  "doi:10.1007/s10633-024-09980-z": {
+   "doi": "10.1007/s10633-024-09980-z",
+   "title": "Portable multi-focal visual evoked potential diagnostics for multiple sclerosis/optic neuritis patients",
+   "year": 2024,
+   "authors": [
+    "Banijamali",
+    "Versek",
+    "Babinski",
+    "Kamarthi"
+   ],
+   "venue": "Documenta Ophthalmologica",
+   "type": "journal",
+   "openalex": "W4400306591",
+   "pmid": "38955958",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧠 Neuroimaging",
+   "page_line": 75,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1007/s10994-025-06881-3": {
+   "doi": "10.1007/s10994-025-06881-3",
+   "openalex": "W4415217351",
+   "title": "Mast: interpretable stress testing via meta-learning for forecasting model robustness evaluation",
+   "year": 2025,
+   "authors": [
+    "Inácio",
+    "Cerqueira",
+    "Barandas",
+    "Soares"
+   ],
+   "venue": "Machine Learning",
+   "type": "journal",
+   "pubdate": "2025-10-15",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/s10994-026-07132-9": {
+   "doi": "10.1007/s10994-026-07132-9",
+   "openalex": "W7204522771",
+   "title": "Morphing-Based Sensitivity Analysis: A Comparative Study of Linear and Non-linear Temporal Transformations in TSC Robustness",
+   "year": 2026,
+   "authors": [
+    "Brito",
+    "Folgado",
+    "Soares",
+    "Santos"
+   ],
+   "venue": "Machine Learning",
+   "type": "journal",
+   "pubdate": "2026-08-28",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/s11207-026-02612-6": {
+   "doi": "10.1007/s11207-026-02612-6",
+   "openalex": "W7127362913",
+   "title": "Predicting Major Solar Flares Using Convolutional Neural Networks and Multivariate Magnetic Field Time-Series Data",
+   "year": 2026,
+   "authors": [
+    "Foumani",
+    "Farokhi",
+    "Qi"
+   ],
+   "venue": "Solar Physics",
+   "type": "journal",
+   "pubdate": "2026-02-01",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.1007/s11760-025-04892-0": {
+   "doi": "10.1007/s11760-025-04892-0",
+   "openalex": "W4415371662",
+   "title": "Small footprint automatic speech recognition (ASR)-free keyword spotting using multivariate time series analysis",
+   "year": 2025,
+   "authors": [
+    "Das",
+    "Padole",
+    "Tiwari"
+   ],
+   "venue": "Signal Image and Video Processing",
+   "type": "journal",
+   "pubdate": "2025-10-21",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/s12539-026-00817-8": {
+   "doi": "10.1007/s12539-026-00817-8",
+   "openalex": "W7131814098",
+   "pmid": "41758277",
+   "title": "A Framework Integrating Spiking Cortical Circuit Modeling and Simulation-Based Inference to Probe Biomarkers of Cortical Dysfunction in Alzheimer’s Disease",
+   "year": 2026,
+   "authors": [
+    "Sánchez",
+    "Valero",
+    "García",
+    "Rodríguez-González"
+   ],
+   "venue": "Interdisciplinary Sciences Computational Life Sciences",
+   "type": "journal",
+   "pubdate": "2026-02-27",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "features extracted 'using complementary methods (i.e., catch22, 1/f slope, and wavelet-based features)'"
+  },
+  "doi:10.1007/s41060-026-01098-6": {
+   "doi": "10.1007/s41060-026-01098-6",
+   "openalex": "W7151092169",
+   "title": "Explainability and uncertainty for time-series classification in cryptocurrency data: a hybrid XAI methodology based on COMTE and LEFTIST",
+   "year": 2026,
+   "authors": [
+    "Morais",
+    "Ludermir"
+   ],
+   "venue": "International Journal of Data Science and Analytics",
+   "type": "journal",
+   "pubdate": "2026-04-06",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "Catch22Classifier is one of several models in Table 2 (MRSQM, TS Forest, SVM, ...)"
+  },
+  "doi:10.1007/s41666-026-00245-9": {
+   "doi": "10.1007/s41666-026-00245-9",
+   "openalex": "W7167961139",
+   "pmid": "42666394",
+   "title": "Detection and Early Detection of Pathological Motor Evoked Potentials: A Novel Approach for Intraoperative Neuromonitoring Assistance",
+   "year": 2026,
+   "authors": [
+    "Azzari",
+    "Boaro",
+    "Basaldella",
+    "Nunes"
+   ],
+   "venue": "Journal of Healthcare Informatics Research",
+   "type": "journal",
+   "pubdate": "2026-07-10",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "Canonical Isolation Forest: 'the first 22 features' of 25 measures are catch22 (derivative algorithm)"
+  },
+  "doi:10.1007/s44311-025-00011-x": {
+   "doi": "10.1007/s44311-025-00011-x",
+   "openalex": "W4410008690",
+   "title": "Approaches for IoT-enhanced predictive process monitoring",
+   "year": 2025,
+   "authors": [
+    "Bertrand",
+    "Stevens",
+    "Deforce",
+    "Smedt"
+   ],
+   "venue": "Process Science",
+   "type": "journal",
+   "pubdate": "2025-05-01",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.1007/s44427-025-00016-1": {
+   "doi": "10.1007/s44427-025-00016-1",
+   "openalex": "W7124706022",
+   "title": "Twenty Years of Time Series Classification: From Nearest-Neighbors to ROCKETs and Large Language Models",
+   "year": 2026,
+   "authors": [
+    "Búza",
+    "Antal"
+   ],
+   "venue": "Acta Universitatis Sapientiae Informatica",
+   "type": "journal",
+   "pubdate": "2026-01-19",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.1016/j.array.2026.100893": {
+   "doi": "10.1016/j.array.2026.100893",
+   "openalex": "W7161413795",
+   "title": "Beyond tabular data: Feature extraction and selection for high-dimensional data",
+   "year": 2026,
+   "authors": [
+    "Cavina",
+    "Manzella",
+    "G.",
+    "Sciavicco"
+   ],
+   "venue": "Array",
+   "type": "journal",
+   "pubdate": "2026-05-16",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.asoc.2025.114090": {
+   "doi": "10.1016/j.asoc.2025.114090",
+   "openalex": "W4415687464",
+   "title": "MMformer with adaptive attention: Advancing multivariate time series forecasting for environmental applications",
+   "year": 2025,
+   "authors": [
+    "Xin",
+    "Su",
+    "Hasan"
+   ],
+   "venue": "Applied Soft Computing",
+   "type": "journal",
+   "pubdate": "2025-10-30",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.atech.2025.101686": {
+   "doi": "10.1016/j.atech.2025.101686",
+   "openalex": "W4416869492",
+   "title": "A full end-to-end analytical framework for livestock behavior modeling and health assessment using wearable electronic recording system and machine learning",
+   "year": 2025,
+   "authors": [
+    "Ni",
+    "Jia",
+    "Shi",
+    "Chang"
+   ],
+   "venue": "Smart Agricultural Technology",
+   "type": "journal",
+   "pubdate": "2025-12-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.atmosres.2023.106608": {
+   "doi": "10.1016/j.atmosres.2023.106608",
+   "title": "One month in advance prediction of air temperature from Reanalysis data with eXplainable Artificial Intelligence techniques",
+   "year": 2023,
+   "authors": [
+    "Gómez-Orellana",
+    "Guijo-Rubio",
+    "Pérez‐Aracil",
+    "Gutiérrez"
+   ],
+   "venue": "Atmospheric Research",
+   "type": "journal",
+   "openalex": "W4313897548",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🔭 Meteorology and astronomy",
+   "page_line": 80,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1016/j.bja.2025.09.053": {
+   "doi": "10.1016/j.bja.2025.09.053",
+   "openalex": "W4416445617",
+   "pmid": "41271473",
+   "title": "Heart rate dynamics predict anaesthetic depth: a compact machine learning model",
+   "year": 2025,
+   "authors": [
+    "Qian",
+    "Xiao",
+    "Luo",
+    "Song"
+   ],
+   "venue": "British Journal of Anaesthesia",
+   "type": "journal",
+   "pubdate": "2025-11-21",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.ceb.2025.102585": {
+   "doi": "10.1016/j.ceb.2025.102585",
+   "openalex": "W4414693194",
+   "pmid": "41037869",
+   "title": "From images to understanding: Advances in deep learning for cellular dynamics analysis",
+   "year": 2025,
+   "authors": [
+    "Woodhams",
+    "Uhlmann"
+   ],
+   "venue": "Current Opinion in Cell Biology",
+   "type": "journal",
+   "pubdate": "2025-10-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.cja.2026.104159": {
+   "doi": "10.1016/j.cja.2026.104159",
+   "openalex": "W7135246235",
+   "title": "Mining and analysis of tactical strategy patterns from reinforcement learning model in close-range air combat",
+   "year": 2026,
+   "authors": [
+    "Liu",
+    "Yu",
+    "Tian",
+    "Dang"
+   ],
+   "venue": "Chinese Journal of Aeronautics",
+   "type": "journal",
+   "pubdate": "2026-03-13",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.compag.2025.110799": {
+   "doi": "10.1016/j.compag.2025.110799",
+   "openalex": "W7077055165",
+   "title": "Evaluating ROCKET and Catch22 features for calf behaviour classification from accelerometer data using Machine Learning models",
+   "year": 2025,
+   "authors": [
+    "Dissanayake",
+    "McPherson",
+    "Allyndrée",
+    "Kennedy"
+   ],
+   "venue": "Computers and Electronics in Agriculture",
+   "type": "journal",
+   "pubdate": "2025-08-14",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "note": "published version of doi:10.48550/arxiv.2404.18159"
+  },
+  "doi:10.1016/j.compeleceng.2025.110163": {
+   "doi": "10.1016/j.compeleceng.2025.110163",
+   "title": "Unveiling energy usage patterns in industrial kitchens: From detection to clustering of appliance usage",
+   "year": 2025,
+   "authors": [
+    "Martins",
+    "Morais",
+    "Pereira"
+   ],
+   "venue": "Computers & Electrical Engineering",
+   "type": "journal",
+   "openalex": "W4407756427",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 64,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1016/j.crfs.2026.101441": {
+   "doi": "10.1016/j.crfs.2026.101441",
+   "openalex": "W7161252910",
+   "pmid": "42221873",
+   "title": "Improved FTIR-based classification for food authentication using a topological ensemble framework",
+   "year": 2026,
+   "authors": [
+    "Yu",
+    "Chen"
+   ],
+   "venue": "Current Research in Food Science",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.cub.2025.08.027": {
+   "doi": "10.1016/j.cub.2025.08.027",
+   "openalex": "W4414015692",
+   "pmid": "40914164",
+   "title": "Inactivation of primate cortex reveals inductive biases in visual learning",
+   "year": 2025,
+   "authors": [
+    "Laamerad",
+    "Krause",
+    "Guitton",
+    "Pack"
+   ],
+   "venue": "Current Biology",
+   "type": "journal",
+   "pubdate": "2025-09-05",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.datak.2025.102490": {
+   "doi": "10.1016/j.datak.2025.102490",
+   "openalex": "W4412609461",
+   "title": "Advancing credit risk assessment in the retail banking industry: A hybrid approach using time series and supervised learning models",
+   "year": 2025,
+   "authors": [
+    "Goldmann",
+    "Machado",
+    "Osterrieder"
+   ],
+   "venue": "Data & Knowledge Engineering",
+   "type": "journal",
+   "pubdate": "2025-07-23",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.engappai.2025.110674": {
+   "doi": "10.1016/j.engappai.2025.110674",
+   "title": "Explainable time series features for hard disk drive failure prediction",
+   "year": 2025,
+   "authors": [
+    "Li",
+    "Zhou",
+    "Radhakrishnan",
+    "Kamarthi"
+   ],
+   "venue": "Engineering Applications of Artificial Intelligence",
+   "type": "journal",
+   "openalex": "W4409365925",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 62,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1016/j.engappai.2026.115681": {
+   "doi": "10.1016/j.engappai.2026.115681",
+   "openalex": "W7170092480",
+   "title": "Integrated vision and tactile-based soft robotic system for automated fruit classification and handling in storage environments",
+   "year": 2026,
+   "authors": [
+    "Monteiro",
+    "Reis",
+    "Tolu"
+   ],
+   "venue": "Engineering Applications of Artificial Intelligence",
+   "type": "journal",
+   "pubdate": "2026-07-22",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.eswa.2022.119023": {
+   "doi": "10.1016/j.eswa.2022.119023",
+   "title": "Towards understanding the importance of time-series features in automated algorithm performance prediction",
+   "year": 2022,
+   "authors": [
+    "Petelin",
+    "Cenikj",
+    "Eftimov"
+   ],
+   "venue": "Expert Systems with Applications",
+   "type": "journal",
+   "openalex": "W4306320563",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🌍 General",
+   "page_line": 94,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1016/j.eswa.2025.128693": {
+   "doi": "10.1016/j.eswa.2025.128693",
+   "openalex": "W4411488291",
+   "title": "Kernel grouping for time series classification with multiple transformations and pooling operators",
+   "year": 2025,
+   "authors": [
+    "Wang",
+    "Wu",
+    "Yuan",
+    "Li"
+   ],
+   "venue": "Expert Systems with Applications",
+   "type": "journal",
+   "pubdate": "2025-06-20",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.eswa.2026.131373": {
+   "doi": "10.1016/j.eswa.2026.131373",
+   "openalex": "W7125924678",
+   "title": "GPS-Mamba: Graph permutation scanning state space model for multivariate time series forecasting",
+   "year": 2026,
+   "authors": [
+    "Yao",
+    "Zheng",
+    "Zuo",
+    "Zhang"
+   ],
+   "venue": "Expert Systems with Applications",
+   "type": "journal",
+   "pubdate": "2026-01-28",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.fuel.2026.141327": {
+   "doi": "10.1016/j.fuel.2026.141327",
+   "openalex": "W7212379286",
+   "title": "Dynamic prediction of WFGD outlet SO2 concentration using optimal input subset generation and improved Bayesian-optimized BiLSTM",
+   "year": 2026,
+   "authors": [
+    "Chen",
+    "Peng",
+    "Zhang",
+    "Ma"
+   ],
+   "venue": "Fuel",
+   "type": "journal",
+   "pubdate": "2026-09-12",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "'Refined inputs are constructed by integrating mRMR, canonical time-series characteristics (CATCH22), and SHAP' (abstract)"
+  },
+  "doi:10.1016/j.health.2026.100447": {
+   "doi": "10.1016/j.health.2026.100447",
+   "openalex": "W7124447144",
+   "title": "An analytics framework for graph-based anomaly detection in healthcare time series",
+   "year": 2026,
+   "authors": [
+    "Okano",
+    "Aloise",
+    "Nascimento"
+   ],
+   "venue": "Healthcare Analytics",
+   "type": "journal",
+   "pubdate": "2026-01-16",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.inffus.2023.101955": {
+   "doi": "10.1016/j.inffus.2023.101955",
+   "title": "Explainability meets uncertainty quantification: Insights from feature-based model fusion on multimodal time series",
+   "year": 2023,
+   "authors": [
+    "Folgado",
+    "Barandas",
+    "Famiglini",
+    "Santos"
+   ],
+   "venue": "Information Fusion",
+   "type": "journal",
+   "openalex": "W4385383262",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🖥️ Algorithms <a href=\"algs\" id=\"algs\"></a>",
+   "page_line": 25,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1016/j.inffus.2025.103458": {
+   "doi": "10.1016/j.inffus.2025.103458",
+   "openalex": "W4412055414",
+   "title": "MVFusion-TSC: A multi-view fusion image-based network for time series classification",
+   "year": 2025,
+   "authors": [
+    "Lian",
+    "Kang",
+    "Li",
+    "Zhou"
+   ],
+   "venue": "Information Fusion",
+   "type": "journal",
+   "pubdate": "2025-07-05",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.jaecs.2025.100440": {
+   "doi": "10.1016/j.jaecs.2025.100440",
+   "openalex": "W4416971603",
+   "title": "Classification of fuel type for predictive maintenance in marine and industrial engines using time series feature extraction based on hypothesis tests and automated machine learning",
+   "year": 2025,
+   "authors": [
+    "Guo",
+    "Jansson",
+    "Johansson",
+    "Lindgren"
+   ],
+   "venue": "Applications in Energy and Combustion Science",
+   "type": "journal",
+   "pubdate": "2025-12-04",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.knosys.2025.113462": {
+   "doi": "10.1016/j.knosys.2025.113462",
+   "openalex": "W4409387695",
+   "title": "Improved dynamic time warping for fire safety emergency response: A robust and interpretable extension",
+   "year": 2025,
+   "authors": [
+    "Zhang",
+    "Wang",
+    "Wang",
+    "Mozaffari"
+   ],
+   "venue": "Knowledge-Based Systems",
+   "type": "journal",
+   "pubdate": "2025-04-12",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.knosys.2026.116523": {
+   "doi": "10.1016/j.knosys.2026.116523",
+   "openalex": "W7165781331",
+   "title": "KFS-TUNE: Kernel-based Feature Selection for efficiency and accuracy tuning in Time Series Classification",
+   "year": 2026,
+   "authors": [
+    "Vei",
+    "Tiakas",
+    "Vakali"
+   ],
+   "venue": "Knowledge-Based Systems",
+   "type": "journal",
+   "pubdate": "2026-06-24",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.knosys.2026.116906": {
+   "doi": "10.1016/j.knosys.2026.116906",
+   "openalex": "W7206195639",
+   "title": "A taxonomy of interpretable neurosymbolic models for time series classification",
+   "year": 2026,
+   "authors": [
+    "Porcher",
+    "Ayadi",
+    "Devanne",
+    "Weber"
+   ],
+   "venue": "Knowledge-Based Systems",
+   "type": "journal",
+   "pubdate": "2026-09-02",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.measurement.2026.120751": {
+   "doi": "10.1016/j.measurement.2026.120751",
+   "openalex": "W7127921132",
+   "title": "Multiple tapping method for non-destructive testing of defects in metal components",
+   "year": 2026,
+   "authors": [
+    "Bykhovsky",
+    "Neuman",
+    "Golan",
+    "Kobo"
+   ],
+   "venue": "Measurement",
+   "type": "journal",
+   "pubdate": "2026-02-06",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.mtcomm.2026.114857": {
+   "doi": "10.1016/j.mtcomm.2026.114857",
+   "openalex": "W7129460150",
+   "title": "A machine learning pipeline for silicon wafer warpage prediction in diamond coated wire slicing",
+   "year": 2026,
+   "authors": [
+    "zavattari",
+    "Demaria",
+    "Bonda",
+    "Iacca"
+   ],
+   "venue": "Materials Today Communications",
+   "type": "journal",
+   "pubdate": "2026-02-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.rineng.2025.107541": {
+   "doi": "10.1016/j.rineng.2025.107541",
+   "openalex": "W4414871795",
+   "title": "Metalearning for improving time series forecasting based on deep learning: A water case study",
+   "year": 2025,
+   "authors": [
+    "Solís",
+    "Gamboa",
+    "Troncoso"
+   ],
+   "venue": "Results in Engineering",
+   "type": "journal",
+   "pubdate": "2025-10-07",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.rineng.2025.108009": {
+   "doi": "10.1016/j.rineng.2025.108009",
+   "openalex": "W4415973925",
+   "title": "Automatic classification of water drop impact characteristics using audio information",
+   "year": 2025,
+   "authors": [
+    "Arogeti",
+    "Fisher",
+    "Bykhovsky"
+   ],
+   "venue": "Results in Engineering",
+   "type": "journal",
+   "pubdate": "2025-11-06",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.scsadv.2026.100051": {
+   "doi": "10.1016/j.scsadv.2026.100051",
+   "openalex": "W7138400538",
+   "title": "Explainable deep representation learning for clustering building-energy time series",
+   "year": 2026,
+   "authors": [
+    "Kallel",
+    "Amayri",
+    "Bouguila"
+   ],
+   "venue": "Sustainable Cities and Society Advances",
+   "type": "journal",
+   "pubdate": "2026-03-17",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.suscom.2026.101405": {
+   "doi": "10.1016/j.suscom.2026.101405",
+   "openalex": "W7163159842",
+   "title": "GreenEdge: A computationally sustainable adaptive learning framework for energy-efficient smart home communities",
+   "year": 2026,
+   "authors": [
+    "Milyani",
+    "Thota",
+    "Polat",
+    "Yilmaz"
+   ],
+   "venue": "Sustainable Computing Informatics and Systems",
+   "type": "journal",
+   "pubdate": "2026-06-02",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.xinn.2026.101396": {
+   "doi": "10.1016/j.xinn.2026.101396",
+   "openalex": "W7154565164",
+   "title": "TDA-PIDO: A topological data analysis approach for early warning of infectious disease outbreaks",
+   "year": 2026,
+   "authors": [
+    "Luo",
+    "Liu",
+    "Lu",
+    "Wang"
+   ],
+   "venue": "The Innovation",
+   "type": "journal",
+   "pubdate": "2026-04-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1038/s41467-024-44740-2": {
+   "doi": "10.1038/s41467-024-44740-2",
+   "title": "Personalising intravenous to oral antibiotic switch decision making through fair interpretable machine learning",
+   "year": 2024,
+   "authors": [
+    "Bolton",
+    "Wilson",
+    "Gilchrist",
+    "Georgiou"
+   ],
+   "venue": "Nature Communications",
+   "type": "journal",
+   "openalex": "W4390839094",
+   "pmid": "38218885",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1038/s41467-025-61945-1": {
+   "doi": "10.1038/s41467-025-61945-1",
+   "openalex": "W4413115915",
+   "pmid": "40804039",
+   "title": "A dream EEG and mentation database",
+   "year": 2025,
+   "authors": [
+    "Wong",
+    "Herzog",
+    "Andrade",
+    "Andrillon"
+   ],
+   "venue": "Nature Communications",
+   "type": "journal",
+   "pubdate": "2025-08-13",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'We extracted traditional PSD features and corresponding non-traditional features obtained from the catch22 analytical pipeline'"
+  },
+  "doi:10.1038/s41540-025-00527-9": {
+   "doi": "10.1038/s41540-025-00527-9",
+   "openalex": "W4410240801",
+   "pmid": "40346107",
+   "title": "A Python toolbox for neural circuit parameter inference",
+   "year": 2025,
+   "authors": [
+    "Valero",
+    "Rodríguez-González",
+    "Montobbio",
+    "Casal"
+   ],
+   "venue": "npj Systems Biology and Applications",
+   "type": "journal",
+   "pubdate": "2025-05-09",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'Two time-series feature libraries are included: hctsa and catch22'; catch22 compared with the 1/f slope in the case study"
+  },
+  "doi:10.1038/s41593-025-02091-1": {
+   "doi": "10.1038/s41593-025-02091-1",
+   "openalex": "W4415611784",
+   "pmid": "41152637",
+   "title": "Falling asleep follows a predictable bifurcation dynamic",
+   "year": 2025,
+   "authors": [
+    "Li",
+    "Ilina",
+    "Peach",
+    "Wei"
+   ],
+   "venue": "Nature Neuroscience",
+   "type": "journal",
+   "pubdate": "2025-10-28",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "'plus the canonical timeseries characteristics (CATCH-22) feature set' added to band-power and coupling features"
+  },
+  "doi:10.1038/s41597-025-05035-3": {
+   "doi": "10.1038/s41597-025-05035-3",
+   "openalex": "W4409946275",
+   "pmid": "40301383",
+   "title": "The OPS-SAT benchmark for detecting anomalies in satellite telemetry",
+   "year": 2025,
+   "authors": [
+    "Ruszczak",
+    "Kotowski",
+    "Evans",
+    "Nalepa"
+   ],
+   "venue": "Scientific Data",
+   "type": "journal",
+   "pubdate": "2025-04-29",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.1038/s42003-022-04077-2": {
+   "doi": "10.1038/s42003-022-04077-2",
+   "title": "Voltage imaging reveals the dynamic electrical signatures of human breast cancer cells",
+   "year": 2022,
+   "authors": [
+    "Quicke",
+    "Sun",
+    "Arias-García",
+    "Beykou"
+   ],
+   "venue": "Communications Biology",
+   "type": "journal",
+   "openalex": "W4308786656",
+   "pmid": "36369329",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1063/5.0250399": {
+   "doi": "10.1063/5.0250399",
+   "title": "Peptide classification from statistical analysis of nanopore sensing experiments",
+   "year": 2025,
+   "authors": [
+    "Hoßbach",
+    "Tovey",
+    "Ensslen",
+    "Behrends"
+   ],
+   "venue": "The Journal of Chemical Physics",
+   "type": "journal",
+   "openalex": "W4407917905",
+   "pmid": "39998165",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 49,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1073/pnas.2532196123": {
+   "doi": "10.1073/pnas.2532196123",
+   "openalex": "W4416185985",
+   "pmid": "42550901",
+   "title": "A lettuce receptor-like kinase recognizes the highly conserved heptapeptide motif within microbial Nep1-like proteins",
+   "year": 2026,
+   "authors": [
+    "Bañales",
+    "Mehrem",
+    "Landman",
+    "Alderkamp"
+   ],
+   "venue": "Proceedings of the National Academy of Sciences",
+   "type": "conference",
+   "pubdate": "2026-08-04",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1080/09524622.2025.2487688": {
+   "doi": "10.1080/09524622.2025.2487688",
+   "openalex": "W4409434801",
+   "title": "On feature representations for marmoset vocal communication analysis",
+   "year": 2025,
+   "authors": [
+    "Sarkar",
+    "Wierucka",
+    "Bosshard",
+    "Burkart"
+   ],
+   "venue": "Bioacoustics",
+   "type": "journal",
+   "pubdate": "2025-04-14",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'SSL-based feature representations and end-to-end acoustic modeling tend to lead to better systems than Catch22 features'"
+  },
+  "doi:10.1088/1361-6579/ae2aa7": {
+   "doi": "10.1088/1361-6579/ae2aa7",
+   "openalex": "W4417174767",
+   "pmid": "41364978",
+   "title": "An electrical pulse artifact signal for estimating arterial blood pressure: a proof-of-concept study",
+   "year": 2025,
+   "authors": [
+    "Howidi",
+    "Koh",
+    "Wijendran",
+    "Omidian"
+   ],
+   "venue": "Physiological Measurement",
+   "type": "journal",
+   "pubdate": "2025-12-09",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'The EVG signals were processed (e.g. extract Catch22 features) ... the RF model + Catch22 features' (abstract; full text unreachable)"
+  },
+  "doi:10.1101/2024.01.14.575365": {
+   "doi": "10.1101/2024.01.14.575365",
+   "title": "Intricate response dynamics enhances stimulus discrimination in the resource-limited C. elegans chemosensory system",
+   "year": 2024,
+   "authors": [
+    "Bokman",
+    "Pritz",
+    "Ruach",
+    "Itskovits"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "openalex": "W4390893407",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1101/2025.04.05.647237": {
+   "doi": "10.1101/2025.04.05.647237",
+   "openalex": "W4409190168",
+   "title": "An engine for systematic discovery of cause-effect relationships between brain structure and function",
+   "year": 2025,
+   "authors": [
+    "Luppi",
+    "Milisav",
+    "Suárez",
+    "Shafiei"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2025-04-05",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "'time-series feature extraction using the catch22 toolbox' for regional dynamics, alongside hctsa"
+  },
+  "doi:10.1101/2025.04.30.651376": {
+   "doi": "10.1101/2025.04.30.651376",
+   "title": "Identifying Explainable and Generalizable Features for MEG Decoding",
+   "year": 2025,
+   "authors": [
+    "Maleki",
+    "Karimi-Rouzbahani"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "openalex": "W4410070870",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 48,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1101/2025.06.27.662066": {
+   "doi": "10.1101/2025.06.27.662066",
+   "openalex": "W4411988275",
+   "pmid": "40631304",
+   "title": "Response of human iPSC-cardiomyocytes to adrenergic drugs assessed by high-throughput pericellular oxygen measurements and computational modeling",
+   "year": 2025,
+   "authors": [
+    "Li",
+    "Forouzandehmehr",
+    "McLeod",
+    "Pozo"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2025-07-03",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.1101/2025.08.01.668189": {
+   "doi": "10.1101/2025.08.01.668189",
+   "openalex": "W4412835735",
+   "title": "Transdiagnostic electrophysiological subtypes reveal brain-behavior dimensions in youth psychiatry",
+   "year": 2025,
+   "authors": [
+    "Tabbal",
+    "Ebadi",
+    "Robert",
+    "Rodríguez‐Herreros"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2025-08-01",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "'catch24 (a subset of time-series features from the hctsa toolbox)' is one of four feature categories"
+  },
+  "doi:10.1101/2025.11.10.687610": {
+   "doi": "10.1101/2025.11.10.687610",
+   "openalex": "W4416229767",
+   "pmid": "41292863",
+   "title": "Sample size critically shapes the reliability of EEG case-control findings in psychiatry",
+   "year": 2025,
+   "authors": [
+    "Ebadi",
+    "Kaderi",
+    "Rodríguez‐Herreros",
+    "Chabane"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2025-11-12",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "'we incorporated metrics from the CAnonical Time-series CHaracteristics (Catch22) toolbox' among many other EEG features"
+  },
+  "doi:10.1103/qnx2-yp4c": {
+   "doi": "10.1103/qnx2-yp4c",
+   "openalex": "W4417210148",
+   "title": "Feature-based information-theoretic approach for detecting interpretable, long-timescale pairwise interactions from time series",
+   "year": 2025,
+   "authors": [
+    "Nguyen",
+    "McMullin",
+    "Lizier",
+    "Fulcher"
+   ],
+   "venue": "Physical Review Research",
+   "type": "journal",
+   "pubdate": "2025-10-14",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/abc64332.2025.11118591": {
+   "doi": "10.1109/abc64332.2025.11118591",
+   "openalex": "W4413459304",
+   "title": "Recognising Depression Using Facial and Cephalic Feature Extractors with Machine Learning - Answer to BeyondSmile Challenge",
+   "year": 2025,
+   "authors": [
+    "Skibińska",
+    "Syed",
+    "Channa",
+    "Shah"
+   ],
+   "type": "journal",
+   "pubdate": "2025-04-21",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'Two feature extraction schemes—TSFEL and Catch22—were employed' (abstract)"
+  },
+  "doi:10.1109/access.2021.3074891": {
+   "doi": "10.1109/access.2021.3074891",
+   "title": "Two-Step Meta-Learning for Time-Series Forecasting Ensemble",
+   "year": 2021,
+   "authors": [
+    "Vaičiukynas",
+    "Danėnas",
+    "Kontrimas",
+    "Butleris"
+   ],
+   "venue": "IEEE Access",
+   "type": "journal",
+   "openalex": "W3158106363",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🌍 General",
+   "page_line": 94,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1109/access.2026.3669415": {
+   "doi": "10.1109/access.2026.3669415",
+   "openalex": "W7133255595",
+   "title": "The Density of Cross-Persistence Diagrams and Its Applications",
+   "year": 2026,
+   "authors": [
+    "Mironenko",
+    "Burnaev",
+    "Barannikov"
+   ],
+   "venue": "IEEE Access",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/access.2026.3733861": {
+   "doi": "10.1109/access.2026.3733861",
+   "openalex": "W7214048068",
+   "title": "Behavioral Featurization for Data of Unknown or Volatile Dimensionality",
+   "year": 2026,
+   "authors": [
+    "Lemos",
+    "Amaral",
+    "Priotto",
+    "Lazzaretti"
+   ],
+   "venue": "IEEE Access",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/aero66936.2026.11519969": {
+   "doi": "10.1109/aero66936.2026.11519969",
+   "openalex": "W7162101070",
+   "title": "Predicting Cognitive State and Workload of Aviators with Machine Learning of Physiological Data",
+   "year": 2026,
+   "authors": [
+    "Johnston",
+    "Radhakrishnan",
+    "Shamwell"
+   ],
+   "type": "journal",
+   "pubdate": "2026-03-07",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'We apply the Catch22 feature extraction technique as well as the Entropy and Complexity technique' (abstract)"
+  },
+  "doi:10.1109/bigdata50022.2020.9378424": {
+   "doi": "10.1109/bigdata50022.2020.9378424",
+   "title": "The Canonical Interval Forest (CIF) Classifier for Time Series Classification",
+   "year": 2020,
+   "authors": [
+    "Middlehurst",
+    "Large",
+    "Bagnall"
+   ],
+   "type": "journal",
+   "openalex": "W3080921724",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🖥️ Algorithms <a href=\"algs\" id=\"algs\"></a>",
+   "page_line": 25,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1109/bigdata66926.2025.11401894": {
+   "doi": "10.1109/bigdata66926.2025.11401894",
+   "openalex": "W7134174218",
+   "title": "Interpretable Multivariate Anomaly Detector Selection for Automatic Marine Data Quality Control",
+   "year": 2025,
+   "authors": [
+    "Nguyen",
+    "Skålvik",
+    "Sylligardos",
+    "Heldal"
+   ],
+   "type": "journal",
+   "pubdate": "2025-12-08",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/biosmart71257.2026.11598165": {
+   "doi": "10.1109/biosmart71257.2026.11598165",
+   "openalex": "W7168241016",
+   "title": "EEG-Based Age Prediction: Evaluating the Impact of NeuroHarmonize",
+   "year": 2026,
+   "authors": [
+    "Shamaa",
+    "Kasab",
+    "Diab",
+    "Hassan"
+   ],
+   "type": "journal",
+   "pubdate": "2026-06-03",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/cai68641.2026.11536544": {
+   "doi": "10.1109/cai68641.2026.11536544",
+   "openalex": "W7163071775",
+   "title": "Foundation Model-Driven Auto-Annotation: A Multi-Modal Toolbox for General-Purpose Data Labeling*",
+   "year": 2026,
+   "authors": [
+    "Ntampakis",
+    "Tziolas",
+    "Dimitriadis",
+    "Vasilakis"
+   ],
+   "type": "journal",
+   "pubdate": "2026-05-08",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/cscwd68734.2026.11582129": {
+   "doi": "10.1109/cscwd68734.2026.11582129",
+   "openalex": "W7167467700",
+   "title": "Deep Representation Learning-Assisted Distance Metric Recommendation for Time Series Clustering",
+   "year": 2026,
+   "authors": [
+    "Wu",
+    "Zhao",
+    "Rao",
+    "Lu"
+   ],
+   "type": "journal",
+   "pubdate": "2026-05-13",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/dsaa65442.2025.11247984": {
+   "doi": "10.1109/dsaa65442.2025.11247984",
+   "openalex": "W4416677392",
+   "title": "Automatic Feature Engineering for Time Series Extrinsic Regression: A Comparative Study of Signal Processing Libraries",
+   "year": 2025,
+   "authors": [
+    "Renault",
+    "Gay",
+    "Nair-Benrekia",
+    "Lemaire"
+   ],
+   "type": "journal",
+   "pubdate": "2025-10-09",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/icabme66883.2025.11211540": {
+   "doi": "10.1109/icabme66883.2025.11211540",
+   "openalex": "W4415934451",
+   "title": "EEG-Based Age Prediction: A Machine Learning Approach",
+   "year": 2025,
+   "authors": [
+    "Naifeh",
+    "Shamaa",
+    "Diab",
+    "Hassan"
+   ],
+   "type": "journal",
+   "pubdate": "2025-10-09",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/iccbdai66607.2025.11388398": {
+   "doi": "10.1109/iccbdai66607.2025.11388398",
+   "openalex": "W7130395855",
+   "title": "Data-Driven Shooting Sport Pattern Recognition Based on Dynamic Time Warping and Semi-Supervised Clustering",
+   "year": 2025,
+   "authors": [
+    "Xu",
+    "Wang",
+    "Tao",
+    "Qin"
+   ],
+   "type": "journal",
+   "pubdate": "2025-11-21",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/icdm65498.2025.00117": {
+   "doi": "10.1109/icdm65498.2025.00117",
+   "openalex": "W7131406074",
+   "title": "PULSAR: Advancing Interval-Based Time Series Classification to State-of-the-Art Performance",
+   "year": 2025,
+   "authors": [
+    "Cabello",
+    "Kulik"
+   ],
+   "type": "journal",
+   "pubdate": "2025-11-12",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/ickg55886.2022.00013": {
+   "doi": "10.1109/ickg55886.2022.00013",
+   "title": "Matrix Profile XXVII: A Novel Distance Measure for Comparing Long Time Series",
+   "year": 2022,
+   "authors": [
+    "Der",
+    "Yeh",
+    "Wu",
+    "Wang"
+   ],
+   "type": "journal",
+   "openalex": "W4319309399",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🌍 General",
+   "page_line": 94,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1109/icmla61862.2024.00163": {
+   "doi": "10.1109/icmla61862.2024.00163",
+   "openalex": "W4408146354",
+   "title": "Contrastive Representation Learning for Predicting Solar Flares from Extremely Imbalanced Multivariate Time Series Data",
+   "year": 2024,
+   "authors": [
+    "Vural",
+    "Hamdi",
+    "Boubrahimi"
+   ],
+   "type": "journal",
+   "pubdate": "2024-12-18",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🔭 Meteorology and astronomy",
+   "note": "published version of doi:10.48550/arxiv.2410.00312"
+  },
+  "doi:10.1109/icprs66293.2025.11302822": {
+   "doi": "10.1109/icprs66293.2025.11302822",
+   "openalex": "W7117486760",
+   "title": "Explainable AI for Binary Black Hole Light Curve Classification via Feature-Weighted Embeddings",
+   "year": 2025,
+   "authors": [
+    "Echegaray",
+    "Cuadra"
+   ],
+   "type": "journal",
+   "pubdate": "2025-12-01",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'automated feature extraction of accretion-rate time series using pycatch22' is stage (i) of the method (abstract)"
+  },
+  "doi:10.1109/icufn65838.2025.11169954": {
+   "doi": "10.1109/icufn65838.2025.11169954",
+   "openalex": "W4414647633",
+   "title": "Road Surface Classification Using an Accelerometer and MiniROCKET on Ultra-Low-Power STM32",
+   "year": 2025,
+   "authors": [
+    "Delgado",
+    "Melo",
+    "Carvalho",
+    "Fukuda"
+   ],
+   "type": "journal",
+   "pubdate": "2025-07-08",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/imcet69180.2026.11503639": {
+   "doi": "10.1109/imcet69180.2026.11503639",
+   "openalex": "W7160631274",
+   "title": "A Comparative Evaluation of Linear and Non-Linear Combat Variants for Multisite EEG Harmonization",
+   "year": 2026,
+   "authors": [
+    "Kasab",
+    "Shamaa",
+    "Bonnardot",
+    "Laurent"
+   ],
+   "type": "journal",
+   "pubdate": "2026-04-15",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/iscc65549.2025.11326085": {
+   "doi": "10.1109/iscc65549.2025.11326085",
+   "openalex": "W7123596948",
+   "title": "Quality Assurance for Home Spirometry using Machine Learning",
+   "year": 2025,
+   "authors": [
+    "Gardiner",
+    "Rogers",
+    "Lines",
+    "Wilson"
+   ],
+   "type": "journal",
+   "pubdate": "2025-07-02",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/jsen.2025.3626760": {
+   "doi": "10.1109/jsen.2025.3626760",
+   "openalex": "W4415883024",
+   "title": "Unsupervised Feature Selection-Based Interval Enhancement for Time Series Clustering and Its Application",
+   "year": 2025,
+   "authors": [
+    "Mi",
+    "Huo",
+    "He",
+    "Zhu"
+   ],
+   "venue": "IEEE Sensors Journal",
+   "type": "journal",
+   "pubdate": "2025-11-04",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/jsen.2026.3678199": {
+   "doi": "10.1109/jsen.2026.3678199",
+   "openalex": "W7147018682",
+   "title": "Human Activity Recognition via a Categorical Kalman Filter Using Inertial Sensors",
+   "year": 2026,
+   "authors": [
+    "Pitombeira-Neto",
+    "França",
+    "Cruz",
+    "Macedo"
+   ],
+   "venue": "IEEE Sensors Journal",
+   "type": "journal",
+   "pubdate": "2026-04-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/mipro70003.2026.11591586": {
+   "doi": "10.1109/mipro70003.2026.11591586",
+   "openalex": "W7167720931",
+   "title": "Addressing Skewed Distributions in Electricity Consumption Forecasting",
+   "year": 2026,
+   "authors": [
+    "Aziz",
+    "Žnidaršič",
+    "Osojnik",
+    "Ženko"
+   ],
+   "type": "journal",
+   "pubdate": "2026-05-25",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/ojcoms.2026.3717518": {
+   "doi": "10.1109/ojcoms.2026.3717518",
+   "openalex": "W7171430290",
+   "title": "Observability-Driven, Sniffer-Free Intrusion Detection for RPL: Closing the Detection Ceiling With On-Mote Control-Plane Features",
+   "year": 2026,
+   "authors": [
+    "Pacheco",
+    "Pedroso"
+   ],
+   "venue": "IEEE Open Journal of the Communications Society",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/rams48127.2025.10935234": {
+   "doi": "10.1109/rams48127.2025.10935234",
+   "title": "Feature Engineering Toolkit for Predictive Analytics in Engineering and Healthcare Informatics",
+   "year": 2025,
+   "authors": [
+    "Zhou",
+    "Li",
+    "Radhakrishnan",
+    "Kamarthi"
+   ],
+   "type": "journal",
+   "openalex": "W4408897575",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🖥️ Algorithms <a href=\"algs\" id=\"algs\"></a>",
+   "page_line": 28,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1109/sdemped53223.2025.11154288": {
+   "doi": "10.1109/sdemped53223.2025.11154288",
+   "openalex": "W4414230982",
+   "title": "Machine Learning-Based Detection of Inter-Turn Short-Circuit Faults in Synchronous Machines Using Stray Flux Time-Domain Analysis",
+   "year": 2025,
+   "authors": [
+    "Talbaoui",
+    "Azzoug",
+    "Ramel",
+    "Pusca"
+   ],
+   "type": "journal",
+   "pubdate": "2025-08-24",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'extracting 22 timeseries features using the Catch22 algorithm to classify healthy and faulty states' (abstract)"
+  },
+  "doi:10.1109/smc58881.2025.11343143": {
+   "doi": "10.1109/smc58881.2025.11343143",
+   "openalex": "W7125934077",
+   "title": "A Multi-Scale Decomposition and Fusion Framework Utilizing Mamba for Enhanced Time Series Forecasting",
+   "year": 2025,
+   "authors": [
+    "Yu",
+    "Li",
+    "Zheng",
+    "Tang"
+   ],
+   "type": "journal",
+   "pubdate": "2025-10-05",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/snams60348.2023.10375473": {
+   "doi": "10.1109/snams60348.2023.10375473",
+   "title": "The Impact of Imputation Methods on the Classification of Household Devices from Electricity Usage Time Series",
+   "year": 2023,
+   "authors": [
+    "Santana"
+   ],
+   "type": "journal",
+   "openalex": "W4390494201",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1109/tcc.2026.3671450": {
+   "doi": "10.1109/tcc.2026.3671450",
+   "openalex": "W7134819079",
+   "title": "A Novel Balanced Binary Whale Optimization Algorithm for Dynamic Feature Selection in Green Cloud Computing",
+   "year": 2026,
+   "authors": [
+    "Smendowski",
+    "Wojtulewicz",
+    "Nawrocki",
+    "Rutkowski"
+   ],
+   "venue": "IEEE Transactions on Cloud Computing",
+   "type": "journal",
+   "pubdate": "2026-03-09",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/tcsi.2025.3582251": {
+   "doi": "10.1109/tcsi.2025.3582251",
+   "openalex": "W4411996048",
+   "title": "Mecha: Multiview Enhanced Characteristics via Series Shuffling for Time Series Classification and Its Application to Turntable Circuit",
+   "year": 2025,
+   "authors": [
+    "He",
+    "Huo",
+    "Mi",
+    "Chen"
+   ],
+   "venue": "IEEE Transactions on Circuits and Systems I Regular Papers",
+   "type": "journal",
+   "pubdate": "2025-07-03",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/tiv.2025.3620769": {
+   "doi": "10.1109/tiv.2025.3620769",
+   "openalex": "W4415125572",
+   "title": "Longitudinal Force Estimation in Intelligent Tires Using Key Features and Tread Dynamics Validation",
+   "year": 2025,
+   "authors": [
+    "Ishii",
+    "Nishida",
+    "Masago",
+    "Mori"
+   ],
+   "venue": "IEEE Transactions on Intelligent Vehicles",
+   "type": "journal",
+   "pubdate": "2025-10-13",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/tnnls.2025.3565535": {
+   "doi": "10.1109/tnnls.2025.3565535",
+   "openalex": "W4410393779",
+   "pmid": "40372864",
+   "title": "Rapid Dynamical Pattern Classification via Deterministic Learning From Sampling Sequences",
+   "year": 2025,
+   "authors": [
+    "Wu",
+    "Li",
+    "Sun",
+    "Wang"
+   ],
+   "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+   "type": "journal",
+   "pubdate": "2025-05-15",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/usbereit65494.2025.11054227": {
+   "doi": "10.1109/usbereit65494.2025.11054227",
+   "openalex": "W4411950116",
+   "title": "Enhanced Audio-Based Analysis of Drop Characteristics by Evaluation of Impact on Water Pool",
+   "year": 2025,
+   "authors": [
+    "Marciano",
+    "Duek",
+    "Arogeti",
+    "Fisher"
+   ],
+   "type": "journal",
+   "pubdate": "2025-05-12",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1111/exsy.70148": {
+   "doi": "10.1111/exsy.70148",
+   "openalex": "W4414845559",
+   "title": "Time Series Embedding Methods for Classification Tasks: A Review",
+   "year": 2025,
+   "authors": [
+    "Irani",
+    "Ghahremani",
+    "Kermani",
+    "Metsis"
+   ],
+   "venue": "Expert Systems",
+   "type": "journal",
+   "pubdate": "2025-10-05",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1126/sciadv.aee8595": {
+   "doi": "10.1126/sciadv.aee8595",
+   "openalex": "W7171941786",
+   "pmid": "42536721",
+   "title": "From trade-offs to translation: An interdisciplinary roadmap for neurotechnology",
+   "year": 2026,
+   "authors": [
+    "Serrano",
+    "Troughton",
+    "Mirkhani",
+    "Martínez"
+   ],
+   "venue": "Science Advances",
+   "type": "journal",
+   "pubdate": "2026-07-31",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1145/3575813.3595198": {
+   "doi": "10.1145/3575813.3595198",
+   "title": "Appliance Detection Using Very Low-Frequency Smart Meter Time Series",
+   "year": 2023,
+   "authors": [
+    "Petralia",
+    "Charpentier",
+    "Boniol",
+    "Palpanas"
+   ],
+   "type": "journal",
+   "openalex": "W4377121437",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1145/3701716.3715229": {
+   "doi": "10.1145/3701716.3715229",
+   "openalex": "W7214209370",
+   "title": "Global Feature Enhancing and Fusion Framework for Strain Gauge Status Recognition",
+   "year": 2025,
+   "authors": [
+    "Zhang",
+    "Wang",
+    "Wang",
+    "Xu"
+   ],
+   "type": "journal",
+   "pubdate": "2025-05-08",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1145/3711896.3737442": {
+   "doi": "10.1145/3711896.3737442",
+   "openalex": "W4412876983",
+   "title": "TSFM-Bench: A Comprehensive and Unified Benchmark of Foundation Models for Time Series Forecasting",
+   "year": 2025,
+   "authors": [
+    "Li",
+    "Qiu",
+    "Chen",
+    "Wang"
+   ],
+   "type": "journal",
+   "pubdate": "2025-08-03",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1145/3725258": {
+   "doi": "10.1145/3725258",
+   "openalex": "W4411403173",
+   "title": "A Structured Study of Multivariate Time-Series Distance Measures",
+   "year": 2025,
+   "authors": [
+    "d’Hondt",
+    "Li",
+    "Yang",
+    "Papapetrou"
+   ],
+   "venue": "Proceedings of the ACM on Management of Data",
+   "type": "conference",
+   "pubdate": "2025-06-17",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1145/3737412.3743491": {
+   "doi": "10.1145/3737412.3743491",
+   "openalex": "W4413307767",
+   "title": "Advancing Workload Management with Foundational Models: Challenges in Time Series Similarity and Interpretability",
+   "year": 2025,
+   "authors": [
+    "Bang",
+    "Roumpos",
+    "Matusevych",
+    "Christofidi"
+   ],
+   "type": "journal",
+   "pubdate": "2025-06-22",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1145/3744256.3812577": {
+   "doi": "10.1145/3744256.3812577",
+   "openalex": "W7165196332",
+   "title": "Benchmarking Data-Driven Time Series Classification Methods for a real-world Building HVAC System",
+   "year": 2026,
+   "authors": [
+    "Hadwiger",
+    "Hirsch",
+    "Masoumali",
+    "Schweiger"
+   ],
+   "type": "journal",
+   "pubdate": "2026-06-19",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'(2) a resampling based approach using the Catch22 feature set' — one of four approaches (abstract)"
+  },
+  "doi:10.1145/3747327.3764784": {
+   "doi": "10.1145/3747327.3764784",
+   "openalex": "W4415065047",
+   "title": "Canonical Time Series Features for Pain Classification",
+   "year": 2025,
+   "authors": [
+    "Boda",
+    "Kamarthi",
+    "Ozek",
+    "Lu"
+   ],
+   "type": "journal",
+   "pubdate": "2025-10-11",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "Title: 'Canonical Time Series Features for Pain Classification' (no abstract or full text reachable; verdict from title)"
+  },
+  "doi:10.1145/3774906.3800486": {
+   "doi": "10.1145/3774906.3800486",
+   "openalex": "W7160606422",
+   "title": "WISP: Printable Graphene-Based Wearables for Force-Based Micro-Gesture Recognition",
+   "year": 2026,
+   "authors": [
+    "Lei",
+    "Liu",
+    "Zhang",
+    "Nguyen"
+   ],
+   "type": "journal",
+   "pubdate": "2026-05-08",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1145/3831694": {
+   "doi": "10.1145/3831694",
+   "openalex": "W7197009812",
+   "title": "Clustering and Mapping Values of Categorical Time Series",
+   "year": 2026,
+   "authors": [
+    "Durand",
+    "Bonifati"
+   ],
+   "venue": "ACM Transactions on Knowledge Discovery from Data",
+   "type": "journal",
+   "pubdate": "2026-08-06",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1177/10711813251374551": {
+   "doi": "10.1177/10711813251374551",
+   "openalex": "W4415206587",
+   "title": "Defining Prosocial Behavior in Traffic: Linking Behavior to Perception",
+   "year": 2025,
+   "authors": [
+    "Kim",
+    "Mehrotra",
+    "Akash",
+    "Salubre"
+   ],
+   "venue": "Proceedings of the Human Factors and Ergonomics Society Annual Meeting",
+   "type": "conference",
+   "pubdate": "2025-09-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1186/s12859-023-05621-5": {
+   "doi": "10.1186/s12859-023-05621-5",
+   "title": "Deep evolutionary fusion neural network: a new prediction standard for infectious disease incidence rates",
+   "year": 2024,
+   "authors": [
+    "Yao",
+    "Chen",
+    "Wang",
+    "Gao"
+   ],
+   "venue": "BMC Bioinformatics",
+   "type": "journal",
+   "openalex": "W4391141613",
+   "pmid": "38262917",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1186/s12984-025-01645-5": {
+   "doi": "10.1186/s12984-025-01645-5",
+   "openalex": "W4410712207",
+   "pmid": "40414904",
+   "title": "A data-centric and interpretable EEG framework for depression severity grading using SHAP-based insights",
+   "year": 2025,
+   "authors": [
+    "Shen",
+    "Sun",
+    "Chen",
+    "Gao"
+   ],
+   "venue": "Journal of NeuroEngineering and Rehabilitation",
+   "type": "journal",
+   "pubdate": "2025-05-24",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "'Time-domain HCSTA catch22 features' as one feature group among band power etc."
+  },
+  "doi:10.1186/s13058-024-01836-3": {
+   "doi": "10.1186/s13058-024-01836-3",
+   "title": "Enhancing pathological complete response prediction in breast cancer: the role of dynamic characterization of DCE-MRI and its association with tumor heterogeneity",
+   "year": 2024,
+   "authors": [
+    "Zhang",
+    "Teng",
+    "Zhang",
+    "Lai"
+   ],
+   "venue": "Breast Cancer Research",
+   "type": "journal",
+   "openalex": "W4396891626",
+   "pmid": "38745321",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1200/cci-25-00141": {
+   "doi": "10.1200/cci-25-00141",
+   "openalex": "W7164120953",
+   "pmid": "42269139",
+   "title": "Multimodal Machine Learning for Early Prediction of Metastasis in a Swedish Multicancer Cohort",
+   "year": 2026,
+   "authors": [
+    "Rugolon",
+    "Randl",
+    "Jovanovic",
+    "Miliou"
+   ],
+   "venue": "JCO Clinical Cancer Informatics",
+   "type": "journal",
+   "pubdate": "2026-04-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1364/boe.466005": {
+   "doi": "10.1364/boe.466005",
+   "title": "COVID-19 screening with digital holographic microscopy using intra-patient probability functions of spatio-temporal bio-optical attributes",
+   "year": 2022,
+   "authors": [
+    "O’Connor",
+    "Javidi"
+   ],
+   "venue": "Biomedical Optics Express",
+   "type": "journal",
+   "openalex": "W4296117539",
+   "pmid": "36425632",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1371/journal.pcbi.1012782": {
+   "doi": "10.1371/journal.pcbi.1012782",
+   "title": "Early detection of disease outbreaks and non-outbreaks using incidence data: A framework using feature-based time series classification and machine learning",
+   "year": 2025,
+   "authors": [
+    "Gao",
+    "Chakraborty",
+    "Greiner",
+    "Lewis"
+   ],
+   "venue": "PLoS Computational Biology",
+   "type": "journal",
+   "openalex": "W4407448928",
+   "pmid": "39946412",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1371/journal.pdig.0000432": {
+   "doi": "10.1371/journal.pdig.0000432",
+   "title": "Automated identification of abnormal infant movements from smart phone videos",
+   "year": 2024,
+   "authors": [
+    "Passmore",
+    "Kwong",
+    "Greenstein",
+    "Olsen"
+   ],
+   "venue": "PLOS Digital Health",
+   "type": "journal",
+   "openalex": "W4392087851",
+   "pmid": "38386627",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1371/journal.pone.0254108": {
+   "doi": "10.1371/journal.pone.0254108",
+   "title": "Exploration of physiological sensors, features, and machine learning models for pain intensity estimation",
+   "year": 2021,
+   "authors": [
+    "Pouromran",
+    "Radhakrishnan",
+    "Kamarthi"
+   ],
+   "venue": "PLoS ONE",
+   "type": "journal",
+   "openalex": "W3182971338",
+   "pmid": "34242325",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1371/journal.pone.0277975": {
+   "doi": "10.1371/journal.pone.0277975",
+   "title": "When less is more powerful: Shapley value attributed ablation with augmented learning for practical time series sensor data classification",
+   "year": 2022,
+   "authors": [
+    "Ukil",
+    "Marín",
+    "Jara"
+   ],
+   "venue": "PLoS ONE",
+   "type": "journal",
+   "openalex": "W4309927928",
+   "pmid": "36417477",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1371/journal.pone.0287513": {
+   "doi": "10.1371/journal.pone.0287513",
+   "title": "Towards an objective theory of subjective liking: A first step in understanding the sense of beauty",
+   "year": 2023,
+   "authors": [
+    "Mazzacane",
+    "Coccagna",
+    "Manzella",
+    "Pagliarini"
+   ],
+   "venue": "PLoS ONE",
+   "type": "journal",
+   "openalex": "W4381839145",
+   "pmid": "37352316",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧠 Neuroimaging",
+   "page_line": 71,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.1371/journal.pone.0307970": {
+   "doi": "10.1371/journal.pone.0307970",
+   "openalex": "W4401211220",
+   "pmid": "39088473",
+   "title": "Uncertainty quantification in neural-network based pain intensity estimation",
+   "year": 2024,
+   "authors": [
+    "Ozek",
+    "Lu",
+    "Radhakrishnan",
+    "Kamarthi"
+   ],
+   "venue": "PLoS ONE",
+   "type": "journal",
+   "pubdate": "2024-08-01",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "note": "published version of doi:10.48550/arxiv.2311.08569"
+  },
+  "doi:10.1371/journal.pone.0351872": {
+   "doi": "10.1371/journal.pone.0351872",
+   "openalex": "W7165807578",
+   "pmid": "42341014",
+   "title": "Decoding visual object recognition from EEG signals",
+   "year": 2026,
+   "authors": [
+    "Kang",
+    "Dousty",
+    "Khodami",
+    "Sejdić"
+   ],
+   "venue": "PLoS ONE",
+   "type": "journal",
+   "pubdate": "2026-06-24",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'we compute the 22 canonical time-series statistics from the catch22 library' as one of several feature families (band power, line length, morphology)"
+  },
+  "doi:10.14778/3749646.3749675": {
+   "doi": "10.14778/3749646.3749675",
+   "openalex": "W4413977976",
+   "title": "BURST: Rendering Clustering Techniques Suitable for Evolving Streams",
+   "year": 2025,
+   "authors": [
+    "Giannoulidis",
+    "Gounaris",
+    "Paparrizos"
+   ],
+   "venue": "Proceedings of the VLDB Endowment",
+   "type": "conference",
+   "pubdate": "2025-07-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.14778/3749646.3749699": {
+   "doi": "10.14778/3749646.3749699",
+   "openalex": "W4414041262",
+   "title": "TSB-AutoAD: Towards Automated Solutions for Time-Series Anomaly Detection",
+   "year": 2025,
+   "authors": [
+    "Liu",
+    "Lee",
+    "Paparrizos"
+   ],
+   "venue": "Proceedings of the VLDB Endowment",
+   "type": "conference",
+   "pubdate": "2025-07-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.14778/3749646.3749700": {
+   "doi": "10.14778/3749646.3749700",
+   "openalex": "W4414004126",
+   "title": "Time-Series Clustering: A Comprehensive Study of Data Mining, Machine Learning, and Deep Learning Methods",
+   "year": 2025,
+   "authors": [
+    "Paparrizos",
+    "Bogireddy"
+   ],
+   "venue": "Proceedings of the VLDB Endowment",
+   "type": "conference",
+   "pubdate": "2025-07-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1590/0101-7438.2026.046.00302988": {
+   "doi": "10.1590/0101-7438.2026.046.00302988",
+   "openalex": "W7172007517",
+   "title": "RANKING TIME SERIES ANOMALY DETECTION ALGORITHMS USING META-LEARNING",
+   "year": 2026,
+   "authors": [
+    "Okano",
+    "Aloise",
+    "Nascimento"
+   ],
+   "venue": "Pesquisa Operacional",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.21203/rs.3.rs-4469036/v1": {
+   "doi": "10.21203/rs.3.rs-4469036/v1",
+   "title": "Study of Influence of Preexisting Pain on the Body's Response to External Pain Stimuli",
+   "year": 2024,
+   "authors": [
+    "Ozek",
+    "Lu",
+    "Radhakrishnan",
+    "Kamarthi"
+   ],
+   "venue": "Research Square",
+   "type": "preprint",
+   "openalex": "W4399509045",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.21203/rs.3.rs-9189120/v1": {
+   "doi": "10.21203/rs.3.rs-9189120/v1",
+   "openalex": "W7141247366",
+   "title": "Automated Workload Pattern Recognition in Kubernetes: A Time Series Detection Framework for Microservice Resource Characterization",
+   "year": 2026,
+   "authors": [
+    "Amirullah",
+    "Saikhu",
+    "Ijtihadie"
+   ],
+   "venue": "Research Square",
+   "type": "preprint",
+   "pubdate": "2026-03-27",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.2139/ssrn.6056160": {
+   "doi": "10.2139/ssrn.6056160",
+   "openalex": "W7121518554",
+   "title": "KnowEEG: Explainable Knowledge Driven EEG Classification",
+   "year": 2026,
+   "authors": [
+    "Sahota",
+    "Foumani",
+    "Santos‐Rodríguez",
+    "Abdallah"
+   ],
+   "venue": "SSRN Electronic Journal",
+   "type": "preprint",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.2139/ssrn.6906937": {
+   "doi": "10.2139/ssrn.6906937",
+   "openalex": "W7163991009",
+   "title": "Benchmarking Python-Packages for Time Series Feature Extraction on Manufacturing Data",
+   "year": 2026,
+   "authors": [
+    "Seidler",
+    "Müller",
+    "Wolf",
+    "Eigenbrod"
+   ],
+   "venue": "SSRN Electronic Journal",
+   "type": "preprint",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.2196/34669": {
+   "doi": "10.2196/34669",
+   "title": "High-Resolution Digital Phenotypes From Consumer Wearables and Their Applications in Machine Learning of Cardiometabolic Risk Markers: Cohort Study",
+   "year": 2022,
+   "authors": [
+    "Zhou",
+    "Chan",
+    "Foo",
+    "Zhang"
+   ],
+   "venue": "Journal of Medical Internet Research",
+   "type": "journal",
+   "openalex": "W4288690784",
+   "pmid": "35904853",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.2196/70938": {
+   "doi": "10.2196/70938",
+   "openalex": "W4413348505",
+   "pmid": "40834427",
+   "title": "Influence of Pre-Existing Pain on the Body’s Response to External Pain Stimuli: Experimental Study",
+   "year": 2025,
+   "authors": [
+    "Ozek",
+    "Lu",
+    "Radhakrishnan",
+    "Kamarthi"
+   ],
+   "venue": "JMIR Biomedical Engineering",
+   "type": "journal",
+   "pubdate": "2025-08-20",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.23919/spa61993.2024.10715636": {
+   "doi": "10.23919/spa61993.2024.10715636",
+   "title": "Sound Analysis of Drop Characteristics by Evaluation of Impact on Water Pool",
+   "year": 2024,
+   "authors": [
+    "Arogeti",
+    "Fisher",
+    "Bykhovsky"
+   ],
+   "type": "journal",
+   "openalex": "W4403511699",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 65,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.3389/fncom.2025.1525785": {
+   "doi": "10.3389/fncom.2025.1525785",
+   "openalex": "W4412732753",
+   "pmid": "40799942",
+   "title": "Computational modelling reveals neurobiological contributions to static and dynamic functional connectivity patterns",
+   "year": 2025,
+   "authors": [
+    "Hoheisel",
+    "Hacker",
+    "Fink",
+    "Daun"
+   ],
+   "venue": "Frontiers in Computational Neuroscience",
+   "type": "journal",
+   "pubdate": "2025-07-29",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.3389/fneur.2023.1270482/full": {
+   "doi": "10.3389/fneur.2023.1270482/full",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.3389/fnhum.2025.1571106": {
+   "doi": "10.3389/fnhum.2025.1571106",
+   "openalex": "W4409866302",
+   "pmid": "40356882",
+   "title": "EEG dynamical features during variable-intensity cycling exercise in Parkinson’s disease",
+   "year": 2025,
+   "authors": [
+    "Alizadeh",
+    "Arasteh",
+    "Mirian",
+    "Sacheli"
+   ],
+   "venue": "Frontiers in Human Neuroscience",
+   "type": "journal",
+   "pubdate": "2025-04-28",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'Canonical Time-series Characteristics (Catch-22) features and Multiset Canonical Correlation Analysis (MCCA) were utilized to identify common profiles' (abstract)"
+  },
+  "doi:10.3389/fnhum.2025.1607941": {
+   "doi": "10.3389/fnhum.2025.1607941",
+   "openalex": "W4410905488",
+   "pmid": "40520675",
+   "title": "Topological signatures of brain dynamics: persistent homology reveals individuality and brain–behavior links",
+   "year": 2025,
+   "authors": [
+    "Wang",
+    "Xian",
+    "Chen",
+    "Yan"
+   ],
+   "venue": "Frontiers in Human Neuroscience",
+   "type": "journal",
+   "pubdate": "2025-05-30",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "catch22 temporal features used as comparator to topological features: 'predict each behavioral summary score based on either topological features or catch22 temporal features'"
+  },
+  "doi:10.3389/fnins.2025.1716271": {
+   "doi": "10.3389/fnins.2025.1716271",
+   "openalex": "W4416936221",
+   "pmid": "41415691",
+   "title": "GEMReg: a spatio-temporal grayordinate ensemble modelling framework for predicting task activation maps from resting-state fMRI",
+   "year": 2025,
+   "authors": [
+    "Pasumarthi",
+    "Bathula",
+    "Tiwari",
+    "Padole"
+   ],
+   "venue": "Frontiers in Neuroscience",
+   "type": "journal",
+   "pubdate": "2025-12-03",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "catch22 listed among feature-based methods (CATCH22, SUMMARY) alongside ROCKET, HYDRA, DrCIF, RISE"
+  },
+  "doi:10.3389/fpain.2025.1562099": {
+   "doi": "10.3389/fpain.2025.1562099",
+   "openalex": "W4409710411",
+   "pmid": "40337527",
+   "title": "Pseudo-labeling based adaptations of pain domain classifiers",
+   "year": 2025,
+   "authors": [
+    "Ricken",
+    "Gruss",
+    "Walter",
+    "Schwenker"
+   ],
+   "venue": "Frontiers in Pain Research",
+   "type": "journal",
+   "pubdate": "2025-04-23",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.3389/frsip.2026.1715921": {
+   "doi": "10.3389/frsip.2026.1715921",
+   "openalex": "W7140178725",
+   "title": "The role of signal preprocessing on the discriminability of canonical time-series characteristics and classification among individuals with and without Parkinson’s disease during serious game interaction",
+   "year": 2026,
+   "authors": [
+    "Almeida",
+    "Cabral",
+    "Souza",
+    "Nozella"
+   ],
+   "venue": "Frontiers in Signal Processing",
+   "type": "journal",
+   "pubdate": "2026-03-24",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "Title: 'The role of signal preprocessing on the discriminability of canonical time-series characteristics and classification among individuals with and without Parkinson's disease'; catch22 features benchmarked against ROCKET"
+  },
+  "doi:10.3390/a16050249": {
+   "doi": "10.3390/a16050249",
+   "title": "Method for Determining the Dominant Type of Human Breathing Using Motion Capture and Machine Learning",
+   "year": 2023,
+   "authors": [
+    "Orlova",
+    "Горобцов",
+    "Sychev",
+    "Розалиев"
+   ],
+   "venue": "Algorithms",
+   "type": "journal",
+   "openalex": "W4381427410",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.3390/app16094451": {
+   "doi": "10.3390/app16094451",
+   "openalex": "W7160090580",
+   "title": "Synthetic Minority Oversampling for Imbalanced Time Series Classification Based on Path Signature",
+   "year": 2026,
+   "authors": [
+    "Abunada",
+    "Belhaouari",
+    "Bensmail"
+   ],
+   "venue": "Applied Sciences",
+   "type": "journal",
+   "pubdate": "2026-05-01",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.3390/bdcc10070201": {
+   "doi": "10.3390/bdcc10070201",
+   "openalex": "W7165627640",
+   "title": "A Comparative Study of Time Series Clustering Performance with Classification as a Benchmark",
+   "year": 2026,
+   "authors": [
+    "Sadowska",
+    "Gajowniczek"
+   ],
+   "venue": "Big Data and Cognitive Computing",
+   "type": "journal",
+   "pubdate": "2026-06-23",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.3390/bioengineering12050493": {
+   "doi": "10.3390/bioengineering12050493",
+   "openalex": "W4410121465",
+   "pmid": "40428112",
+   "title": "Optimizing Input Feature Sets Using Catch-22 and Personalization for an Accurate and Reliable Estimation of Continuous, Cuffless Blood Pressure",
+   "year": 2025,
+   "authors": [
+    "Kasbekar",
+    "Radhakrishnan",
+    "Ji",
+    "Goel"
+   ],
+   "venue": "Bioengineering",
+   "type": "journal",
+   "pubdate": "2025-05-06",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'optimized machine learning using the Catch-22 features, when applied to the photoplethysmogram waveform ... can accurately estimate systolic and diastolic BP' (abstract; full text unreachable)"
+  },
+  "doi:10.3390/e27060624": {
+   "doi": "10.3390/e27060624",
+   "openalex": "W4411243656",
+   "pmid": "40566211",
+   "title": "Simulation Study on How Input Data Affects Time-Series Classification Model Results",
+   "year": 2025,
+   "authors": [
+    "Sadowska",
+    "Gajowniczek"
+   ],
+   "venue": "Entropy",
+   "type": "journal",
+   "pubdate": "2025-06-12",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'the least effective model was the Catch22 Classifier' — one of several classifiers (abstract)"
+  },
+  "doi:10.3390/logics3030009": {
+   "doi": "10.3390/logics3030009",
+   "openalex": "W4413133229",
+   "title": "How Explainable Really Is AI? Benchmarking Explainable AI",
+   "year": 2025,
+   "authors": [
+    "Bergami",
+    "Fox"
+   ],
+   "venue": "Logics",
+   "type": "journal",
+   "pubdate": "2025-08-06",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.3390/math14030538": {
+   "doi": "10.3390/math14030538",
+   "openalex": "W7127185026",
+   "title": "Structural Preservation in Time Series Through Multiscale Topological Features Derived from Persistent Homology",
+   "year": 2026,
+   "authors": [
+    "Jesus",
+    "Fernández-Navarro",
+    "Carbonero-Ruz"
+   ],
+   "venue": "Mathematics",
+   "type": "journal",
+   "pubdate": "2026-02-02",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.3390/mi17070840": {
+   "doi": "10.3390/mi17070840",
+   "openalex": "W7168988237",
+   "pmid": "42513051",
+   "title": "Data-Driven MOX Chemosensing for Beer Discrimination: Towards Rapid Food Quality Screening",
+   "year": 2026,
+   "authors": [
+    "Manini",
+    "Poeta",
+    "Núñez-Carmona",
+    "Sberveglieri"
+   ],
+   "venue": "Micromachines",
+   "type": "journal",
+   "pubdate": "2026-07-15",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.3390/s22093468": {
+   "doi": "10.3390/s22093468",
+   "title": "Behavioral Change Prediction from Physiological Signals Using Deep Learned Features",
+   "year": 2022,
+   "authors": [
+    "Diraco",
+    "Siciliano",
+    "Leone"
+   ],
+   "venue": "Sensors",
+   "type": "journal",
+   "openalex": "W4225329809",
+   "pmid": "35591158",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.3390/s23156916": {
+   "doi": "10.3390/s23156916",
+   "title": "Physiological Signals and Affect as Predictors of Advertising Engagement",
+   "year": 2023,
+   "authors": [
+    "Strle",
+    "Košir",
+    "Burnik"
+   ],
+   "venue": "Sensors",
+   "type": "journal",
+   "openalex": "W4385543946",
+   "pmid": "37571700",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.3390/s25237395": {
+   "doi": "10.3390/s25237395",
+   "openalex": "W4417054924",
+   "pmid": "41374770",
+   "title": "Towards In-Vehicle Non-Contact Estimation of EDA-Based Arousal with LiDAR",
+   "year": 2025,
+   "authors": [
+    "Brandstetter",
+    "Knoch",
+    "Gauterin"
+   ],
+   "venue": "Sensors",
+   "type": "journal",
+   "pubdate": "2025-12-04",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.3997/2214-4609.202210042": {
+   "doi": "10.3997/2214-4609.202210042",
+   "openalex": "W4285251184",
+   "title": "Deep vs. Shallow Learning: A Benchmark Study in Low Magnitude Earthquake Detection",
+   "year": 2022,
+   "authors": [
+    "Gorse",
+    "Goel"
+   ],
+   "venue": "83rd EAGE Annual Conference &amp; Exhibition",
+   "type": "conference",
+   "pubdate": "2022-01-01",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🔭 Meteorology and astronomy",
+   "note": "published version of doi:10.48550/arxiv.2205.00525"
+  },
+  "doi:10.48550/arxiv.2205.00525": {
+   "doi": "10.48550/arxiv.2205.00525",
+   "title": "Deep vs. Shallow Learning: A Benchmark Study in Low Magnitude Earthquake Detection",
+   "year": 2022,
+   "authors": [
+    "Goel",
+    "Gorse"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "openalex": "W4225368752",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🔭 Meteorology and astronomy",
+   "page_line": 80,
+   "note": "bootstrap: already on page",
+   "published_as": "10.3997/2214-4609.202210042"
+  },
+  "doi:10.48550/arxiv.2211.15368": {
+   "doi": "10.48550/arxiv.2211.15368",
+   "title": "Arbitrarily Large Labelled Random Satisfiability Formulas for Machine Learning Training",
+   "year": 2022,
+   "authors": [
+    "Achlioptas",
+    "Daswaney",
+    "Papakonstantinou"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "openalex": "W4310428081",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🌍 General",
+   "page_line": 94,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.48550/arxiv.2311.08569": {
+   "published_as": "10.1371/journal.pone.0307970"
+  },
+  "doi:10.48550/arxiv.2404.18159": {
+   "published_as": "10.1016/j.compag.2025.110799"
+  },
+  "doi:10.48550/arxiv.2410.00312": {
+   "published_as": "10.1109/icmla61862.2024.00163"
+  },
+  "doi:10.48550/arxiv.2511.11629": {
+   "doi": "10.48550/arxiv.2511.11629",
+   "openalex": "W7106025283",
+   "title": "Global Feature Enhancing and Fusion Framework for Strain Gauge Time Series Classification",
+   "year": 2025,
+   "authors": [
+    "Zhang",
+    "Wang",
+    "Wang",
+    "Xu"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-11-07",
+   "first_seen": "2026-09-30",
+   "verdict": "D",
+   "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.5194/bg-18-4059-2021": {
+   "doi": "10.5194/bg-18-4059-2021",
+   "title": "The motion of trees in the wind: a data synthesis",
+   "year": 2021,
+   "authors": [
+    "Jackson",
+    "Sethi",
+    "Dellwik",
+    "Angelou"
+   ],
+   "venue": "Biogeosciences",
+   "type": "journal",
+   "openalex": "W3128560567",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.5220/0011036400003191": {
+   "doi": "10.5220/0011036400003191",
+   "title": "Driving Events Identification and Operational Parameters Correlation based on the Analysis of OBD-II Timeseries",
+   "year": 2022,
+   "authors": [
+    "Rimpas",
+    "Papadakis"
+   ],
+   "type": "journal",
+   "openalex": "W4285055305",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.52294/001c.140433": {
+   "doi": "10.52294/001c.140433",
+   "openalex": "W4412432957",
+   "title": "Canonical time-series features for characterizing biologically informative dynamical patterns in fMRI",
+   "year": 2025,
+   "authors": [
+    "Alam",
+    "Harris",
+    "Cahill",
+    "Cliff"
+   ],
+   "venue": "Aperture Neuro",
+   "type": "journal",
+   "pubdate": "2025-07-15",
+   "first_seen": "2026-09-30",
+   "verdict": "C",
+   "evidence": "'We introduce improvements to the catch22 pipeline for constructing a reduced set of time-series features from a large feature library (such as hctsa)' — catchaMouse16 is a new derived set, not catch22"
+  },
+  "doi:10.5334/dsj-2024-025": {
+   "doi": "10.5334/dsj-2024-025",
+   "title": "Time-Series Mining Approaches for Malaria Vector Prediction On Mid-Infrared Spectroscopy Data",
+   "year": 2024,
+   "authors": [
+    "Castro",
+    "Costa",
+    "Souza"
+   ],
+   "venue": "Data Science Journal",
+   "type": "journal",
+   "openalex": "W4396563780",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.5753/sbbd.2025.247033": {
+   "doi": "10.5753/sbbd.2025.247033",
+   "openalex": "W4415378646",
+   "title": "Analysis of online and offline classification algorithms for human activity recognition using IMU sensors",
+   "year": 2025,
+   "authors": [
+    "Machado",
+    "Magalhães",
+    "Cruz",
+    "Souza"
+   ],
+   "type": "journal",
+   "pubdate": "2025-09-29",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'The catch22 (CAnonical Time-series CHaracteristics) tool ... was chosen due to its balance between computational efficiency and robustness'"
+  },
+  "doi:10.5753/sbcas.2025.6851": {
+   "doi": "10.5753/sbcas.2025.6851",
+   "openalex": "W4411169770",
+   "title": "Enhancing HAR Novelty Detection with Activity Confusion Analysis and Clustering",
+   "year": 2025,
+   "authors": [
+    "Sousa",
+    "Cruz",
+    "Souza",
+    "Magalhães"
+   ],
+   "type": "journal",
+   "pubdate": "2025-06-09",
+   "first_seen": "2026-09-30",
+   "verdict": "A",
+   "evidence": "'We extract time series features from the segments with the Catch22 toolbox'"
+  },
+  "doi:10.64898/2026.02.06.704323": {
+   "doi": "10.64898/2026.02.06.704323",
+   "openalex": "W7128301474",
+   "title": "Robust EEG brain-behavior associations emerge only at large sample sizes",
+   "year": 2026,
+   "authors": [
+    "Guern",
+    "Allouch",
+    "Pascucci",
+    "Ebadi"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2026-02-07",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.64898/2026.02.17.26345661": {
+   "doi": "10.64898/2026.02.17.26345661",
+   "openalex": "W7130389936",
+   "pmid": "41757193",
+   "title": "Leveraging Expert Knowledge and Causal Structure Learning to Build Parsimonious Models of Acute Brain Dysfunction in the Pediatric Intensive Care Unit (PICU)",
+   "year": 2026,
+   "authors": [
+    "Claudio",
+    "Horvat",
+    "Taylor",
+    "Au"
+   ],
+   "venue": "medRxiv",
+   "type": "preprint",
+   "pubdate": "2026-02-18",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'we used Catch22 as the featurization approach' in one experiment among several"
+  },
+  "doi:10.64898/2026.05.19.726067": {
+   "doi": "10.64898/2026.05.19.726067",
+   "openalex": "W7161985172",
+   "title": "A framework for peptide identification on commercial nanopore sequencing platforms",
+   "year": 2026,
+   "authors": [
+    "Beslic",
+    "Kucklick",
+    "Graap",
+    "Sedaghatjoo"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2026-05-21",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.64898/2026.05.28.728582": {
+   "doi": "10.64898/2026.05.28.728582",
+   "openalex": "W7162768964",
+   "pmid": "42327262",
+   "title": "Mechanistic corticostriatal circuit model predicts learning-dependent fMRI dynamics and individual reward bias in humans",
+   "year": 2026,
+   "authors": [
+    "Carter",
+    "Kuang",
+    "Chesebro",
+    "Organtzidis"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2026-05-29",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.64898/2026.08.04.742735": {
+   "doi": "10.64898/2026.08.04.742735",
+   "openalex": "W7202132290",
+   "title": "An Open-Source End-to-End Pipeline for Large-Scale EEG-Based Brain Age Modelling",
+   "year": 2026,
+   "authors": [
+    "Rajesh",
+    "Sharma",
+    "Venugopal",
+    "Sasidharan"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2026-08-10",
+   "first_seen": "2026-09-30",
+   "verdict": "B",
+   "evidence": "'Two independent feature sets were extracted: the Catch22 time-series characteristics and a comprehensive set ... from the CCS toolbox' (abstract)"
+  },
+  "doi:10.7554/elife.106194.1": {
+   "doi": "10.7554/elife.106194.1",
+   "openalex": "W4410550617",
+   "title": "Virtual Brain Inference (VBI): A flexible and integrative toolkit for efficient probabilistic inference on virtual brain models",
+   "year": 2025,
+   "authors": [
+    "Ziaeemehr",
+    "Woodman",
+    "Domide",
+    "Petkoski"
+   ],
+   "venue": "eLife",
+   "type": "journal",
+   "pubdate": "2025-05-21",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.7554/elife.106194.4": {
+   "doi": "10.7554/elife.106194.4",
+   "openalex": "W4417291512",
+   "pmid": "41384500",
+   "title": "Virtual Brain Inference (VBI), a flexible and integrative toolkit for efficient probabilistic inference on whole-brain models",
+   "year": 2025,
+   "authors": [
+    "Ziaeemehr",
+    "Woodman",
+    "Domide",
+    "Petkoski"
+   ],
+   "venue": "eLife",
+   "type": "journal",
+   "pubdate": "2025-11-24",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.7554/elife.86695": {
+   "doi": "10.7554/elife.86695",
+   "title": "A reductionist paradigm for high-throughput behavioural fingerprinting in Drosophila melanogaster",
+   "year": 2023,
+   "authors": [
+    "Jones",
+    "Willis",
+    "Firth",
+    "Giachello"
+   ],
+   "venue": "eLife",
+   "type": "journal",
+   "openalex": "W4376141655",
+   "pmid": "37938101",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "doi:10.7717/peerj-cs.3328": {
+   "doi": "10.7717/peerj-cs.3328",
+   "openalex": "W4415786270",
+   "title": "Crossfire: cross-domain feature integration for robust time series classification",
+   "year": 2025,
+   "authors": [
+    "Alagöz"
+   ],
+   "venue": "PeerJ Computer Science",
+   "type": "journal",
+   "pubdate": "2025-11-03",
+   "first_seen": "2026-09-30",
+   "verdict": "U",
+   "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "url:https://arxiv.org/abs/2303.16117": {
+   "url": "https://arxiv.org/abs/2303.16117",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏛️ Finance and databases",
+   "page_line": 88,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://arxiv.org/abs/2310.08278": {
+   "url": "https://arxiv.org/abs/2310.08278",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🌍 General",
+   "page_line": 94,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://arxiv.org/abs/2311.08569": {
+   "url": "https://arxiv.org/abs/2311.08569",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://arxiv.org/abs/2312.01344": {
+   "url": "https://arxiv.org/abs/2312.01344",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🖥️ Algorithms <a href=\"algs\" id=\"algs\"></a>",
+   "page_line": 25,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://arxiv.org/abs/2312.09871": {
+   "url": "https://arxiv.org/abs/2312.09871",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://arxiv.org/abs/2404.06198": {
+   "url": "https://arxiv.org/abs/2404.06198",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🌍 General",
+   "page_line": 94,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://arxiv.org/abs/2404.18159": {
+   "url": "https://arxiv.org/abs/2404.18159",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://arxiv.org/abs/2410.00312": {
+   "url": "https://arxiv.org/abs/2410.00312",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🔭 Meteorology and astronomy",
+   "page_line": 82,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://arxiv.org/abs/2503.17018": {
+   "url": "https://arxiv.org/abs/2503.17018",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 61,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://biomedrb.com/Article/brb-4041": {
+   "url": "https://biomedrb.com/Article/brb-4041",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 51,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://econpapers.repec.org/paper/iseremwps/wp01852021.htm": {
+   "url": "https://econpapers.repec.org/paper/iseremwps/wp01852021.htm",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏛️ Finance and databases",
+   "page_line": 88,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://ieeexplore.ieee.org/abstract/document/10063853": {
+   "url": "https://ieeexplore.ieee.org/abstract/document/10063853",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "⌚ Physiological and other sensors",
+   "page_line": 38,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://ieeexplore.ieee.org/abstract/document/9441284": {
+   "url": "https://ieeexplore.ieee.org/abstract/document/9441284",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 46,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://ieeexplore.ieee.org/document/10825872": {
+   "url": "https://ieeexplore.ieee.org/document/10825872",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🖥️ Algorithms <a href=\"algs\" id=\"algs\"></a>",
+   "page_line": 27,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://ieeexplore.ieee.org/document/10935284": {
+   "url": "https://ieeexplore.ieee.org/document/10935284",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 63,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://osf.io/preprints/psyarxiv/69e43_v1": {
+   "url": "https://osf.io/preprints/psyarxiv/69e43_v1",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧠 Neuroimaging",
+   "page_line": 76,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://repositorio.usp.br/directbitstream/0a2656f3-54e2-449d-ba1a-1db95ca007d3/3142491.pdf": {
+   "url": "https://repositorio.usp.br/directbitstream/0a2656f3-54e2-449d-ba1a-1db95ca007d3/3142491.pdf",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧠 Neuroimaging",
+   "page_line": 71,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://repositorio.usp.br/directbitstream/bd56a114-4b4c-49b7-a179-554e1d1fc099/3142482.pdf": {
+   "url": "https://repositorio.usp.br/directbitstream/bd56a114-4b4c-49b7-a179-554e1d1fc099/3142482.pdf",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏛️ Finance and databases",
+   "page_line": 88,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1325376&dswid=5668": {
+   "url": "https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1325376&dswid=5668",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🔭 Meteorology and astronomy",
+   "page_line": 80,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://vihar-2024.vihar.org/assets/VIHAR_2024_proceedings.pdf": {
+   "url": "https://vihar-2024.vihar.org/assets/VIHAR_2024_proceedings.pdf",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "page_line": 50,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://wes.copernicus.org/articles/9/181/2024/": {
+   "url": "https://wes.copernicus.org/articles/9/181/2024/",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://www.mdpi.com/2076-3417/10/24/9050": {
+   "url": "https://www.mdpi.com/2076-3417/10/24/9050",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://www.mdpi.com/2076-3417/12/17/8685": {
+   "url": "https://www.mdpi.com/2076-3417/12/17/8685",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🌍 General",
+   "page_line": 94,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://www.mdpi.com/2220-9964/13/8/264": {
+   "url": "https://www.mdpi.com/2220-9964/13/8/264",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://www.mdpi.com/2624-831X/3/1/8": {
+   "url": "https://www.mdpi.com/2624-831X/3/1/8",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://www.researchgate.net/profile/Mourad-Khayati/publication/383497799_ImputeVIS_An_Interactive_Evaluator_to_Benchmark_Imputation_Techniques_for_Time_Series_Data/links/66d039dbfa5e11512c3cea73/ImputeVIS-An-Interactive-Evaluator-to-Benchmark-Imputation-Techniques-for-Time-Series-Data.pdf": {
+   "url": "https://www.researchgate.net/profile/Mourad-Khayati/publication/383497799_ImputeVIS_An_Interactive_Evaluator_to_Benchmark_Imputation_Techniques_for_Time_Series_Data/links/66d039dbfa5e11512c3cea73/ImputeVIS-An-Interactive-Evaluator-to-Benchmark-Imputation-Techniques-for-Time-Series-Data.pdf",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🌍 General",
+   "page_line": 94,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://www.researchgate.net/publication/376641713_Predictive_Fraud_Detection_An_Intelligent_Method_for_Internet_of_Smart_Grid_Things_Systems": {
+   "url": "https://www.researchgate.net/publication/376641713_Predictive_Fraud_Detection_An_Intelligent_Method_for_Internet_of_Smart_Grid_Things_Systems",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🏭 Industry, energy and chemistry",
+   "page_line": 57,
+   "note": "bootstrap: already on page"
+  },
+  "url:https://www.sktime.net/en/stable/examples/transformation/catch22.html": {
+   "url": "https://www.sktime.net/en/stable/examples/transformation/catch22.html",
+   "first_seen": "2026-09-22",
+   "verdict": "A",
+   "on_page": true,
+   "section": "Tutorials",
+   "page_line": 104,
+   "note": "bootstrap: already on page"
+  }
+ }
+}
