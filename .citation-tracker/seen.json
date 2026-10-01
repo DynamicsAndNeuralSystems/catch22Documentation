@@ -1380,6 +1380,26 @@
    "verdict": "C",
    "evidence": "'plus the canonical timeseries characteristics (CATCH-22) feature set' added to band-power and coupling features"
   },
+  "doi:10.1038/s41593-026-02460-4": {
+   "doi": "10.1038/s41593-026-02460-4",
+   "openalex": "W7214797907",
+   "title": "Comprehensive profiling of brain dynamics during anesthesia across phylogeny",
+   "year": 2026,
+   "authors": [
+    "Luppi",
+    "Uhrig",
+    "Tasserie",
+    "Shafiei"
+   ],
+   "venue": "Nature Neuroscience",
+   "type": "journal",
+   "pubdate": "2026-09-29",
+   "first_seen": "2026-10-01",
+   "verdict": "A",
+   "section": "🧠 Neuroimaging",
+   "evidence": "Because catch22 includes features pertaining to autocorrelation, forecasting and temporal frequency, capturing many dynamical properties that we found to be consistently perturbed by anesthesia, for our main PLS analysis we use the catch22 features to provide more interpretable results",
+   "note": "Ben is a co-author; primarily an hctsa paper (already on the hctsa page), catch22 subset drives the main PLS analysis"
+  },
   "doi:10.1038/s41597-025-05035-3": {
    "doi": "10.1038/s41597-025-05035-3",
    "openalex": "W4409946275",
