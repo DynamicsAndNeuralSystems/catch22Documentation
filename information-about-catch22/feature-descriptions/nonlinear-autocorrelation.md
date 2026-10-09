@@ -40,7 +40,7 @@ _catch22_ contains **2** features which each capture some aspect of the nonlinea
 
 ### What it does
 
-[`trev` ](#user-content-fn-1)[^1]computes computes the average across the time series of the cube of successive time-series differences. It will be close to zero for time series for which the distribution of successive decreases in the time series matches the distribution of successive increases, but will be positive if increases tend to be larger in magnitude and negative if decreases tend to be larger in magnitude.
+[`trev` ](#user-content-fn-1)[^1]computes the average across the time series of the cube of successive time-series differences. It will be close to zero for time series for which the distribution of successive decreases in the time series matches the distribution of successive increases, but will be positive if increases tend to be larger in magnitude and negative if decreases tend to be larger in magnitude.
 
 It is computed as:
 
@@ -90,6 +90,8 @@ This[ Lozi map](https://www.comp-engine.org/#!visualize/8d547ec4-3872-11e8-8680-
 
 [`ami2`](#user-content-fn-2)[^2] is a nonlinear version of the autocorrelation function: using a nonlinear correlation metric (mutual information) instead of a conventional linear correlation metric, evaluated using a histogram with 5 bins and at a time delay _τ_ = 2 (from the _hctsa_ code `CO_HistogramAMI(x_z,2,'even',5)`).
 
+The 5 bins have equal widths and span the full range of the time series (widened slightly beyond the minimum and maximum values). The joint distribution of the pairs $$(x_t, x_{t+2})$$ is estimated as a 5 × 5 histogram, and the marginal distributions are obtained by summing it across rows and columns. The mutual information is then $$\sum_{ij} p_{ij} \log\left[p_{ij} / (p_i\, p_j)\right]$$, using the natural logarithm.
+
 Explore the tabs below to see examples of the typical outputs of this feature for various time series:
 
 {% tabs %}
@@ -98,7 +100,8 @@ This feature gives **high** values to time series like this [Chaotic Web map](ht
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-which has clear dependence structure of the time-series value at the current point, $$x_t$$, and the value two time points ahead, $$x_{t+2}$$_,_ yielding a high value for this feature of 1.25:
+which has clear dependence structure of the time-series value at the current point, $$x_t$$, and the value two time points ahead, $$x_{t+2}$$
+_,_ yielding a high value for this feature of 1.25:
 
 <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 

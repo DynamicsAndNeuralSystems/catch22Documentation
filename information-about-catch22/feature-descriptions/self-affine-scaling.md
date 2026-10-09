@@ -32,7 +32,7 @@ layout:
 
 # Self-affine scaling
 
-_catch22_ contains two features that capture the behaviour of two features based on fluctuation analysis, which aim to capture potential long-range correlations in time series, derived from the `SC_FluctAnal` function in [_hctsa_](https://github.com/benfulcher/hctsa). Select one of the cards below to discover more information:
+_catch22_ contains two features based on fluctuation analysis, which aim to capture potential long-range correlations in time series, derived from the `SC_FluctAnal` function in [_hctsa_](https://github.com/benfulcher/hctsa). Select one of the cards below to discover more information:
 
 <table data-view="cards"><thead><tr><th></th><th align="center"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td align="center"><strong><code>rs_range</code></strong></td><td></td><td><a href="self-affine-scaling.md#id-1.-rs_range">#id-1.-rs_range</a></td></tr><tr><td></td><td align="center"><strong><code>dfa</code></strong></td><td></td><td><a href="self-affine-scaling.md#id-2.-dfa">#id-2.-dfa</a></td></tr></tbody></table>
 
@@ -46,13 +46,15 @@ The main steps of the method are as follows:
 
 1. Compute a cumulative sum of the time series
 2. Compute the level of fluctuation (e.g., root-mean-square deviations from local low-order trends) across windows corresponding to a given timescale. Different methods exist for detrending time-series windows at a given timescale, including (relevant to these two features):
-   1. Rescaled range analysis removes a line connecting the endpoints of each window and computes the range of the remaining points (Caccia et al., Physica A, 1997)
-   2. DFA fits a _k_-order polynomial to each window and computes the residuals from this fit.
+   1. Rescaled range analysis computes the range of the detrended points in each window (Caccia et al., Physica A, 1997). In _catch22_, the trend removed is a least-squares line fitted to each window, and the range is not divided by the window's standard deviation (as it would be in a conventional rescaled range statistic). The fluctuation at that timescale is the root-mean-square of the ranges across windows.
+   2. DFA fits a _k_-order polynomial to each window (linear, _k_ = 1, in _catch22_) and computes the root-mean-square of the residuals from this fit across all windows.
 3. Looks for linear scaling in the log(timescale)–log(fluctuation) plot.
 
-Some time series exhibit 'multifractal' scaling: there are different scaling rules at different ranges of timescales. The two _catch22_ features fit two distinct scaling regimes and return the timescale at which the predicted change in scaling regime occurs.
+In _catch22_, fluctuations are computed at up to 50 logarithmically spaced timescales between 5 samples and half the time-series length (rounded to the nearest integer, with duplicates removed). If fewer than 12 distinct timescales remain (i.e., for short time series), both features return 0.
 
-Note that these features make quite strong assumptions about the data and can be unstable for time series that do not exhibit scaling, or exhibit strong but 'unifractal' scaling.
+Some time series exhibit a 'crossover' in their scaling: there are different scaling rules at different ranges of timescales. The two _catch22_ features fit straight lines to two distinct scaling regimes in the log–log plot (each regime containing at least 6 timescales), choosing the split point that minimises the combined fitting error. They return the proportion of the evaluated timescales that fall in the first (shorter-timescale) regime, up to and including the split point, rather than the timescale itself.
+
+Note that these features make quite strong assumptions about the data and can be unstable for time series that do not exhibit scaling, or that exhibit a single scaling regime across all timescales.
 
 ***
 
