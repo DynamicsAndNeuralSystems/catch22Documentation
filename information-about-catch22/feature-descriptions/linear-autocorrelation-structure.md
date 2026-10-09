@@ -42,12 +42,12 @@ _catch22_ contains **6** features which each capture some aspect of the linear a
 
 ### What it does
 
-The [`acf_timescale`](#user-content-fn-1)[^1] feature in _catch22_ computes the first 1/_e_ crossing of the autocorrelation function of the time series. In _hctsa_, this can be computed as `CO_FirstCrossing(x_z,'ac',1/exp(1),'discrete')`.
+The [`acf_timescale`](#user-content-fn-1)[^1] feature in _catch22_ computes the first 1/_e_ crossing of the autocorrelation function of the time series. In _hctsa_, this can be computed as [`CO_FirstCrossing(x_z,'ac',1/exp(1),'continuous')`](https://github.com/benfulcher/hctsa/blob/main/Operations/CO_FirstCrossing.m) (the _hctsa_ feature `firstCrossing_1e_acf_point`).
 
 This feature measures the first time lag at which the autocorrelation function drops below 1/_e_ (= 0.3679). The _catch22_ implementation linearly interpolates between the two lags either side of the crossing, so it generally returns a non-integer value (e.g., about 0.63 for uncorrelated noise, rather than 1). If the autocorrelation function never drops below 1/_e_, it returns the length of the time series.
 
 {% hint style="info" %}
-**Note**: The example outputs below were computed with an earlier version of _catch22_ that returned the integer lag (as in the `'discrete'` _hctsa_ call above), so current versions return slightly smaller, non-integer values.
+**Note**: The example outputs below were computed with an earlier version of _catch22_ that returned the integer lag (equivalent to the `'discrete'` option of `CO_FirstCrossing` in _hctsa_, the feature `firstCrossing_1e_acf_tau`), so current versions return slightly smaller, non-integer values.
 {% endhint %}
 
 ### What it measures
@@ -223,7 +223,7 @@ The feature maxes out at 40 (or half the time-series length, if shorter), meanin
 
 High values reflect highly autocorrelated, long-memory processes (on the timescale of the sampling period), and low values reflect low-memory or noise processes.
 
-[^1]: **Naming info:** The name `CO_f1ecac` derives from an earlier version of _hctsa_ (the current version of _hctsa_ names this feature as `first1e_acf_tau`). The _catch22_ short name is `acf_timescale`.
+[^1]: **Naming info:** The name `CO_f1ecac` derives from an earlier version of _hctsa_ (the current version of _hctsa_ names this feature `firstCrossing_1e_acf_point`; the integer-lag version is `firstCrossing_1e_acf_tau`). The _catch22_ short name is `acf_timescale`.
 
 [^2]: **Naming info**: short name:`acf_first_min` in _catch22_ (long name: `CO_FirstMin_ac`) and matches the feature called `firstMin_acf` in _hctsa_
 
