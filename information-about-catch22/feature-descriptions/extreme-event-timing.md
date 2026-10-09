@@ -42,18 +42,18 @@ _catch22_ contains two features based on the `DN_OutlierInclude` function in hct
 These features involve the following steps:
 
 1. _z_-score the input time series.&#x20;
-2. Initialise an equally spaced set of increments, from zero to the maximum values of the time series, in the case of `outlier_timing_pos` (or from 0 to the minimum value of the time series in the case of `outlier_timing_neg`). In this way, a set of increasingly \`extreme' deviations from the mean (either deviations above-the-mean or below-the-mean) are analysed across the loop in Step (3).&#x20;
+2. Initialise an equally spaced set of thresholds, in increments of 0.01 (i.e., 1% of the standard deviation, as the series is _z_-scored), from zero to the maximum value of the time series, in the case of `outlier_timing_pos` (or from 0 to the minimum value of the time series in the case of `outlier_timing_neg`). In this way, a set of increasingly \`extreme' deviations from the mean (either deviations above-the-mean or below-the-mean) are analysed across the loop in Step (3).&#x20;
 3. At each threshold set in Step (2):
    1. Determine the time points in which the time series is \`over-threshold'.
    2. Compute the median index of all such over-threshold time points, as `rmd` .
    3. For interpretation, and to appropriately compare time series of different lengths, we then linearly re-scale `rmd` such that a median right in the middle of the time series, at index `N/2`, maps to 0, a value at the end of the time series, at index `N`, maps to 1, and a value at the start of the time series, index `1`, maps to a -1.
-4. The final statistic returns the median of all values of `rmd` values across all values of the threshold, as the output statistic.
+4. The final statistic is the median of the `rmd` values across thresholds. Only thresholds that are still exceeded by more than 2% of the time points on that side of the mean (and by at least two points) are included, so the most extreme thresholds, at which very few points are over threshold, are discarded.
 
 ***
 
 ## What it measures
 
-These statistics measure whether over-threshold events (either positive or negative deviations from the mean) tend to be positioned relative near the start of the time series (output values near -1), approximately equally likely to be anywhere through the time series (output values near 0), or more likely to be near the end of the time series (output values near 1). These features thus capture something related to the stationarity of over-threshold events.
+These statistics measure whether over-threshold events (either positive or negative deviations from the mean) tend to be positioned relatively near the start of the time series (output values near -1), approximately equally likely to be anywhere through the time series (output values near 0), or more likely to be near the end of the time series (output values near 1). These features thus capture something related to the stationarity of over-threshold events.
 
 To give an intuition, below we plot some examples of how `rmd` at a fixed threshold (80% the maximum positive deviation) for the case of `outlier_timing_pos` ( note that the full statistic takes the median of `rmd` across a range of thresholds, as described above).
 

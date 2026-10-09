@@ -42,7 +42,7 @@ _catch22_ contains **2** features which are each based on the properties of the 
 
 [`high_fluctuation`](#user-content-fn-1)[^1] computes the proportion of difference magnitudes that are greater than 4% of the standard deviation of the time series.
 
-This feature will give low values to series that have periods in which the series stays approximately constant (within $$0.04\sigma$$), and high values to series that do (e.g., they 'jump around a lot' from point to point).
+This feature will give low values to series that have periods in which the series stays approximately constant (within $$0.04\sigma$$), and high values to series that do not (e.g., they 'jump around a lot' from point to point). Note that the threshold of $$0.04\sigma$$ is small: most noisy or irregular time series have values close to 1 (e.g., about 0.98 for uncorrelated Gaussian noise), so this feature mainly distinguishes smooth or finely sampled time series (which have lower values) from everything else.
 
 This is a common statistic to measure about heart rate time series, cf. "[_The pNNx files: re-examining a widely used heart rate variability measure_](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1767394/)_"_, J.E. Mietus et al., Heart 88(4) 378 (2002).
 
@@ -56,7 +56,7 @@ The[ Rossler attractor](https://en.wikipedia.org/wiki/R%C3%B6ssler_attractor) ti
 {% endtab %}
 
 {% tab title="Example 2: Stock opening prices" %}
-These log returns of opening prices of a stock, on the other hand, fluctuate alot more: 95% of successive increments exceed the $$0.04\sigma$$ threshold, yielding a **high value** for this statistic:
+These log returns of opening prices of a stock, on the other hand, fluctuate a lot more: 95% of successive increments exceed the $$0.04\sigma$$ threshold, yielding a **high value** for this statistic:
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 

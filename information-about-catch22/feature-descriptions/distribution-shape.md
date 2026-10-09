@@ -46,8 +46,10 @@ _catch22_ contains two features involving the `DN_HistogramMode` function in _hc
 These functions involve computing the mode of the z-scored time-series through the following steps:
 
 1. z-score the input time series.
-2. Compute a histogram using a given number of (linearly spaced) bins, e.g., 5 bins for `mode_5` and 10 bins for `mode_10.`&#x20;
-3. Return the location of the bin with the most counts.
+2. Compute a histogram using a given number of equal-width bins spanning the range of the data (from its minimum to its maximum), e.g., 5 bins for `mode_5` and 10 bins for `mode_10`.
+3. Return the centre of the bin with the most counts (if several bins tie for the most counts, the average of their centres is returned).
+
+Because the bin edges are set by the minimum and maximum values, the output takes only a small number of possible values and depends on the most extreme values in the time series.
 
 ## What these features measure
 

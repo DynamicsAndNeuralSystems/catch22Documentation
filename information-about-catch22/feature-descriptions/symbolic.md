@@ -43,7 +43,7 @@ _catch22_ contains **4** features which are each based on a discrete symbolisati
 [`entropy_pairs`](#user-content-fn-1)[^1] is computed as the following:
 
 1. Converts each value in the time series into one of three symbols ('A', 'B', or 'C') using an equi-probable binning in which the lowest 3rd of values are assigned 'A', the middle 3rd 'B', and the highest 3rd of values are given 'C'.
-2. It then analyses the probabilities of all two-letter sequences ('AA', 'AB', 'BB', …) and outputs the entropy of this set of probabilities.
+2. It then analyses the probabilities of all two-letter sequences ('AA', 'AB', 'BB', …) and outputs the (Shannon) entropy of this set of nine probabilities, using the natural logarithm. The maximum value, for which all nine pairs are equally probable, is $$\log 9 \approx 2.20$$.
 
 This feature is based on the _hctsa_ code `SB_MotifThree(x_z,'quantile')`, returning the `hh` output.
 
@@ -67,7 +67,7 @@ Here is another very predictable series, which has a very long string of C, then
 {% endtab %}
 
 {% tab title="Example 3" %}
-Time series that have predictable patterns on longer than 2-length windows, or that requiring more granularity than a 3-letter symbolisation to resolve, have high values, like this map:
+Time series that have predictable patterns on longer than 2-length windows, or that require more granularity than a 3-letter symbolisation to resolve, have high values, like this map:
 
 <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
@@ -81,7 +81,7 @@ Time series that have predictable patterns on longer than 2-length windows, or t
 
 ### What it does
 
-[`transition_variance` first](#user-content-fn-2)[^2] symbolises the time series into a 3-letter equiprobable alphabet (by quantile). It then computes $$\tau$$ as first zero-crossing of the autocorrelation function and computes the $$\tau$$-step transition probabilities between the three states as a `3x3` transition matrix. This feature then returns the sum of column-wise variances of this matrix.
+[`transition_variance` first](#user-content-fn-2)[^2] computes $$\tau$$ as the first zero-crossing of the autocorrelation function and downsamples the time series by taking every $$\tau$$th value. It then symbolises the downsampled series into a 3-letter equiprobable alphabet (by quantile) and counts the transitions between successive symbols as a `3x3` matrix. Each count is divided by the total number of transitions, so each entry is the joint probability of a (source, target) pair, and all nine entries sum to 1. With equiprobable symbols, each row sums to approximately 1/3, so each entry is approximately one-third of the corresponding conditional transition probability. This feature then returns the sum of column-wise variances of this matrix (i.e., the trace of the covariance matrix between its columns).
 
 It is a measure of the specificity of source states given a target state. A minimum value would be given to a noisy series where the transition probabilities are approximately uniform, and a maximum value for a highly ordered series with very specific state transition rules. The subtlety with this feature is that it computes the transitions on a timescale of $$\tau$$ such that it measures such order on the timescale at which the linear autocorrelation has faded.
 
@@ -131,12 +131,12 @@ High values are given to time series that have at least one long duration of tim
 
 `stretch_decreasing` is similar to the above, but it calculates the longest sequence of successive steps in the time series that _decrease_. Algorithmically, this is achieved in two steps:
 
-1. Transform the time series into a binary sequence: each time-series value is converted to a `1` if it is higher than the previous time point, and `0` if it is lower than the previous time point (starting from the second point in the time series, and thus yielding a sequence of length `N-1`, where `N` is the length of the original time series).
-2. Return the longest sequence of successive values that are `0`.
+1. Transform the time series into a binary sequence: each time-series value is converted to a `1` if it is higher than the previous time point, and `0` otherwise (i.e., if it is lower than or equal to the previous time point) (starting from the second point in the time series, and thus yielding a sequence of length `N-1`, where `N` is the length of the original time series).
+2. Return the longest sequence of successive values that are `0` (i.e., the longest stretch of non-increasing steps, so flat stretches also count).
 
 {% tabs %}
 {% tab title="Example 1: Complex Butterfly Map" %}
-Here is a time series of a time series from the complex butterfly map, with the longest period of 30 successive decreases highlighted in red:
+Here is a time series from the complex butterfly map, with the longest period of 30 successive decreases highlighted in red:
 
 <figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
