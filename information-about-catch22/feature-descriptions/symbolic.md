@@ -131,8 +131,8 @@ High values are given to time series that have at least one long duration of tim
 
 `stretch_decreasing` is similar to the above, but it calculates the longest sequence of successive steps in the time series that _decrease_. Algorithmically, this is achieved in two steps:
 
-1. Transform the time series into a binary sequence: each time-series value is converted to a `1` if it is higher than (or equal to) the previous time point, and `0` if it is lower than the previous time point (starting from the second point in the time series, and thus yielding a sequence of length `N-1`, where `N` is the length of the original time series).
-2. Return the longest sequence of successive values that are `0`.
+1. Transform the time series into a binary sequence: each time-series value is converted to a `1` if it is higher than the previous time point, and `0` otherwise (i.e., if it is lower than or equal to the previous time point) (starting from the second point in the time series, and thus yielding a sequence of length `N-1`, where `N` is the length of the original time series).
+2. Return the longest sequence of successive values that are `0` (i.e., the longest stretch of non-increasing steps, so flat stretches also count).
 
 {% tabs %}
 {% tab title="Example 1: Complex Butterfly Map" %}
