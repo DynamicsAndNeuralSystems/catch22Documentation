@@ -1535,7 +1535,8 @@
    "on_page": true,
    "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
    "page_line": 46,
-   "note": "bootstrap: already on page"
+   "note": "bootstrap: already on page",
+   "published_as": "10.1186/s12915-024-01977-z"
   },
   "doi:10.1101/2025.04.05.647237": {
    "doi": "10.1101/2025.04.05.647237",
@@ -2449,6 +2450,27 @@
    "page_line": 46,
    "note": "bootstrap: already on page"
   },
+  "doi:10.1186/s12915-024-01977-z": {
+   "doi": "10.1186/s12915-024-01977-z",
+   "openalex": "W4401602330",
+   "pmid": "39148065",
+   "title": "Intricate response dynamics enhances stimulus discrimination in the resource-limited C. elegans chemosensory system",
+   "year": 2024,
+   "authors": [
+    "Bokman",
+    "Pritz",
+    "Ruach",
+    "Itskovits"
+   ],
+   "venue": "BMC Biology",
+   "type": "journal",
+   "pubdate": "2024-08-15",
+   "first_seen": "2026-10-13",
+   "verdict": "A",
+   "on_page": true,
+   "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
+   "note": "published version of doi:10.1101/2024.01.14.575365 (retitled match confirmed by Ben)"
+  },
   "doi:10.1186/s12984-025-01645-5": {
    "doi": "10.1186/s12984-025-01645-5",
    "openalex": "W4410712207",
@@ -2755,7 +2777,8 @@
    "on_page": true,
    "section": "⌚ Physiological and other sensors",
    "page_line": 38,
-   "note": "bootstrap: already on page"
+   "note": "bootstrap: already on page",
+   "published_as": "10.2196/70938"
   },
   "doi:10.21203/rs.3.rs-9189120/v1": {
    "doi": "10.21203/rs.3.rs-9189120/v1",
@@ -3579,7 +3602,10 @@
    "on_page": true,
    "section": "🖥️ Algorithms <a href=\"algs\" id=\"algs\"></a>",
    "page_line": 25,
-   "note": "bootstrap: already on page"
+   "note": "bootstrap: already on page; tsMorph preprint, still unpublished as of 2026-10-13. The suggested METAFORE paper (same authors) is a different work",
+   "not_published_as": [
+    "10.1007/s41060-024-00569-y"
+   ]
   },
   "url:https://arxiv.org/abs/2312.09871": {
    "url": "https://arxiv.org/abs/2312.09871",
