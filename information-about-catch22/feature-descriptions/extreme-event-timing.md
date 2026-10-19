@@ -49,6 +49,9 @@ These features involve the following steps:
    3. For interpretation, and to appropriately compare time series of different lengths, we then linearly re-scale `rmd` such that a median right in the middle of the time series, at index `N/2`, maps to 0, a value at the end of the time series, at index `N`, maps to 1, and a value at the start of the time series, index `1`, maps to a -1.
 4. The final statistic is the median of the `rmd` values across thresholds. Only thresholds that are still exceeded by more than 2% of the time points on that side of the mean (and by at least two points) are included, so the most extreme thresholds, at which very few points are over threshold, are discarded.
 
+These features are unchanged in v1.0.
+For a constant time series, which cannot be _z_-scored, both features return 0 by default (with masking; earlier versions returned `NaN`).
+
 ***
 
 ## What it measures

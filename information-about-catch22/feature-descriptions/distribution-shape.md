@@ -34,11 +34,16 @@ layout:
 
 _catch22_ contains two features involving the `DN_HistogramMode` function in _hctsa:_
 
-* `mode_5` (the _hctsa_ feature `DN_HistogramMode_5`)
-* `mode_10` (the _hctsa_ feature `DN_HistogramMode_10`)
+* `mode_5` (long name `DN_HistogramMode_5`, the _hctsa_ feature of the same name), computed in _hctsa_ as `DN_HistogramMode(x_z,5,true,false)`
+* `mode_10` (long name `DN_HistogramMode_10`, the _hctsa_ feature of the same name), computed in _hctsa_ as `DN_HistogramMode(x_z,10,true,false)`
+
+From v1.0, both features match these _hctsa_ calls exactly.
 
 {% hint style="info" %}
-**Note**: The C implementation of these features (in _catch22)_ does not map perfectly onto the _hctsa_ implementation, due to slight differences in how the histogram bins are constructed. But the trends are similar.&#x20;
+**Changes in v1.0**: The names are unchanged, but the bin edges now follow _hctsa_ (see Step 2 below).
+Before v1.0, the edges lay exactly at equal steps from the minimum to the maximum, and each value was assigned to a bin by truncating its distance from the minimum in units of the bin width, so a value lying exactly on an edge could fall in either neighbouring bin through rounding error.
+Because the bin centres have moved by $$10^{-6}$$ of a bin width, most values differ from earlier versions in about the sixth decimal place.
+Larger differences are rare and occur when values lie exactly on bin edges (e.g., integer-valued data), which can change the most populated bin.
 {% endhint %}
 
 ## What it does
@@ -47,9 +52,12 @@ These functions involve computing the mode of the z-scored time-series through t
 
 1. z-score the input time series.
 2. Compute a histogram using a given number of equal-width bins spanning the range of the data (from its minimum to its maximum), e.g., 5 bins for `mode_5` and 10 bins for `mode_10`.
+   As in _hctsa_, the interior bin edges are lowered (and the two outer edges widened) by $$10^{-6}$$ of a bin width, so that a value lying exactly on an edge always falls in the upper bin.
 3. Return the centre of the bin with the most counts (if several bins tie for the most counts, the average of their centres is returned).
 
 Because the bin edges are set by the minimum and maximum values, the output takes only a small number of possible values and depends on the most extreme values in the time series.
+
+A constant time series cannot be _z_-scored, so by default (with masking) both features return 0 for it (earlier versions returned `NaN`).
 
 ## What these features measure
 

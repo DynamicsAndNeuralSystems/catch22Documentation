@@ -46,6 +46,14 @@ This feature will give low values to series that have periods in which the serie
 
 This is a common statistic to measure about heart rate time series, cf. "[_The pNNx files: re-examining a widely used heart rate variability measure_](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1767394/)_"_, J.E. Mietus et al., Heart 88(4) 378 (2002).
 
+In _hctsa_, this feature is the `pnn40` output of `MD_pNN(x_z)`.
+For a constant time series, which cannot be _z_-scored, it returns 0 by default (with masking; earlier versions returned `NaN`).
+
+{% hint style="info" %}
+**Changes in v1.0**: The values are unchanged, but the long name changed from `MD_hrv_classic_pnn40` to `MD_pNN_pnn40`.
+_hctsa_'s `MD_hrv_classic` no longer computes pnn40 on the _z_-scored series (it now uses thresholds relative to the spread of the increments), so the earlier name no longer gives this feature in _hctsa_.
+{% endhint %}
+
 {% tabs %}
 {% tab title="Example 1: Rossler Attractor" %}
 The[ Rossler attractor](https://en.wikipedia.org/wiki/R%C3%B6ssler_attractor) time series below has many near-constant stretches (Just 14.5% of all step increments are larger than $$0.04\sigma$$), yielding a **low value** for this statistic:
@@ -74,7 +82,18 @@ These log returns of opening prices of a stock, on the other hand, fluctuate a l
 
 1. The set of incremental differences between successive pairs of time-series values (imagining this as the set of residuals from a naive 1-point forecast).
 2. Computes the first zero-crossing of the autocorrelation function for the residuals, `tau_resid`, and for the original time series, `tau`.
+   Each crossing is linearly interpolated between the two lags either side of it (as for [`acf_timescale`](linear-autocorrelation-structure.md#id-1.-acf_timescale)), so it is generally not an integer.
 3. Returns the ratio of these two values, `tau_resid/tau`.
+
+In _hctsa_, this feature is the `taurat` output of `FC_LocalSimple(x_z,'mean',1)`.
+For a constant time series, which cannot be _z_-scored, it returns 0 by default (with masking).
+
+{% hint style="info" %}
+**Changes in v1.0**: The long name changed from `FC_LocalSimple_mean1_tauresrat` to `FC_LocalSimple_mean1_taurat`, following _hctsa_.
+Before v1.0, each zero-crossing was the integer lag at which the autocorrelation function first became non-positive (not interpolated), so the feature was a ratio of two integers.
+Values therefore change for all time series, and the example outputs below were computed with an earlier version of _catch22_ (e.g., Example 1 is the integer ratio 1/15).
+Earlier versions returned `NaN` for a constant time series.
+{% endhint %}
 
 {% tabs %}
 {% tab title="Example 1" %}
@@ -96,6 +115,6 @@ By contrast, in this [AR(2)](https://en.wikipedia.org/wiki/Autoregressive_model)
 
 ***
 
-[^1]: **Naming info:** This matches the _hctsa_ feature named `MD_hrv_classic_pnn40`
+[^1]: **Naming info:** Short name `high_fluctuation`; long name `MD_pNN_pnn40` (before v1.0: `MD_hrv_classic_pnn40`). Reproduced in _hctsa_ by `MD_pNN(x_z).pnn40`; it is not a registered _hctsa_ feature, so its long name is the one that _hctsa_'s naming convention gives this call.
 
-[^2]: **Naming info:** This feature matches the feature called `FC_LocalSimple_mean1_tauresrat` in _hctsa_. It is the `tauresrat` output of running the code `FC_LocalSimple(x_z,'mean',1)` in _hctsa._
+[^2]: **Naming info:** Short name `whiten_timescale`; long name `FC_LocalSimple_mean1_taurat` (before v1.0: `FC_LocalSimple_mean1_tauresrat`), matching the _hctsa_ feature of the same name. It is the `taurat` output of running the code `FC_LocalSimple(x_z,'mean',1)` in _hctsa._

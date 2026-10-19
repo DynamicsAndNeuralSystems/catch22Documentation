@@ -52,7 +52,10 @@ for time-series values, _x_, averaged across all possible time point&#x73;_, t_ 
 
 It is based on a statistic used in nonlinear time-series analysis, cf. [Surrogate time series](https://doi.org/10.1016/S0167-2789\(00\)00043-9), Schreiber and Schmitz, _Physica D_, **142:** 346 (2000).
 
-The original _hctsa_ implementation is the code `CO_trev(x_z,1)` , for a _z_-scored time series, `x_z`.
+The original _hctsa_ implementation is the code `CO_trev(x_z,1)` , for a _z_-scored time series, `x_z` (the `num` output).
+
+This feature is unchanged in v1.0.
+For a constant time series, which cannot be _z_-scored, it returns 0 by default (with masking; earlier versions returned `NaN`).
 
 To give an intuition, below we plot some examples of the outputs of this feature for different scenarios:
 
@@ -88,9 +91,23 @@ This[ Lozi map](https://www.comp-engine.org/#!visualize/8d547ec4-3872-11e8-8680-
 
 ### What it does
 
-[`ami2`](#user-content-fn-2)[^2] is a nonlinear version of the autocorrelation function: using a nonlinear correlation metric (mutual information) instead of a conventional linear correlation metric, evaluated using a histogram with 5 bins and at a time delay _τ_ = 2 (from the _hctsa_ code `CO_HistogramAMI(x_z,2,'even',5)`).
+[`ami2`](#user-content-fn-2)[^2] is a nonlinear version of the autocorrelation function: using a nonlinear correlation metric (mutual information) instead of a conventional linear correlation metric, evaluated using a histogram with 5 bins and at a time delay _τ_ = 2 (the `ami2` output of the _hctsa_ code `CO_HistogramAMI(x_z,1:5,'even',5)`).
 
-The 5 bins have equal widths and span the full range of the time series (widened slightly beyond the minimum and maximum values). The joint distribution of the pairs $$(x_t, x_{t+2})$$ is estimated as a 5 × 5 histogram, and the marginal distributions are obtained by summing it across rows and columns. The mutual information is then $$\sum_{ij} p_{ij} \log\left[p_{ij} / (p_i\, p_j)\right]$$, using the natural logarithm.
+The 5 bins have equal widths and span the range of the time series, from its minimum to its maximum (with edges placed as for [`mode_5`](distribution-shape.md), so that a value lying exactly on an edge always falls in the upper bin). The joint distribution of the $$n = N - 2$$ pairs $$(x_t, x_{t+2})$$ is estimated as a 5 × 5 histogram, and the marginal distributions are obtained by summing it across rows and columns. The mutual information is then estimated as $$\sum_{ij} p_{ij} \log\left[p_{ij} / (p_i\, p_j)\right]$$, using the natural logarithm.
+As in _hctsa_, this estimate is corrected for its upward bias (the Panzeri–Treves, or Miller–Madow, correction) by subtracting $$(M_{xy} - M_x - M_y + 1)/(2n)$$, where $$M_{xy}$$ is the number of occupied cells of the joint histogram, and $$M_x$$ and $$M_y$$ are the numbers of occupied bins of the two marginal histograms.
+
+When it cannot be computed (for a constant time series, which cannot be _z_-scored, or a series too short to contain a pair two samples apart), the feature returns 0 by default (with masking).
+
+{% hint style="info" %}
+**Changes in v1.0**: The long name changed from `CO_HistogramAMI_even_2_5` to `CO_HistogramAMI_even_5bin_ami2`, and the estimate now matches the _hctsa_ call above, with two differences from earlier versions:
+
+* Earlier versions widened the range by 0.1 beyond the minimum and the maximum, so the 5 equal-width bins spanned [min − 0.1, max + 0.1]; the bins now span [min, max].
+* Earlier versions did not apply the bias correction.
+
+Values change for almost all time series (typically by a few percent).
+Earlier versions returned `NaN` for a constant time series.
+The example outputs below were computed with an earlier version of _catch22_.
+{% endhint %}
 
 Explore the tabs below to see examples of the typical outputs of this feature for various time series:
 
@@ -147,6 +164,6 @@ and embedding:
 
 ***
 
-[^1]: **Naming info**: This matches the _hctsa_ feature `CO_trev_1_num.`
+[^1]: **Naming info**: Short name `trev`; long name `CO_trev_1_num` (unchanged in v1.0), matching the _hctsa_ feature of the same name. Reproduced in _hctsa_ by `CO_trev(x_z,1).num`.
 
-[^2]: **Naming info**: Original name matched an earlier _hctsa_ name `CO_HistogramAMI_even_2_5` but this feature has since been renamed in current _hctsa_ library to more clearly describe the binning, as `CO_HistogramAMI_even_5bin_ami2`
+[^2]: **Naming info**: Short name `ami2`; long name `CO_HistogramAMI_even_5bin_ami2` (before v1.0: `CO_HistogramAMI_even_2_5`). Reproduced in _hctsa_ by `CO_HistogramAMI(x_z,1:5,'even',5).ami2`; it is not a registered _hctsa_ feature, so its long name is the one that _hctsa_'s naming convention gives this call. The earlier name followed an older _hctsa_ naming scheme in which `CO_HistogramAMI_even_2_5` denoted a different feature (2 bins, at lag 5); _catch22_ has always computed 5 bins at lag 2.
