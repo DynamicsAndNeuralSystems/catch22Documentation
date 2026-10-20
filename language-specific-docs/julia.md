@@ -6,6 +6,12 @@ coverY: 0
 
 # Julia
 
+{% hint style="warning" %}
+**_Catch22.jl_ does not yet implement catch22 v1.0.**
+Its feature names and values follow _catch22_ v0.x (see the [feature descriptions](../information-about-catch22/feature-descriptions/) for how they differ from v1.0).
+Support for v1.0 is coming.
+{% endhint %}
+
 ## Julia Usage Guide
 
 Select a card below to access Julia-specific usage information.&#x20;

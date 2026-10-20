@@ -10,6 +10,12 @@ coverY: 0
 
 # R API
 
+{% hint style="warning" %}
+**_Rcatch22_ does not yet implement catch22 v1.0.**
+Its feature names and values follow _catch22_ v0.x (see the [feature descriptions](../feature-descriptions/) for how they differ from v1.0).
+Support for v1.0 is coming.
+{% endhint %}
+
 The `Rcatch22` package provides functionality for extracting the _catch22_ feature set from time series data.
 
 ## Functions
