@@ -34,7 +34,7 @@ layout:
 
 _catch22_ contains **6** features which each capture some aspect of the linear autocorrelation structure of a time series. Select one of the cards below to discover more information:
 
-<table data-view="cards"><thead><tr><th></th><th align="center"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-1.-acf_timescale"><strong><code>acf_timescale</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-1.-acf_timescale">#id-1.-acf_timescale</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-2.-acf_first_min"><strong><code>acf_first_min</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-2.-acf_first_min">#id-2.-acf_first_min</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-3.-periodicity"><strong><code>periodicity</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-3.-periodicity">#id-3.-periodicity</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-4.-low_freq_power"><strong><code>low_freq_power</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-4.-low_freq_power">#id-4.-low_freq_power</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-5.-centroid_freq"><strong><code>centroid_freq</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-5.-centroid_freq">#id-5.-centroid_freq</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-6.-ami_timescale"><strong><code>ami_timescale</code></strong></a></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th align="center"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-1.-acf_timescale"><strong><code>acf_timescale</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-1.-acf_timescale">#id-1.-acf_timescale</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-2.-acf_first_min"><strong><code>acf_first_min</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-2.-acf_first_min">#id-2.-acf_first_min</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-3.-periodicity"><strong><code>periodicity</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-3.-periodicity">#id-3.-periodicity</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-4.-low_freq_power"><strong><code>low_freq_power</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-4.-low_freq_power">#id-4.-low_freq_power</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-5.-median_freq"><strong><code>median_freq</code></strong></a></td><td></td><td><a href="linear-autocorrelation-structure.md#id-5.-median_freq">#id-5.-median_freq</a></td></tr><tr><td></td><td align="center"><a href="linear-autocorrelation-structure.md#id-6.-ami_timescale"><strong><code>ami_timescale</code></strong></a></td><td></td><td></td></tr></tbody></table>
 
 ***
 
@@ -42,12 +42,19 @@ _catch22_ contains **6** features which each capture some aspect of the linear a
 
 ### What it does
 
-The [`acf_timescale`](#user-content-fn-1)[^1] feature in _catch22_ computes the first 1/_e_ crossing of the autocorrelation function of the time series. In _hctsa_, this can be computed as [`CO_FirstCrossing(x_z,'ac',1/exp(1),'continuous')`](https://github.com/benfulcher/hctsa/blob/main/Operations/CO_FirstCrossing.m) (the _hctsa_ feature `firstCrossing_1e_acf_point`).
+The [`acf_timescale`](#user-content-fn-1)[^1] feature in _catch22_ computes the first 1/_e_ crossing of the autocorrelation function of the time series. In _hctsa_, this is the `pointOfCrossing` output of [`CO_FirstCrossing(x_z,'ac',1/exp(1),'both')`](https://github.com/benfulcher/hctsa/blob/main/Operations/CO_FirstCrossing.m) (the _hctsa_ feature `firstCrossing_1e_acf_point`).
 
-This feature measures the first time lag at which the autocorrelation function drops below 1/_e_ (= 0.3679). The _catch22_ implementation linearly interpolates between the two lags either side of the crossing, so it generally returns a non-integer value (e.g., about 0.63 for uncorrelated noise, rather than 1). If the autocorrelation function never drops below 1/_e_, it returns the length of the time series.
+This feature measures the first time lag at which the autocorrelation function drops below 1/_e_ (= 0.3679). The _catch22_ implementation linearly interpolates between the two lags either side of the crossing, so it generally returns a non-integer value (e.g., about 0.63 for uncorrelated noise, rather than 1).
+If the autocorrelation function never drops below 1/_e_, it returns _N_ − 1 for a time series of length _N_ (the largest lag at which the autocorrelation can be computed).
+A constant time series, which cannot be _z_-scored, is treated in the same way (an autocorrelation that never decays): by default (with masking), it also returns _N_ − 1.
 
 {% hint style="info" %}
-**Note**: The example outputs below were computed with an earlier version of _catch22_ that returned the integer lag (equivalent to the `'discrete'` option of `CO_FirstCrossing` in _hctsa_, the feature `firstCrossing_1e_acf_tau`), so current versions return slightly smaller, non-integer values.
+**Changes in v1.0**: The long name changed from `CO_f1ecac` to `CO_FirstCrossing_acf_1e_pointOfCrossing`, following _hctsa_.
+The values are unchanged, except in two edge cases: when the autocorrelation function never drops below 1/_e_, earlier versions returned _N_ (now _N_ − 1), and for a constant time series they returned 0 (now _N_ − 1).
+{% endhint %}
+
+{% hint style="info" %}
+**Note**: The example outputs below were computed with an earlier version of _catch22_ (before v0.3) that returned the integer lag (equivalent to the `firstCrossing` output of `CO_FirstCrossing` in _hctsa_, the feature `firstCrossing_1e_acf_tau`), so current versions return slightly smaller, non-integer values.
 {% endhint %}
 
 ### What it measures
@@ -98,7 +105,12 @@ Financial series (and many non-stationary stochastic processes) are highly autoc
 
 ### What it does
 
-Similar to the 1/_e_ crossing feature above, [`acf_first_min`](#user-content-fn-2)[^2] computes the **first minimum** of the autocorrelation function: the first lag at which the autocorrelation is lower than at the lags immediately before and after it. For an oscillatory time series, this is approximately half the period of the oscillation (e.g., 10 samples for a sine wave with a period of 20 samples). For time series whose autocorrelation function decays without oscillating, the first local minimum is set by estimation noise in the tail of the autocorrelation function, so values are harder to interpret. If there is no local minimum, the feature returns the length of the time series.
+Similar to the 1/_e_ crossing feature above, [`acf_first_min`](#user-content-fn-2)[^2] computes the **first minimum** of the autocorrelation function: the first lag at which the autocorrelation is lower than at the lags immediately before and after it. For an oscillatory time series, this is approximately half the period of the oscillation (e.g., 10 samples for a sine wave with a period of 20 samples). For time series whose autocorrelation function decays without oscillating, the first local minimum is set by estimation noise in the tail of the autocorrelation function, so values are harder to interpret. If there is no local minimum, the feature returns the length of the time series, _N_.
+In _hctsa_, this feature is computed as `CO_FirstMin(x_z,'ac')`.
+
+The values are unchanged in v1.0.
+When the feature cannot be computed (for a constant time series, which cannot be _z_-scored, or a series shorter than three samples), it returns _N_ by default (with masking), as when no minimum is found.
+Earlier versions returned 0 for a constant time series.
 
 ***
 
@@ -114,6 +126,13 @@ Specifically:
 2. Compute the autocorrelation function of the detrended series up to a lag of one-third of the time-series length.
 3. Find all local peaks and troughs of the autocorrelation function.
 4. Return the lag of the first peak that (i) is preceded by a trough, (ii) is at least 0.01 higher than that trough, and (iii) has a non-negative autocorrelation. If no peak satisfies these conditions, the feature returns 0.
+
+In _hctsa_, this is the `th0_01` output of `PD_PeriodicityWang(x_z)`.
+The feature is unchanged in v1.0, and a constant time series (which cannot be _z_-scored) returns 0 by default (with masking), as in earlier versions.
+
+{% hint style="info" %}
+**Earlier versions**: Before v0.6.0, the C implementation returned the lag minus one (e.g., 19 rather than 20 for a sine wave with a period of 20 samples).
+{% endhint %}
 
 It is based on a method by Wang et al. (2007) (described in their paper: _"_[_Structure-based Statistical Features and Multivariate Time Series Clustering_](https://ieeexplore.ieee.org/document/4470259/)_" )._
 
@@ -143,15 +162,29 @@ For this fast varying (on the timescale of $$\Delta t$$) map, the [Gingerbread m
 
 ### What it does
 
-The feature [`low_freq_power`](#user-content-fn-4)[^4] computes the power in the lowest 20% of frequencies (i.e., the lowest fifth of the frequency range from zero to the Nyquist frequency) \[the output `area_5_1` from the _hctsa_ code `SP_Summaries(x_z,'welch','rect',[],false)`].
+The feature [`low_freq_power`](#user-content-fn-4)[^4] computes the power in the lowest 20% of frequencies (i.e., the lowest fifth of the frequency range from zero to the Nyquist frequency) \[the output `area_5_1` from the _hctsa_ code `SP_Summaries(x_z,'fft',[],[],false)`].
 
 ### What it measures
 
 It gives high values to time series with lots of power in low frequencies, and low values to time series that have most of their power in higher frequencies.
 
-The area under the power spectrum is estimated in linear space. The power spectral density is estimated using Welch's method with a rectangular window that spans the whole time series (i.e., a single segment, so in effect this is a periodogram).
+The area under the power spectrum is estimated in linear space.
+The power spectral density is estimated as a periodogram, from the fast Fourier transform of the whole time series, zero-padded to the next power of two ($$N_{\mathrm{FFT}}$$).
+This gives $$N_{\mathrm{FFT}}/2$$ frequency bins above zero frequency, up to and including the Nyquist frequency (the zero-frequency bin is dropped, since it is zero for a _z_-scored series), and the feature sums the power in the lowest fifth of these bins.
+As in _hctsa_, the spectrum is floored at $$10^{-12}$$ of its maximum before any statistic is computed.
 
 Note that the feature returns the area itself, without dividing by the total power. But because the input time series is _z_-scored (variance 1), the total area under the power spectrum is approximately 1, so the output can be read as the fraction of power in this low-frequency band (e.g., about 0.2 for uncorrelated noise).
+
+A constant time series, which cannot be _z_-scored, is treated as the limit of an infinitely slow time series (with all its power at the lowest frequencies): by default (with masking), it returns 1.
+
+{% hint style="info" %}
+**Changes in v1.0**: The long name changed from `SP_Summaries_welch_rect_area_5_1` to `SP_Summaries_fft_area_5_1`, following _hctsa_, whose `SP_Summaries(x_z,'welch','rect')` now gives a different, segment-averaged Welch estimate.
+Before v1.0, the spectrum was estimated with Welch's method using a single rectangular window spanning the whole time series (in effect, the same periodogram), but its frequency bins included the zero-frequency bin, and the low-frequency band was the lowest fifth of these $$N_{\mathrm{FFT}}/2 + 1$$ bins.
+Since the zero-frequency bin is empty for a _z_-scored series, for most lengths (all except, e.g., 65–128 and 1025–2048 samples, for which the bands coincide) the band now contains one more non-zero bin at its upper edge.
+Values usually change only slightly, but can change substantially when a lot of power lies at the edge of the band, and for very short time series (e.g., for _N_ = 12 the earlier band contained only the zero-frequency bin, giving 0).
+Earlier versions returned `NaN` for a constant time series.
+The example outputs below were computed with an earlier version of _catch22_.
+{% endhint %}
 
 {% tabs %}
 {% tab title="Example 1: Stochastic Process" %}
@@ -175,16 +208,25 @@ This [Lozi map](https://www.comp-engine.org/#!visualize/90c3f445-3872-11e8-8680-
 
 ***
 
-## 5. `centroid_freq`
+## 5. `median_freq`
 
 ### What it does
 
-Like the previous feature, [`centroid_freq`](#user-content-fn-5)[^5] is also extracted from the power spectrum (estimated in the same way, using a single rectangular window). But this time, it returns the frequency, $$f$$, at which the amount of power in frequencies lower and higher than $$f$$ is the same. Specifically, it returns the first frequency at which the cumulative power exceeds half of the total power.
+Like the previous feature, [`median_freq`](#user-content-fn-5)[^5] is also extracted from the power spectrum (estimated in the same way, as a periodogram of the whole time series). But this time, it returns the frequency, $$f$$, at which the amount of power in frequencies lower and higher than $$f$$ is the same. Specifically, it returns the first frequency at which the cumulative power reaches half of the total power: the median frequency \[the output `wq_50` from the _hctsa_ code `SP_Summaries(x_z,'fft',[],[],false)`].
 
 Frequencies are angular frequencies, in radians per sample, ranging from 0 to $$\pi$$ (e.g., about $$\pi/2 \approx 1.57$$ for uncorrelated noise, and $$2\pi/20 \approx 0.31$$ for a sine wave with a period of 20 samples).
 
-{% hint style="warning" %}
-**The name "centroid" is a misnomer**: this feature computes the _median_ frequency of the power spectrum, not its centroid. A centroid is the power-weighted mean frequency, $$\sum_f f\,S(f) / \sum_f S(f)$$. The two differ whenever the power spectrum is skewed: a long tail of high-frequency power pulls the centroid (the mean) up, but barely shifts the median. For example, for an AR(1) process with $$\phi = 0.9$$, `centroid_freq` returns 0.107 (the median), whereas the true spectral centroid is 0.27. The name is retained for consistency with _hctsa_ and earlier versions of _catch22_.
+A constant time series, which cannot be _z_-scored, is treated as the limit of an infinitely slow time series: by default (with masking), it returns 0.
+
+{% hint style="info" %}
+**Changes in v1.0**: This feature was called `centroid_freq` (long name `SP_Summaries_welch_rect_centroid`) before v1.0.
+It always computed the _median_ frequency, so it was renamed `median_freq` (long name `SP_Summaries_fft_wq_50`), following _hctsa_, where `wq_50` is the 50% point of the frequency quantiles `wq_5`, …, `wq_99`.
+A centroid would be the power-weighted mean frequency, $$\sum_f f\,S(f) / \sum_f S(f)$$, which differs from the median whenever the power spectrum is skewed: a long tail of high-frequency power pulls the centroid (the mean) up, but barely shifts the median. For example, for an AR(1) process with $$\phi = 0.9$$, the median frequency is about 0.11, whereas the spectral centroid is 0.27.
+
+The spectrum also changed slightly (see `low_freq_power` above).
+Before v1.0, the Nyquist-frequency bin had half the weight of the other bins, the zero-frequency bin was included, and the feature returned the first frequency at which the cumulative power _exceeded_ (rather than reached) half of the total power.
+Values are identical for most time series, but can differ substantially for series with a lot of power near the Nyquist frequency.
+Earlier versions returned `NaN` for a constant time series.
 {% endhint %}
 
 ### What it measures
@@ -193,11 +235,11 @@ It gives high values to time series that have their power in high frequencies.
 
 {% tabs %}
 {% tab title="Example 1: Birdsong " %}
-Here's an example of audio of an animal sound (centroid point shown with a red circle) that has its power in high frequencies. It gives a **high value** for this statistical measure:&#x20;
+Here's an example of audio of an animal sound (median frequency shown with a red circle) that has its power in high frequencies. It gives a **high value** for this statistical measure:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
-### Feature output: `centroid_freq =`` `<mark style="color:red;">`2.823`</mark>
+### Feature output: `median_freq =`` `<mark style="color:red;">`2.823`</mark>
 {% endtab %}
 
 {% tab title="Example 2: ECG Recording " %}
@@ -205,7 +247,7 @@ Low values are assigned to slower-varying time series like this snippet of an [e
 
 <figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
-### Feature output: `centroid_freq =`` `<mark style="color:red;">`0.147`</mark>
+### Feature output: `median_freq =`` `<mark style="color:red;">`0.147`</mark>
 {% endtab %}
 {% endtabs %}
 
@@ -220,17 +262,26 @@ Low values are assigned to slower-varying time series like this snippet of an [e
 Automutual information is estimated here using a Gaussian assumption on the data (and is thus a **nonlinear transformation** of the **linear autocorrelation function**). As a result, this feature is sensitive only to linear autocorrelation, not to nonlinear dependence. Because the Gaussian automutual information, $$-\frac{1}{2}\log(1 - r^2)$$, increases with the magnitude of the autocorrelation, $$|r|$$, its first minimum occurs at the first minimum of $$|r|$$. For an oscillatory time series, this is close to the first zero-crossing of the autocorrelation function (rather than its first minimum, as in `acf_first_min`).
 
 The feature maxes out at 40 (or half the time-series length, if shorter), meaning that if there has been no local minimum after 40 lags, this feature outputs the value 40.
+A constant time series, which cannot be _z_-scored, is treated in the same way: by default (with masking), it returns 40 (or half the time-series length, rounded up, if shorter).
+
+In _hctsa_, this feature is the `fmmi` output of `IN_AutoMutualInfoStats(x_z,40,'gaussian')`.
+Its values are unchanged in v1.0, which only floors $$1 - r^2$$ at $$10^{-12}$$ (as in _hctsa_), affecting only autocorrelations within rounding error of ±1.
+
+{% hint style="info" %}
+**Earlier versions**: Before v0.6.0, the C implementation returned the lag of the first minimum minus one.
+Before v1.0, a constant time series gave `NaN`.
+{% endhint %}
 
 High values reflect highly autocorrelated, long-memory processes (on the timescale of the sampling period), and low values reflect low-memory or noise processes.
 
-[^1]: **Naming info:** The name `CO_f1ecac` derives from an earlier version of _hctsa_ (the current version of _hctsa_ names this feature `firstCrossing_1e_acf_point`; the integer-lag version is `firstCrossing_1e_acf_tau`). The _catch22_ short name is `acf_timescale`.
+[^1]: **Naming info:** Short name `acf_timescale`; long name `CO_FirstCrossing_acf_1e_pointOfCrossing` (before v1.0: `CO_f1ecac`, a name derived from an earlier version of _hctsa_). Reproduced in _hctsa_ by `CO_FirstCrossing(x_z,'ac',1/exp(1),'both').pointOfCrossing`, the _hctsa_ feature `firstCrossing_1e_acf_point` (the integer-lag version is `firstCrossing_1e_acf_tau`).
 
-[^2]: **Naming info**: short name:`acf_first_min` in _catch22_ (long name: `CO_FirstMin_ac`) and matches the feature called `firstMin_acf` in _hctsa_
+[^2]: **Naming info**: Short name `acf_first_min`; long name `CO_FirstMin_ac` (unchanged in v1.0). Reproduced in _hctsa_ by `CO_FirstMin(x_z,'ac')`, the _hctsa_ feature `firstMin_acf`.
 
-[^3]: **Naming info**: long name is `PD_PeriodicityWang_th0_01`
+[^3]: **Naming info**: Short name `periodicity`; long name `PD_PeriodicityWang_th0_01` (unchanged in v1.0). Reproduced in _hctsa_ by `PD_PeriodicityWang(x_z).th0_01`.
 
-[^4]: **Naming info:** Long name (matching the _hctsa_ name) is `SP_Summaries_welch_rect_area_5_1`
+[^4]: **Naming info:** Short name `low_freq_power`; long name (matching the _hctsa_ name) `SP_Summaries_fft_area_5_1` (before v1.0: `SP_Summaries_welch_rect_area_5_1`). Reproduced in _hctsa_ by `SP_Summaries(x_z,'fft',[],[],false).area_5_1`.
 
-[^5]: **Naming info**: _hctsa_ name is `SP_Summaries_welch_rect_centroid`.
+[^5]: **Naming info**: Short name `median_freq` (before v1.0: `centroid_freq`); long name (matching the _hctsa_ name) `SP_Summaries_fft_wq_50` (before v1.0: `SP_Summaries_welch_rect_centroid`). Reproduced in _hctsa_ by `SP_Summaries(x_z,'fft',[],[],false).wq_50`.
 
-[^6]: **Naming info**: This feature matches the _hctsa_ feature called `IN_AutoMutualInfoStats_40_gaussian_fmmi`
+[^6]: **Naming info**: Short name `ami_timescale`; long name `IN_AutoMutualInfoStats_40_gaussian_fmmi` (unchanged in v1.0), matching the _hctsa_ feature of the same name. Reproduced in _hctsa_ by `IN_AutoMutualInfoStats(x_z,40,'gaussian').fmmi`.

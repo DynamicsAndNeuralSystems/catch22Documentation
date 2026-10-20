@@ -14,6 +14,12 @@ The _catch22_ feature set provides open access to a powerful set of time-series 
 
 The material in this chapter should help you to understand what each of these 22 features is doing, and point you to the relevant time-series theory that underpins it.
 
+{% hint style="info" %}
+**catch22 v1.0**: These pages describe _catch22_ v1.0, in which each feature exactly reproduces a piece of _hctsa_ code (listed in the [feature overview table](feature-overview-table.md#feature-names-before-v1.0-and-hctsa-code)).
+Some features were renamed, the values of some features changed, and features that cannot be estimated (e.g., for a constant time series) are now [masked](feature-overview-table.md#masking) by default.
+Where v1.0 changes a feature, its description includes a note on how earlier versions behaved, and the changes are summarised in the [feature overview table](feature-overview-table.md#changes-in-v1.0).
+{% endhint %}
+
 ## _catch22_ Feature Descriptions
 
 Select the feature overview table for a high level description of each feature, or delve into detailed explanations and examples by exploring each of the 9 categories of time-series features included in _catch22_:

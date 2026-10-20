@@ -36,6 +36,13 @@ layout:
 
 [`forecast_error`](#user-content-fn-1)[^1] returns the a measure of error from using the mean of the previous 3 values of the time series to predict the next value. The error statistic used here is the standard deviation of the residuals from the full set of simple 1-step forecasts. Because the input time series is _z_-scored (standard deviation of 1), the residuals should have a standard deviation less than 1 if this forecasting method is doing something (at least minimally) useful.
 
+In _hctsa_, this feature is the `stde` output of `FC_LocalSimple(x_z,'mean',3)`.
+A constant time series, which cannot be _z_-scored, is treated as perfectly predictable: by default (with masking), it returns 0 (earlier versions returned `NaN`).
+
+{% hint style="info" %}
+**Changes in v1.0**: The values are unchanged, but the long name changed from `FC_LocalSimple_mean3_stderr` to `FC_LocalSimple_mean3_stde`, following _hctsa_.
+{% endhint %}
+
 {% tabs %}
 {% tab title="Example 1: Predator-Prey System" %}
 Here's an example of a predator-prey system (black) for which the dynamics are varying on a timescale of 3 steps, such that mean-3 predictions (blue) are very poor forecasts. For this time series, the residuals have a higher variance than the original time series:
@@ -54,4 +61,4 @@ This ODE system, by contrast is very highly sampled, such that the time series i
 
 
 
-[^1]: **Naming info**: This feature matches the _hctsa_ feature called `FC_LocalSimple_mean3_stderr`. It computes the `stderr` output from running the code `FC_LocalSimple(x_z,'mean',3)` in _hctsa_.&#x20;
+[^1]: **Naming info**: Short name `forecast_error`; long name `FC_LocalSimple_mean3_stde` (before v1.0: `FC_LocalSimple_mean3_stderr`), matching the _hctsa_ feature of the same name. It computes the `stde` output from running the code `FC_LocalSimple(x_z,'mean',3)` in _hctsa_.
