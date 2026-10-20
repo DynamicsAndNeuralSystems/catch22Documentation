@@ -28,7 +28,7 @@ pip install pycatch22
 ```
 
 _pycatch22_ supports Python 3.8 and later, and has no runtime dependencies (`numpy` is optional).
-_pycatch22_ v1.0 uses _catch22_ v1.0.1.
+_pycatch22_ v1.0 uses _catch22_ v1.1.0.
 
 Additionally, _pycatch22_ can also be installed using the following alternative installation options. Click the expandable drop-down tabs to explore these options:
 
@@ -181,7 +181,14 @@ print(f"trev feature output: {trev_value}")
 # trev feature output: -0.08153158906199524
 ```
 
-Each of these functions computes all the features and returns one of them, so use `catch22_all` if you need more than one feature.
+You can also compute a feature by its long or short name with `compute_feature`:
+
+```python
+trev_value = pycatch22.compute_feature(x, 'trev')  # or 'CO_trev_1_num'
+# -0.08153158906199524
+```
+
+Either way, only that feature is computed, and its value is exactly the one that `catch22_all` gives.
 
 The long names used before v1.0 (e.g., `CO_f1ecac`, now `CO_FirstCrossing_acf_1e_pointOfCrossing`) still work as deprecated aliases: they compute the v1.0 feature and issue a `DeprecationWarning`.
 {% endtab %}

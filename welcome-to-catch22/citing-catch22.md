@@ -44,7 +44,7 @@ If you use a language package (e.g., _pycatch22_), report both its version and t
 
 In addition to the paper, you can cite the version of the _catch22_ software that you used through its archived release on Zenodo:
 
-* **A specific version** (recommended for reproducibility): _catch22_ v1.0.1 is [10.5281/zenodo.23486629](https://doi.org/10.5281/zenodo.23486629), and v1.0.0 is [10.5281/zenodo.23485546](https://doi.org/10.5281/zenodo.23485546) (v1.0.0 and v1.0.1 give identical feature values).
+* **A specific version** (recommended for reproducibility): _catch22_ v1.1.0 is [10.5281/zenodo.23486909](https://doi.org/10.5281/zenodo.23486909), v1.0.1 is [10.5281/zenodo.23486629](https://doi.org/10.5281/zenodo.23486629), and v1.0.0 is [10.5281/zenodo.23485546](https://doi.org/10.5281/zenodo.23485546) (all three give identical feature values).
 * **All versions**: the concept DOI [10.5281/zenodo.4431165](https://doi.org/10.5281/zenodo.4431165) always resolves to the latest release.
 
 Each Zenodo record provides a citation (including BibTeX) for that version.

@@ -334,6 +334,17 @@ dfa                  1 (masked)
 It returns `CATCH22_OK`, or `CATCH22_BAD_INPUT` if the time series is empty or contains `NaN` or `Inf` (all outputs are then `NaN`).
 `catch22_n_features(catch24)` gives the number of features, and `catch22_feature_name(i)`, `catch22_short_name(i)`, `catch22_legacy_name(i)` (the name before v1.0) and `catch22_hctsa_call(i)` describe feature `i`.
 `catch22_compute_timed` also returns the computation time of each feature.
+
+To compute a single feature, by its index or its long or short name, use `catch22_compute_feature` (from _catch22_ v1.1.0), which computes only that feature and gives exactly the value that `catch22_compute` gives:
+
+```c
+double trev;
+if (catch22_compute_feature(x, n, catch22_feature_index("trev"), mask_nans, &trev, NULL) == CATCH22_OK) {
+    printf("trev = %.6g\n", trev);
+}
+```
+
+`catch22_feature_index(name)` returns the index of the feature with that long or short name, or -1 if there is none, in which case `catch22_compute_feature` returns `CATCH22_BAD_INDEX`.
 See [`C/catch22.h`](https://github.com/DynamicsAndNeuralSystems/catch22/blob/main/C/catch22.h) for details.
 {% endtab %}
 {% endtabs %}

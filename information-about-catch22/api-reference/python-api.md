@@ -137,10 +137,48 @@ print(pycatch22.feature_table()[4])
 
 ***
 
+## <mark style="color:purple;">compute\_feature</mark>
+
+Compute a single feature by its long or short name.
+Only that feature is computed, and its value is exactly the one that `catch22_all` gives.
+
+### Syntax
+
+```python
+pycatch22.compute_feature(data, name, mask_nans=True)
+```
+
+### Parameters
+
+| Parameter   | Type                                                                                    | Description                                                        |
+| ----------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `data`      | [array-like](https://numpy.org/doc/stable/user/basics.creation.html#array-like-objects) | Input time-series data (as for `catch22_all`).                     |
+| `name`      | [str](https://docs.python.org/3/library/stdtypes.html#str)                              | The feature's long or short name (e.g., `'CO_trev_1_num'` or `'trev'`), as in `feature_table(catch24=True)`. An unknown name (including a name from before v1.0) raises a `ValueError`. |
+| `mask_nans` | [bool](https://docs.python.org/3/library/stdtypes.html#boolean-values)                  | Whether to mask the feature if it cannot be estimated (as for `catch22_all`). Default is True. |
+
+### Return Value
+
+The feature value, as a [float](https://docs.python.org/3/library/functions.html#float).
+
+### Example Usage
+
+```python
+import numpy as np
+import pycatch22
+
+data = np.random.default_rng(42).standard_normal(100)
+print(pycatch22.compute_feature(data, 'mean'))
+# Output: -0.05026961148385783
+```
+
+***
+
+***
+
 ## Individual Feature Methods
 
 Each feature can also be computed on its own as `pycatch22.{name}`, where `{name}` is the feature's **long** name in the [table of features](../feature-descriptions/feature-overview-table.md).
-Each of these functions computes all the features and returns one, so use `catch22_all` when you need more than one feature.
+Only that feature is computed, and its value is exactly the one that `catch22_all` gives.
 
 ### Syntax
 
