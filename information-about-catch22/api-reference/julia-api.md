@@ -10,6 +10,12 @@ coverY: 0
 
 # Julia API
 
+{% hint style="warning" %}
+**_Catch22.jl_ does not yet implement catch22 v1.0.**
+Its feature names and values follow _catch22_ v0.x (see the [feature descriptions](../feature-descriptions/) for how they differ from v1.0).
+Support for v1.0 is coming.
+{% endhint %}
+
 ## Catch22 Module
 
 The `Catch22` module provides functionality for extracting the _catch22_ feature set from time series data.

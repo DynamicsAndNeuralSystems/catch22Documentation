@@ -27,6 +27,9 @@ Python users can install _pycatch22_ via [pip](https://pypi.org/project/pycatch2
 pip install pycatch22
 ```
 
+_pycatch22_ supports Python 3.8 and later, and has no runtime dependencies (`numpy` is optional).
+_pycatch22_ v1.0 uses _catch22_ v1.1.0.
+
 Additionally, _pycatch22_ can also be installed using the following alternative installation options. Click the expandable drop-down tabs to explore these options:
 
 <details>
@@ -44,25 +47,26 @@ _OR_
 <pre class="language-bash"><code class="lang-bash"><strong>mamba install -c conda-forge pycatch22
 </strong></code></pre>
 
+The conda-forge package can lag behind PyPI, so check that it gives you version 1.0 or later (`conda list pycatch22`).
+
 </details>
 
 <details>
 
 <summary>Alternative Installation Option 2: Manual Install</summary>
 
-This should not be require&#x64;_,_ but if you find issues with the `pip` or `conda` install options, you can try installing using `setuptools.`
+This should not be require&#x64;_,_ but if you find issues with the `pip` or `conda` install options, you can build _pycatch22_ from source (this needs a C compiler).
 
-First, clone the [_pycatch22_](https://github.com/DynamicsAndNeuralSystems/pycatch22.git) repository to your local machine using:
+First, clone the [_pycatch22_](https://github.com/DynamicsAndNeuralSystems/pycatch22.git) repository to your local machine, including the _catch22_ C code (a git submodule), using:
 
 ```
-git clone https://github.com/DynamicsAndNeuralSystems/pycatch22.git
+git clone --recurse-submodules https://github.com/DynamicsAndNeuralSystems/pycatch22.git
 ```
 
 Navigate to the location of the cloned repository and install manually using:
 
 ```bash
-python3 setup.py build
-python3 setup.py install
+pip install .
 ```
 
 </details>
@@ -73,24 +77,36 @@ python3 setup.py install
 
 Here we outline how you can jump straight into computing _catch22_ features on your time series data with a basic usage example.
 
+{% hint style="info" %}
+**Upgrading from pycatch22 v0.x?**
+_pycatch22_ v1.0 computes _catch22_ v1.0, which changed the values of most features (to match _hctsa_ v3.0.0 exactly) and renamed several of them, so results are not comparable with v0.x.
+The features are also returned in a different order (e.g., the outlier-timing features are now 3rd and 4th), so select features by name rather than by position.
+See the [feature descriptions](../information-about-catch22/feature-descriptions/) for what changed.
+{% endhint %}
+
 ### Expected Input
 
-In _pycatch22,_ time series can be provided as arrays in the form of **tuples** or **lists** , or as `numpy` arrays:
+In _pycatch22,_ a time series can be any sequence of numbers: a **list**, a **tuple**, or a `numpy` array:
 
 ```python
+import numpy as np
 import pycatch22
-tsData_asList = [1, 2, 3, 4] # (or more interesting data!)
-tsData_as_numpy = np.array([1, 2, 3, 4])
+
+rng = np.random.default_rng(42)
+x = np.sin(np.linspace(0, 20*np.pi, 1000)) + 0.5*rng.standard_normal(1000)  # (or more interesting data!)
+tsData_asList = list(x)
 ```
+
+Input that is not a sequence of numbers raises a `TypeError`.
 
 ### Computing _catch22_ features
 
 All features are bundled in the method `catch22_all` which can simply be called on your time series data as shown below:
 
-<pre class="language-python"><code class="lang-python"><strong># for time series data supplied as a list...
-</strong><strong>results = pycatch22.catch22_all(tsData_asList)
-</strong># alternatively, for time series data as a numpy array...
-results_numpy = pycatch22.catch22_all(tsData_as_numpy)
+<pre class="language-python"><code class="lang-python"><strong># for time series data as a numpy array...
+</strong><strong>results = pycatch22.catch22_all(x)
+</strong># alternatively, for time series data supplied as a list...
+results_list = pycatch22.catch22_all(tsData_asList)
 </code></pre>
 
 ### Expected output
@@ -98,7 +114,7 @@ results_numpy = pycatch22.catch22_all(tsData_as_numpy)
 The results of your calculation will be stored in a **dictionary** with the keys: `names` and `values`:
 
 * `names`: the feature names, as listed in the [feature table](../information-about-catch22/feature-descriptions/feature-overview-table.md), returned as a list of strings.&#x20;
-* `values`: the feature outputs returned as a list of float64's.&#x20;
+* `values`: the feature outputs returned as a list of floats.&#x20;
 
 Note that the ordering of the feature names is the same as that in which the outputs are given i.e., the first feature in `names` has the output corresponding to the first (zeroth) index in `values.`
 
@@ -109,15 +125,19 @@ for feature, output in zip(results['names'], results['values']):
     print(f"{feature}: {output}")
 ```
 
-Which gives the following example output:
+Which gives the following output:
 
-<pre><code><strong>DN_HistogramMode_5: -0.03625270501343825
-</strong>DN_HistogramMode_10: 0.2711751186493062
-CO_f1ecac: 0.6562407580313526
-CO_FirstMin_ac: 2
+<pre><code><strong>DN_HistogramMode_5: 0.0335441836925168
+</strong>DN_HistogramMode_10: -0.7462245693351899
+DN_OutlierInclude_p_001_mdrmd: 0.014000000000000012
+DN_OutlierInclude_n_001_mdrmd: 0.131
+CO_FirstCrossing_acf_1e_pointOfCrossing: 15.700534880150066
+CO_FirstMin_ac: 2.0
 ...
-FC_LocalSimple_mean3_stderr: 1.1654896899009854
+SC_FluctAnal_2_dfa_50_1_2_logi_prop_r1: 0.5652173913043478
 </code></pre>
+
+To look up a feature by name, you can make a dictionary of the results, e.g., `dict(zip(results['names'], results['values']))['CO_FirstMin_ac']`.
 
 And that's it! You now have all the knowledge you need to apply _catch22_ to your time series data. To access some of the additional functionality of _catch22_, keep reading for advanced usage tips and examples.
 
@@ -136,10 +156,8 @@ If the location and spread of the raw time series distribution may be important 
 _Catch24_ is an extension of the original _catch22_ feature set to include **mean** and **standard deviation,** yielding a total of **24** time series features. To access _catch24_, you can pass an additional parameter to the `catch22_all` method, telling it to compute the _catch24_ feature set as follows:
 
 ```python
-import pycatch22
-​
-tsData = [1, 2, 3, 4] # your ts data
-c24_results = pycatch22.catch22_all(tsData, catch24 = True)
+c24_results = pycatch22.catch22_all(x, catch24=True)
+print(c24_results['names'][-2:])  # ['DN_mean', 'DN_Spread_std']
 ```
 {% endtab %}
 {% endtabs %}
@@ -148,25 +166,31 @@ c24_results = pycatch22.catch22_all(tsData, catch24 = True)
 
 ### 2. Computing Individual Features
 
-If you do not wish to compute the full _catch22_ feature set on your time series, you can alternatively compute each feature (including mean and std. deviation) individually.
+If you only need one feature, you can compute it on its own (including the mean and standard deviation).
 
 {% tabs %}
 {% tab title="Computing Individual Features" %}
-In _pycatch22_ each feature function can be accessed individually and takes **arrays** as **tuples** or **lists** (not `numpy`arrays) as input. To call a feature function, make sure to use its corresponding **long name** (as in the [feature overview table](../information-about-catch22/feature-descriptions/feature-overview-table.md)), e.g., using [`CO_trev_1_num`](../information-about-catch22/feature-descriptions/feature-overview-table.md) for computing [`trev`](../information-about-catch22/feature-descriptions/nonlinear-autocorrelation.md).
+In _pycatch22_ each feature has its own function, named by the feature's **long name** (as in the [feature overview table](../information-about-catch22/feature-descriptions/feature-overview-table.md)), e.g., [`CO_trev_1_num`](../information-about-catch22/feature-descriptions/nonlinear-autocorrelation.md) for computing [`trev`](../information-about-catch22/feature-descriptions/nonlinear-autocorrelation.md).
+It takes the same input as `catch22_all` (and the same `mask_nans` option) and returns a float.
 
-As example, let's compute the feature `trev` for a single univariate time series:
+As example, let's compute the feature `trev` for the time series `x` from above:
 
 ```python
-import pycatch22
-import numpy as np
-​
-x = np.linspace(0, 10*np.pi, 500)
-y = 0.3 * np.sin(x + 0.2) + 0.1 * np.random.randn(500)
-tsData = list(y) # your time series data as a list
-​
-trev_value = pycatch22.CO_trev_1_num(tsData)
+trev_value = pycatch22.CO_trev_1_num(x)
 print(f"trev feature output: {trev_value}")
+# trev feature output: -0.08153158906199524
 ```
+
+You can also compute a feature by its long or short name with `compute_feature`:
+
+```python
+trev_value = pycatch22.compute_feature(x, 'trev')  # or 'CO_trev_1_num'
+# -0.08153158906199524
+```
+
+Either way, only that feature is computed, and its value is exactly the one that `catch22_all` gives.
+
+The long names used before v1.0 (e.g., `CO_f1ecac`, now `CO_FirstCrossing_acf_1e_pointOfCrossing`) still work as deprecated aliases: they compute the v1.0 feature and issue a `DeprecationWarning`.
 {% endtab %}
 {% endtabs %}
 
@@ -181,17 +205,11 @@ For each feature, we also include a unique 'short name' for easier reference (as
 In _pycatch22_ short names can be included in the output when calling `catch22_all()` by setting `short_names = True:`
 
 ```python
-import pycatch22
-import numpy as np
-​
-data = np.random.randn(100)
-data = list(data)
-​
-# return short names
-results = pycatch22.catch22_all(data, short_names=True)
+results = pycatch22.catch22_all(x, short_names=True)
 ```
 
-The returned dictionary, `results`, now has three keys: `names`, `short_names` and `values.` As before, `names` is a list of the original long feature names (as strings), `short_names` is a list of short names (as strings) and `values` is a list of feature values.&#x20;
+The returned dictionary, `results`, now has three keys: `names`, `values` and `short_names.`
+As before, `names` is a list of the long feature names (as strings), `values` is a list of feature values, and `short_names` is a list of short names (as strings).
 
 Continuing from the basic usage example, let's try printing the feature outputs along with their corresponding short names:
 
@@ -203,67 +221,93 @@ for (short_name, val) in zip(results['short_names'], results['values']):
 Here is the output from our example. A lot more readable!
 
 ```
-mode_5: -0.7500426173295759
-mode_10: 1.2786397188378562
-acf_timescale: 0.5693516006124166
+mode_5: 0.0335441836925168
+mode_10: -0.7462245693351899
+outlier_timing_pos: 0.014000000000000012
+outlier_timing_neg: 0.131
+acf_timescale: 15.700534880150066
 ...
-forecast_error: 1.1774630418671619
+dfa: 0.5652173913043478
+```
+
+`pycatch22.feature_table()` lists every feature's name, short name, name before v1.0 (`legacy_name`), and the _hctsa_ code that reproduces it (`hctsa_call`), as a list of dictionaries:
+
+```python
+pycatch22.feature_table()[4]
+# {'name': 'CO_FirstCrossing_acf_1e_pointOfCrossing', 'short_name': 'acf_timescale', 'legacy_name': 'CO_f1ecac', 'hctsa_call': "CO_FirstCrossing(x_z,'ac',1/exp(1),'both').pointOfCrossing"}
 ```
 {% endtab %}
 {% endtabs %}
 
 
 
-### 4. Multithreading
+### 4. Masking
+
+Some features cannot be estimated for some time series, e.g., any feature of a constant time series, or `dfa` for a time series shorter than 79 samples.
+
+{% tabs %}
+{% tab title="Masking" %}
+By default, such features are [masked](../information-about-catch22/feature-descriptions/feature-overview-table.md#masking): set to a fixed value at the appropriate end of the feature's range, so that 22 real numbers are always returned.
+Set `return_masked=True` to also return `masked`, which says which values were masked, and `mask_nans=False` to get `NaN` instead:
+
+```python
+y = np.random.default_rng(1).standard_normal(50)  # too short for dfa
+res = pycatch22.catch22_all(y, short_names=True, return_masked=True)
+print([(name, value) for name, value, m in zip(res['short_names'], res['values'], res['masked']) if m])
+# [('dfa', 1.0)]
+
+res = pycatch22.catch22_all(y, mask_nans=False)
+print(res['values'][-1])
+# nan
+```
+
+A time series that is empty or contains `NaN` or `Inf` gives `NaN` for every feature (it is never masked), with a `RuntimeWarning`.
+{% endtab %}
+{% endtabs %}
+
+
+
+### 5. Multithreading
 
 When working with large time series datasets (containing many univariate time series instances), computing features can often become a significant computational bottleneck. This is where multi-threading comes into play, offering a powerful solution to accelerate feature computation through parallelisation.
 
 {% tabs %}
 {% tab title="Multithreading" %}
+From v1.0, _pycatch22_ releases Python's global interpreter lock (GIL) while it computes features, so features of different time series can be computed in parallel threads (with earlier versions, threads gave no speedup).
+
 1. Let's start by importing all of the libraries we will need:
 
 ```python
-import pycatch22 as catch22
 import os
-from joblib import Parallel, delayed
+from concurrent.futures import ThreadPoolExecutor
 import numpy as np
+import pycatch22
 ```
 
-and then create a large time series dataset consisting of `50 000` univariate time series instances, each of length `1000:`
+and then create a large time series dataset consisting of `10 000` univariate time series instances, each of length `1000:`
 
 <pre class="language-python"><code class="lang-python"><strong># generate list where each entry is a length 1000 time series
-</strong>dataset = [np.random.randn(1000) for _ in range(50000)]
+</strong>rng = np.random.default_rng(0)
+dataset = [rng.standard_normal(1000) for _ in range(10000)]
 </code></pre>
 
-2. Next, we will need to define an iterable function which takes in a single time series, applies _catch22_, and then returns the feature values:
+2. Next, we will need to define a function which takes in a single time series, applies _catch22_, and then returns the feature values:
 
 ```python
 def compute_features(x):
-    res = catch22.catch22_all(x)
-    return res['values'] # just return the values 
+    return pycatch22.catch22_all(x)['values']
 ```
 
-3. We need to see how many cpu cores are available for multithreading. You can check by running `os.cpu_count()`. The value returned (num of cpu cores available) will differ depending on your hardware and setup:
+3. Now we can compute the features of all the time series in parallel, with one thread per CPU core (`os.cpu_count()`):
 
 ```python
-print(f"Number of cores available: {os.cpu_count()}")
+with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+    feature_matrix = np.array(list(executor.map(compute_features, dataset)))
+
+print(feature_matrix.shape)  # (10000, 22): one row per time series
 ```
 
-4. Now we can parallelise our function using the following:
-
-```python
-threads_to_use = os.cpu_count()
-results_list = Parallel(n_jobs=threads_to_use)(
-    delayed(compute_features)(data[i]) for i in range(len(data))
-)
-
-# print the results for the first time series
-print(results_list[1]) # prints list of feature outputs for time series 1
-```
-
-You should notice that the time to compute all _catch22_ features on the entire dataset of 50 000 time series is much faster than sequentially looping over each!&#x20;
-
-For example, on 8 cores (Mac M1), it takes _\~27_ seconds to compute features on the entire dataset. Without multi-threading this would usually take _\~2.5_ minutes. **That's almost a 5.5x speedup!**
+The speedup grows with the number of threads: for example, 4 threads computed the features of 200 time series of length 5000 about 3.8 times faster than a single thread (on Apple Silicon).
 {% endtab %}
 {% endtabs %}
 
@@ -289,7 +333,8 @@ If you would like to submit a bug report, you can access our Bug Tracker [here](
 
 <summary>Which Python versions are compatible with <em>pycatch22</em>? </summary>
 
-We have conducted thorough [unit testing](https://github.com/DynamicsAndNeuralSystems/pycatch22/blob/main/.github/workflows/run_unit_tests.yaml) across Python versions 3.8, 3.9, 3.10, and 3.11 to verify and guarantee compatibility. These tests have been carried out on various operating systems, including Windows, macOS, and Linux, to ensure consistent performance and reliability across different platforms.
+We have conducted thorough [unit testing](https://github.com/DynamicsAndNeuralSystems/pycatch22/blob/main/.github/workflows/run_unit_tests.yaml) across Python versions 3.8 to 3.13 to verify and guarantee compatibility.
+These tests are run on Windows, macOS, and Linux, to ensure consistent performance and reliability across different platforms.
 
 </details>
 
@@ -307,7 +352,18 @@ We have a detailed installation guide [here](python.md#installation), including 
 
 While _pycatch22_ only takes a single univariate time series as input, when working with large time series datasets (containing many univariate time series instances), computing features can often become a significant computational bottleneck. While a simple for loop may suffice, such tasks are well suited to multi-threading approaches.
 
-See above in our advanced usage guide for how you can compute _catch22_ features on large datasets using [multi-threading](python.md#id-4.-multithreading).&#x20;
+See above in our advanced usage guide for how you can compute _catch22_ features on large datasets using [multi-threading](python.md#id-5.-multithreading).&#x20;
+
+</details>
+
+<details>
+
+<summary>Why do my feature values differ from an earlier version of <em>pycatch22</em>?</summary>
+
+_pycatch22_ v1.0 computes _catch22_ v1.0, in which each feature exactly reproduces a feature of _hctsa_ v3.0.0.
+This changed the values of most features, renamed several of them, and changed the order in which they are returned.
+Use `pycatch22.feature_table()` to match the new names to the old ones, and see the [feature descriptions](../information-about-catch22/feature-descriptions/) for how each feature changed.
+When reporting results, state the version you used (see [Citing _catch22_](../welcome-to-catch22/citing-catch22.md)).
 
 </details>
 
@@ -322,4 +378,3 @@ Tutorials for using _catch22_ within the _sktime_ framework are also available [
 </details>
 
 ***
-

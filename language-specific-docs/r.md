@@ -6,6 +6,12 @@ coverY: -230.33315128345166
 
 # R
 
+{% hint style="warning" %}
+**_Rcatch22_ does not yet implement catch22 v1.0.**
+Its feature names and values follow _catch22_ v0.x (see the [feature descriptions](../information-about-catch22/feature-descriptions/) for how they differ from v1.0).
+Support for v1.0 is coming.
+{% endhint %}
+
 ## R Usage Guide
 
 Select a card below to access R-specific usage information.&#x20;

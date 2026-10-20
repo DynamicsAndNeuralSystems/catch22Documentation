@@ -10,6 +10,9 @@ coverY: 0
 
 # MATLAB API
 
+The MATLAB functions are in the `wrap_Matlab` folder of the [_catch22_ repository](https://github.com/DynamicsAndNeuralSystems/catch22).
+Run `mexAll` once to compile `catch22_mex`, which they call (see [Installation](../../language-specific-docs/matlab.md#installation)).
+
 ## <mark style="color:orange;">catch22\_all</mark>
 
 _Automatically run every time series feature calculation included in the catch22/24 set._
@@ -19,12 +22,12 @@ _Automatically run every time series feature calculation included in the catch22
 ### Syntax
 
 ```matlab
-[featureValues, featureNamesLong, featureNamesShort] = catch22_all(data, doCatch24)
+[featureValues, featureNamesLong, featureNamesShort, isMasked] = catch22_all(data, doCatch24, maskNaNs)
 ```
 
 ### Description
 
-`[featureValues, featureNamesLong, featureNamesShort] = catch22_all(data, doCatch24)` returns a `24x1` array of feature outputs, a `24x1` array of long feature names and `24x1` array of short feature names for the input time series, `data`.
+`[featureValues, featureNamesLong, featureNamesShort, isMasked] = catch22_all(data, doCatch24, maskNaNs)` returns the 24 (or, if `doCatch24` is `false`, 22) feature values of the input time series, `data`, as a column vector, together with column cell arrays of the long and short feature names and a logical column vector marking masked values.
 
 ***
 
@@ -34,15 +37,18 @@ _Automatically run every time series feature calculation included in the catch22
 
 <summary>Compute <em>catch22</em> features</summary>
 
-Compute _catch22_ features on a Gaussian i.i.d. random number sequence.
+Compute _catch22_ features on a uniformly distributed random number sequence.
 
-<pre class="language-matlab"><code class="lang-matlab">tsData = rand(100, 1) % data as a column vector
+<pre class="language-matlab"><code class="lang-matlab">tsData = rand(100, 1); % data as a vector
 
 % compute catch22 features
-<strong>[featureValues, featureNamesLong, featureNameShort] = catch22_all(data, false)
+<strong>[featureValues, featureNamesLong, featureNamesShort] = catch22_all(tsData, false);
 </strong>
-% compute cactch24 features
-[featureValues, featureNamesLong, featureNameShort] = catch22_all(data)
+% compute catch24 features
+[featureValues, featureNamesLong, featureNamesShort] = catch22_all(tsData);
+
+% compute catch22 features, with NaN for features that cannot be estimated
+featureValues = catch22_all(tsData, false, false);
 </code></pre>
 
 </details>
@@ -53,11 +59,11 @@ Compute _catch22_ features on a Gaussian i.i.d. random number sequence.
 
 <details>
 
-<summary>data - time series as column vector</summary>
+<summary>data - time series as a vector</summary>
 
-Input univariate time series, specified as a column vector.&#x20;
+Input univariate time series, specified as a vector (row or column).&#x20;
 
-**Data Types**:  double
+**Data Types**:  double (other numeric types are converted to double)
 
 </details>
 
@@ -71,6 +77,19 @@ Whether to include mean and standard deviation (a total of 24 features). Default
 
 </details>
 
+<details>
+
+<summary>maskNaNs - Mask features that cannot be estimated</summary>
+
+Whether to [mask](../feature-descriptions/feature-overview-table.md#masking) features that cannot be estimated (e.g., for a constant or very short time series), setting each to a fixed value at the appropriate end of its range so that real numbers are always returned.
+If `false`, such features are `NaN`.
+A time series containing `NaN` or `Inf` gives `NaN` for every feature either way.
+Default is `true`.
+
+**Data Types:** logical
+
+</details>
+
 ***
 
 ### Output Arguments
@@ -79,9 +98,9 @@ Whether to include mean and standard deviation (a total of 24 features). Default
 
 <summary>featureValues </summary>
 
-Computed feature values for the input data.
+Computed feature values for the input data, as a column vector (`22x1` or `24x1`), in the order of the [feature overview table](../feature-descriptions/feature-overview-table.md).
 
-**Data Type:** cell array
+**Data Type:** double
 
 </details>
 
@@ -105,6 +124,16 @@ Short feature names corresponding to the feature values.&#x20;
 
 </details>
 
+<details>
+
+<summary>isMasked</summary>
+
+`true` for each feature value that was masked.
+
+**Data Type**: logical
+
+</details>
+
 ***
 
 ## <mark style="color:orange;">GetAllFeatureNames</mark>
@@ -116,14 +145,14 @@ _Get all feature names for the catch22/24 feature set._&#x20;
 ### Syntax
 
 ```matlab
-[featureNamesLong, featureNamesShort] = GetAllFeatureNames(doCatch24)
+[featureNamesLong, featureNamesShort, legacyNames, hctsaCalls] = GetAllFeatureNames(doCatch24)
 ```
 
 ***
 
 ### Description
 
-`[featureNamesLong, featureNamesShort] = GetAllFeatureNames(doCatch24)` retrieves all feature names for the _catch22_ (or _catch24_) feature set.&#x20;
+`[featureNamesLong, featureNamesShort, legacyNames, hctsaCalls] = GetAllFeatureNames(doCatch24)` retrieves all feature names for the _catch22_ (or _catch24_) feature set, in the order of `catch22_all`, together with each feature's name before v1.0 and the _hctsa_ code that reproduces it.
 
 ***
 
@@ -135,9 +164,11 @@ _Get all feature names for the catch22/24 feature set._&#x20;
 
 ```matlab
 % get catch24 feature names
-[featureNamesLong24,featureNamesShort24] = GetAllFeatureNames(true)
+[featureNamesLong24, featureNamesShort24] = GetAllFeatureNames(true)
 % get catch22 feature names
-[featureNamesLong22,featureNamesShort22] = GetAllFeatureNames(false)
+[featureNamesLong22, featureNamesShort22] = GetAllFeatureNames(false)
+% also get the names before v1.0 and the hctsa code
+[featureNamesLong22, featureNamesShort22, legacyNames22, hctsaCalls22] = GetAllFeatureNames(false)
 ```
 
 </details>
@@ -180,65 +211,35 @@ Short feature names corresponding to the feature values.
 
 </details>
 
-***
+<details>
+
+<summary>legacyNames</summary>
+
+Each feature's long name in _catch22_ v0.x, for matching earlier results (the values of most features changed in v1.0, so they are not comparable).
+
+**Data Type**: cell array
+
+</details>
+
+<details>
+
+<summary>hctsaCalls</summary>
+
+The _hctsa_ v3.0.0 code that reproduces each feature exactly, on `x_z` (the _z_-scored time series) or `x` (the raw time series), e.g., `'CO_FirstMin(x_z,''ac'')'`.
+
+**Data Type**: cell array
+
+</details>
 
 ***
 
-## <mark style="color:orange;">catch22\_DN\_HistogramMode\_5</mark>
+***
 
-_Measures the mode of the data vector using histogram with 5 bins._&#x20;
+## Individual features
 
 {% hint style="info" %}
-**Note:** This is a typical example of how an individual feature method is called. All features are called in this way and accept the same data types as inputs while returning the same data types as outputs. You can call each feature individually using its corresponding **long name** as per the [table of features](../feature-descriptions/feature-overview-table.md), e.g., `catch22_CO_f1ecac.`
+**Note:** From v1.0, the MATLAB wrapper has no separate function for each feature (such as `catch22_DN_HistogramMode_5` in earlier versions).
+Compute all features with `catch22_all` and select the one you need by name, e.g., `vals(strcmp(names, 'DN_HistogramMode_5'))`.
 {% endhint %}
-
-### Syntax
-
-<pre class="language-matlab"><code class="lang-matlab"><strong>% individual feature method of interest, e.g., DN_HistogramMode_5
-</strong><strong>featureVal = catch22_DN_HistogramMode_5(data)
-</strong></code></pre>
-
-### Description
-
-`featureVal = catch22_DN_HistogramMode_5(data)` computes the mode of the data vector using a histogram with 5 bins.&#x20;
-
-### Examples
-
-<details>
-
-<summary>Compute DN_HistogramMode_5 for time series</summary>
-
-```matlab
-tsData = rand(1, 100) % time series as a row vector
-featureVal = catch22_DN_HisogramMode_5(tsData)
-```
-
-</details>
-
-### Input Arguments
-
-<details>
-
-<summary>data - time series row vector </summary>
-
-Input univariate time series, specified as a row vector.&#x20;
-
-**Data Types**:  double
-
-</details>
-
-### Output Arguments
-
-<details>
-
-<summary>featureVal - feature output</summary>
-
-Output corresponding to the feature method.
-
-**Data Type:** double
-
-</details>
-
-**Note**: All _catch22/24_ feature methods expect the same input arguments (and data types) and return the same output arguments (and data types).&#x20;
 
 ***

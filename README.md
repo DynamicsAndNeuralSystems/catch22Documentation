@@ -35,6 +35,13 @@ Want to do feature-based time-series analysis, fast, and in a coding language of
 * A **generally applicable** subset of 22 features from the [_hctsa_](https://github.com/benfulcher/hctsa/tree/c50568f53133ba7cdc77b5ed2bedb36bbe93ef28) time-series feature library that provide an **effective** general summary of time-series statistical properties.
 * Available as native [**Python**](language-specific-docs/python.md), [**Julia**](language-specific-docs/julia.md)**,** [**MATLAB**](language-specific-docs/matlab.md)**,** and [**R**](language-specific-docs/r.md) packages (that call[ **C-compiled**](language-specific-docs/c-compiled.md) executables).
 
+{% hint style="info" %}
+**catch22 v1.0**: Every feature now exactly reproduces a feature of [_hctsa_ v3.0.0](https://github.com/benfulcher/hctsa/tree/v3.0.0), the final MATLAB release of _hctsa_.
+This changes the values of most features (and the names of several) relative to v0.x, so results are not comparable across versions.
+See the [feature descriptions](information-about-catch22/feature-descriptions/) for what changed.
+The R and Julia packages do not yet implement v1.0.
+{% endhint %}
+
 ## Language-Specific Documentation
 
 Choose your coding language below (or from the sidebar). Each pages cover **all** aspects of usage in a particular language including **installation guides**, **tutorials** and **frequently asked questions**.&#x20;

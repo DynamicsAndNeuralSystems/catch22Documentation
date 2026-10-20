@@ -27,12 +27,20 @@ Select a card below to access MATLAB-specific usage information.&#x20;
 git clone https://github.com/DynamicsAndNeuralSystems/catch22.git
 ```
 
-2. In MATLAB, navigate to the `wrap_MATLAB` directory in the cloned repo and call `mexAll` from the MATLAB command window. Ensure you include the folder in your MATLAB path to use the package:
+2. In MATLAB, navigate to the `wrap_Matlab` directory in the cloned repo and call `mexAll` from the MATLAB command window.
+   This compiles the _catch22_ C code into a single MEX function, `catch22_mex`, which needs a C compiler set up for MATLAB (see `mex -setup C`).
+   Ensure you include the folder in your MATLAB path to use the package:
 
 ```matlab
-cd('catch22/wrap_MATLAB')
-addpath('catch22/wrap_MATLAB') % add folder in MATLAB path
-mexAll 
+cd('catch22/wrap_Matlab')
+addpath(pwd) % add folder in MATLAB path
+mexAll
+```
+
+3. Optionally, check the installation by running `testing`, which compares `catch22_all` with the stored outputs of the C code for the time series in `catch22/testData/basic`:
+
+```matlab
+testing
 ```
 
 ***
@@ -43,7 +51,8 @@ Here we outline how you can jump straight into computing _catch22_ features on y
 
 ### Expected Input
 
-_catch22_ MATLAB only accepts one univariate time series at a time, with the input being passed in as a **column vector.** Consider the following example for a single time series of length 10 (i.e., 10 points):
+_catch22_ MATLAB takes one univariate time series at a time, passed as a **vector** (row or column).
+Consider the following example for a single time series of length 10 (i.e., 10 points):
 
 ```matlab
 >> data = rand(10,1)
@@ -59,9 +68,10 @@ data =
 
 ### Computing _catch22_ features
 
-All features are bundled into a function called `catch22_all`. By default, the extended _catch24_ feature set will be computed unless a boolean flag which corresponds to the argument `doCatch24` (which can either be set to `true` or `false)` is used in the function call:&#x20;
+All features are bundled into a function called `catch22_all`.
+By default, the extended _catch24_ feature set will be computed unless the second argument, `doCatch24`, is set to `false`:
 
-* `true` -> return the _catch24_ feature set (_catch22_ + mean + std. dev.).
+* `true` (default) -> return the _catch24_ feature set (_catch22_ + mean + std. dev.).
 * `false` -> return the standard _catch22_ feature set.
 
 ```matlab
@@ -73,14 +83,22 @@ All features are bundled into a function called `catch22_all`. By default, the e
 
 ### Expected output
 
-An **array** of feature outputs and a **cell** of feature names (`24x1` if _catch24_, `22x1` if _catch22_) will be returned by MATLAB. The order in which the feature outputs are returned corresponds to the order in which feature names are returned, e.g., the feature output in `vals(1)` corresponds to the feature name `names(1)`:
+A **column vector** of feature values and a **cell** of feature names (`24x1` if _catch24_, `22x1` if _catch22_) will be returned by MATLAB.
+The order in which the feature outputs are returned corresponds to the order in which feature names are returned, e.g., the feature output in `vals(1)` corresponds to the feature name `names{1}`:
 
 ```matlab
 % Print feature name and value
-for i = 1:size(names,1)
+for i = 1:numel(names)
     fprintf('%s: %f\n', names{i}, vals(i));
 end
 ```
+
+The features are returned in the order of the [feature overview table](../information-about-catch22/feature-descriptions/feature-overview-table.md), with the names of _catch22_ v1.0.
+
+{% hint style="info" %}
+**catch22 v1.0** changed the values of most features (to match _hctsa_ v3.0.0 exactly) and renamed several of them, so outputs are not comparable with those of v0.x.
+See the [feature descriptions](../information-about-catch22/feature-descriptions/) for what changed.
+{% endhint %}
 
 And that's it! You now have all the knowledge you need to apply _catch22_ to your time series data. To access some of the additional functionality of _catch22_, keep reading for advanced usage tips and examples.
 
@@ -90,7 +108,7 @@ And that's it! You now have all the knowledge you need to apply _catch22_ to you
 
 ## Advanced Usage
 
-Ready to explore some of the additional functionality of _catch22_? Here we provide a usage guide for some of the &#x20;
+Ready to explore some of the additional functionality of _catch22_?
 
 ### 1. _Catch24_
 
@@ -98,11 +116,12 @@ If the location and spread of the raw time series distribution may be important 
 
 {% tabs %}
 {% tab title="Catch24" %}
-_Catch24_ is an extension of the original _catch22_ feature set to include **mean** and **standard deviation,** yielding a total of **24** time series features. In MATLAB, users can enable the _catch24_ feature set by passing the boolean flag `true` into the `catch22_all` function call:
+_Catch24_ is an extension of the original _catch22_ feature set to include **mean** and **standard deviation,** yielding a total of **24** time series features.
+In MATLAB, _catch24_ is computed by default; you can also request it explicitly by passing `true` as the second argument of `catch22_all`:
 
 ```matlab
-tsData = rand(100,1) % create some time series
-[vals, names] = catch22_all(tsData, true)
+tsData = rand(100,1); % create some time series
+[vals, names] = catch22_all(tsData, true);
 ```
 {% endtab %}
 {% endtabs %}
@@ -111,21 +130,17 @@ tsData = rand(100,1) % create some time series
 
 ### 2. Computing Individual Features
 
-If you do not wish to compute the full _catch22_ feature set on your time series, you can alternatively compute each feature (including mean and std. deviation) individually.
-
 {% tabs %}
 {% tab title="Computing Individual Features" %}
-To compute individual features in MATLAB, you can call the corresponding function given by `catch22_{featureName}` where `featureName` is the feature's long name (as in the [feature overview table](../information-about-catch22/feature-descriptions/feature-overview-table.md)). For example, `catch22_DN_HistogramMode_5` can be called to compute the feature [`DN_HistogramMode_5`](../information-about-catch22/feature-descriptions/linear-autocorrelation-structure.md). You can retrive all feature names by calling `GetAllFeatureNames.`
-
-As an example, let's compute only the feature `DN_HistogramMode_5` on a single univariate time series:
+From v1.0, the MATLAB wrapper no longer has a separate function for each feature: compute them all with `catch22_all` and select the one you need by its name (as in the [feature overview table](../information-about-catch22/feature-descriptions/feature-overview-table.md)).
+For example, to get only `DN_HistogramMode_5`:
 
 ```matlab
-tsData = rand(1, 1000) % create length 1000 time series
-f = catch22_DN_HistogramMode_5(tsData) % returns a double
-fprintf('DN_HistogramMode_5 value: %f\n', f) 
+tsData = rand(1000,1); % create length 1000 time series
+[vals, names] = catch22_all(tsData, false);
+f = vals(strcmp(names, 'DN_HistogramMode_5'));
+fprintf('DN_HistogramMode_5 value: %f\n', f)
 ```
-
-Note that here we pass our time series as a **row vector** (`1x1000`) to the individual feature function. On the other hand, the `catch22_all` function for computing the entire feature set only accepts time series as a **column vector** (`1000x1`)**.**&#x20;
 {% endtab %}
 {% endtabs %}
 
@@ -139,16 +154,44 @@ For each feature, we also include a unique 'short name' for easier reference (as
 {% tab title="Short Names" %}
 In MATLAB, short names can be included in the output when calling `catch22_all` by specifying an additional output:
 
-```python
-tsData = rand(1000, 1) % your time series data
-[feature_vals, long_names, short_names] = catch22_all(tsData, false)
+```matlab
+tsData = rand(1000, 1); % your time series data
+[featureVals, longNames, shortNames] = catch22_all(tsData, false);
 % print the short name and corresponding feature value
-for i=1:size(feature_vals, 1):
-    fprintf("%s : %f\n", short_names{i}, feature_vals(i))
+for i = 1:numel(featureVals)
+    fprintf('%s: %f\n', shortNames{i}, featureVals(i));
 end
 ```
 
-Now, in addition to the cell of long names and feature values, we also obtain an additional cell (`22x1` for _catch22,_ `24x1` for _catch24_) of short feature names.&#x20;
+Now, in addition to the cell of long names and feature values, we also obtain an additional cell (`22x1` for _catch22,_ `24x1` for _catch24_) of short feature names.
+
+To get the names without computing any features, use `GetAllFeatureNames`, which also returns each feature's name before v1.0 and the _hctsa_ code that reproduces it:
+
+```matlab
+[longNames, shortNames, legacyNames, hctsaCalls] = GetAllFeatureNames(false);
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+### 4. Masking
+
+Some features cannot be estimated for some time series, e.g., any feature of a constant time series, or `dfa` for a time series shorter than 79 samples.
+
+{% tabs %}
+{% tab title="Masking" %}
+By default, such features are [masked](../information-about-catch22/feature-descriptions/feature-overview-table.md#masking): set to a fixed value at the appropriate end of the feature's range, so that real numbers are always returned.
+The fourth output of `catch22_all` says which values were masked, and setting the third argument, `maskNaNs`, to `false` gives `NaN` instead:
+
+```matlab
+tsData = rand(50,1); % too short for dfa
+[vals, names, shortNames, isMasked] = catch22_all(tsData, false); % dfa is masked (to 1)
+shortNames(isMasked)
+vals = catch22_all(tsData, false, false); % dfa is NaN
+```
+
+A time series containing `NaN` or `Inf` gives `NaN` for every feature (it is never masked).
 {% endtab %}
 {% endtabs %}
 
@@ -158,13 +201,22 @@ Now, in addition to the cell of long names and feature values, we also obtain an
 
 ## FAQ
 
-Click one of the expandable tabs below to explore commonly asked questions about _pycatch22_ in MATLAB:
+Click one of the expandable tabs below to explore commonly asked questions about _catch22_ in MATLAB:
 
 <details>
 
 <summary>How can I submit a bug report for c<em>atch22?</em> </summary>
 
 If you would like to submit a bug report, you can access our Bug Tracker [here](https://github.com/DynamicsAndNeuralSystems/catch22/issues). For guidelines on submitting an ideal bug report, see our page on [contributing to _catch22_](../information-about-catch22/contributing-to-catch22/)_._&#x20;
+
+</details>
+
+<details>
+
+<summary>How do I reproduce a <em>catch22</em> feature in <em>hctsa</em>?</summary>
+
+From v1.0, each _catch22_ feature exactly reproduces a call to _hctsa_ v3.0.0 code, applied to the _z_-scored time series, `x_z` (or, for the mean and standard deviation, to the raw time series, `x`).
+These calls are returned as the fourth output of `GetAllFeatureNames`, and listed in the [feature overview table](../information-about-catch22/feature-descriptions/feature-overview-table.md#feature-names-before-v1.0-and-hctsa-code).
 
 </details>
 
