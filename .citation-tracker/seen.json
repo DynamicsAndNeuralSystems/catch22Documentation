@@ -162,6 +162,25 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1007/978-3-032-05461-6_18": {
+   "doi": "10.1007/978-3-032-05461-6_18",
+   "openalex": "W4414809613",
+   "title": "tsMIST: Model Sensitivity Analysis with Time Series Morphing",
+   "year": 2025,
+   "authors": [
+    "Brito",
+    "Santos",
+    "Folgado",
+    "Soares"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-10-04",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Three classification algorithms were evaluated: LSTM networks, Random Forest with Catch22 features, and the Rocket model.",
+   "note": "Read in browser (Springer)"
+  },
   "doi:10.1007/978-3-032-05962-8_10": {
    "doi": "10.1007/978-3-032-05962-8_10",
    "openalex": "W4414789676",
@@ -336,6 +355,24 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1007/978-3-032-33719-1_12": {
+   "doi": "10.1007/978-3-032-33719-1_12",
+   "openalex": "W7219037348",
+   "title": "Artifact-Aware Classification for Smartphone-Based Heart Auscultation",
+   "year": 2026,
+   "authors": [
+    "Błażej",
+    "Foryś",
+    "Danioł"
+   ],
+   "venue": "Advances in intelligent systems and computing",
+   "type": "journal",
+   "pubdate": "2026-10-03",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Compared to state-of-the-art classifiers (Catch22, ResNet, QUANT), the two step approach achieved the highest total precision and specificity for artifact detection",
+   "note": "Read in browser (Springer)"
+  },
   "doi:10.1007/978-3-032-37676-3_32": {
    "doi": "10.1007/978-3-032-37676-3_32",
    "openalex": "W7210270788",
@@ -351,6 +388,62 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-3-032-41546-2_23": {
+   "doi": "10.1007/978-3-032-41546-2_23",
+   "openalex": "W7222187525",
+   "title": "TopGen-IC: Inter-class Cross-Persistent Homology Features for Time-Series Classification",
+   "year": 2026,
+   "authors": [
+    "Mironenko",
+    "Burnaev",
+    "Barannikov"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-10-14",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "We deliberately use the same random-forest configuration for TopGen-IC, catch22, and tsfresh",
+   "note": "Read in browser (Springer); baseline"
+  },
+  "doi:10.1007/978-3-032-41867-8_5": {
+   "doi": "10.1007/978-3-032-41867-8_5",
+   "openalex": "W7220834583",
+   "title": "Technical Indicators for Load Pattern Recognition: An Automated Feature Engineering Framework",
+   "year": 2026,
+   "authors": [
+    "Gammanpila",
+    "Gammanpila",
+    "Kularathna",
+    "Jayasooriya"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-10-07",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "General-purpose automated feature engineering libraries such as tsfresh [13] and catch22 [14] address the automation challenge but are not designed for horizon-aware selection",
+   "note": "Read in browser (Springer); related work"
+  },
+  "doi:10.1007/978-3-032-43514-9_15": {
+   "doi": "10.1007/978-3-032-43514-9_15",
+   "openalex": "W7212065270",
+   "title": "Improving Multivariate Time Series Classification with Class-Wise Training and Model Aggregation",
+   "year": 2026,
+   "authors": [
+    "Lo",
+    "Morvan",
+    "Rossi",
+    "Morganti"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2026-11-04",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "exploit all available dimensions simultaneously (e.g., Catch22 [10] or WEASEL-MUSE [15])",
+   "note": "Related work"
   },
   "doi:10.1007/978-3-662-72243-5_1": {
    "doi": "10.1007/978-3-662-72243-5_1",
@@ -419,6 +512,24 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/978-981-96-8183-9_16": {
+   "doi": "10.1007/978-981-96-8183-9_16",
+   "openalex": "W4411437779",
+   "title": "Revisit Time Series Classification Benchmark: The Impact of Temporal Information for Classification",
+   "year": 2025,
+   "authors": [
+    "Zhang",
+    "Batista",
+    "Kanhere"
+   ],
+   "venue": "Lecture notes in computer science",
+   "type": "journal",
+   "pubdate": "2025-06-19",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Two time series classification algorithms are selected to evaluate the original and permuted datasets: Mini-Rocket [4] and Catch-22 [12].",
+   "note": "One of two classifiers used to probe the benchmark"
   },
   "doi:10.1007/s00180-025-01703-5": {
    "doi": "10.1007/s00180-025-01703-5",
@@ -601,6 +712,25 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1007/s10994-026-07199-4": {
+   "doi": "10.1007/s10994-026-07199-4",
+   "openalex": "W7140210380",
+   "title": "Advancing Rotation and Scale-Invariant Trajectory Representations for Maritime and Aviation Mobility Data Analysis",
+   "year": 2026,
+   "authors": [
+    "Landi",
+    "Andrienko",
+    "Andrienko",
+    "Guidotti"
+   ],
+   "venue": "Machine Learning",
+   "type": "journal",
+   "pubdate": "2026-11-01",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Lubba, C. H., Sethi, S. S., Knaute, P., Schultz, S. R., Fulcher, B. D., & Jones, N. S. (2019). catch22",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
   },
   "doi:10.1007/s11207-026-02612-6": {
    "doi": "10.1007/s11207-026-02612-6",
@@ -851,6 +981,26 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1016/j.clinph.2025.2110937": {
+   "doi": "10.1016/j.clinph.2025.2110937",
+   "openalex": "W4412644094",
+   "pmid": "40714439",
+   "title": "Prediction of response to transcranial magnetic stimulation treatment for depression using EEG and machine learning",
+   "year": 2025,
+   "authors": [
+    "Bailey",
+    "Fulcher",
+    "Arns",
+    "Fitzgerald"
+   ],
+   "venue": "Clinical Neurophysiology",
+   "type": "journal",
+   "pubdate": "2025-07-24",
+   "first_seen": "2026-11-17",
+   "verdict": "U",
+   "evidence": "Full text unreachable (ScienceDirect blocks the in-app browser; preprint not in Europe PMC full text). Bailey, Fulcher et al.; an hctsa paper already on the hctsa page.",
+   "note": ""
+  },
   "doi:10.1016/j.compag.2025.110799": {
    "doi": "10.1016/j.compag.2025.110799",
    "openalex": "W7077055165",
@@ -942,6 +1092,25 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.egyai.2026.100924": {
+   "doi": "10.1016/j.egyai.2026.100924",
+   "openalex": "W7221002227",
+   "title": "Wind gusts prediction using multivariate time series classification",
+   "year": 2026,
+   "authors": [
+    "Guijo-Rubio",
+    "Gómez-Orellana",
+    "Vargas",
+    "Pérez‐Aracil"
+   ],
+   "venue": "Energy and AI",
+   "type": "journal",
+   "pubdate": "2026-10-08",
+   "first_seen": "2026-11-17",
+   "verdict": "U",
+   "evidence": "Full text unreachable (Energy and AI on ScienceDirect, which blocks the in-app browser). Title suggests multivariate time-series classifiers, so catch22 is probably a baseline.",
+   "note": ""
   },
   "doi:10.1016/j.engappai.2025.110674": {
    "doi": "10.1016/j.engappai.2025.110674",
@@ -1069,6 +1238,25 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1016/j.ijepes.2026.111848": {
+   "doi": "10.1016/j.ijepes.2026.111848",
+   "openalex": "W4416003482",
+   "title": "Installed PV capacity detection on LV substations: Comparison of Data-Driven and Model-Based methods",
+   "year": 2026,
+   "authors": [
+    "Gouveia",
+    "Hashmi",
+    "D’hulst",
+    "Hertem"
+   ],
+   "venue": "International Journal of Electrical Power & Energy Systems",
+   "type": "journal",
+   "pubdate": "2026-04-01",
+   "first_seen": "2026-11-17",
+   "verdict": "U",
+   "evidence": "Full text unreachable (Int. J. Electrical Power & Energy Systems on ScienceDirect).",
+   "note": ""
   },
   "doi:10.1016/j.inffus.2023.101955": {
    "doi": "10.1016/j.inffus.2023.101955",
@@ -1215,6 +1403,24 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1016/j.procir.2026.02.139": {
+   "doi": "10.1016/j.procir.2026.02.139",
+   "openalex": "W7220438288",
+   "title": "Phase-Based Feature Extraction for Error Classification of Thread-Forming Screw Assembly using Machine Learning",
+   "year": 2026,
+   "authors": [
+    "Henkies",
+    "West",
+    "Deuse"
+   ],
+   "venue": "Procedia CIRP",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "U",
+   "evidence": "Full text unreachable (Procedia CIRP on ScienceDirect, which blocks the in-app browser).",
+   "note": ""
+  },
   "doi:10.1016/j.rineng.2025.107541": {
    "doi": "10.1016/j.rineng.2025.107541",
    "openalex": "W4414871795",
@@ -1342,6 +1548,28 @@
    "verdict": "B",
    "evidence": "'We extracted traditional PSD features and corresponding non-traditional features obtained from the catch22 analytical pipeline'"
   },
+  "doi:10.1038/s41467-026-71963-2": {
+   "doi": "10.1038/s41467-026-71963-2",
+   "openalex": "W4414804586",
+   "pmid": "41991947",
+   "title": "Spinal cord structural and functional architecture and its shared organization with the brain across the adult lifespan",
+   "year": 2026,
+   "authors": [
+    "Landelle",
+    "Kinany",
+    "St-Onge",
+    "Lungu"
+   ],
+   "venue": "Nature Communications",
+   "type": "journal",
+   "pubdate": "2026-04-16",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "the dynamic properties of the z-scored BOLD time-series were summarized using a set of features extracted with the Canonical Time-series Characteristics python toolbox, catch2243.",
+   "note": "17 catch22 features plus mean, SD and ALFF",
+   "section": "Neuroimaging",
+   "confidence": 0.9
+  },
   "doi:10.1038/s41540-025-00527-9": {
    "doi": "10.1038/s41540-025-00527-9",
    "openalex": "W4410240801",
@@ -1418,6 +1646,26 @@
    "first_seen": "2026-09-30",
    "verdict": "D",
    "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.1038/s41598-026-66211-y": {
+   "doi": "10.1038/s41598-026-66211-y",
+   "openalex": "W7202339741",
+   "title": "Evaluating the classification performance and data requirements of Catch22 features on noisy and short synthetic time series",
+   "year": 2026,
+   "authors": [
+    "Rojas",
+    "Parlitz",
+    "Masoller"
+   ],
+   "venue": "Scientific Reports",
+   "type": "journal",
+   "pubdate": "2026-08-13",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "The objective of this work is to investigate the conditions under which Catch22 is informative then only short and noisy time-series are available.",
+   "note": "",
+   "section": "General",
+   "confidence": 0.95
   },
   "doi:10.1038/s42003-022-04077-2": {
    "doi": "10.1038/s42003-022-04077-2",
@@ -1630,6 +1878,45 @@
    "verdict": "C",
    "evidence": "'we incorporated metrics from the CAnonical Time-series CHaracteristics (Catch22) toolbox' among many other EEG features"
   },
+  "doi:10.1101/2025.11.19.25340581": {
+   "doi": "10.1101/2025.11.19.25340581",
+   "openalex": "W4416453255",
+   "pmid": "41332820",
+   "title": "Machine-learning analysis of temporal molecular dynamics stratifies autism likelihood - a multinational study",
+   "year": 2025,
+   "authors": [
+    "Midya",
+    "Bello",
+    "Gomez",
+    "Marín"
+   ],
+   "venue": "medRxiv",
+   "type": "preprint",
+   "pubdate": "2025-11-20",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "prominent pairs such as P-Ba (using multiscale cross-entropy features) and Mg-Cu and Mg-Zn (using Catch22 features)",
+   "note": "One feature family among several"
+  },
+  "doi:10.1103/1jn6-l5vq": {
+   "doi": "10.1103/1jn6-l5vq",
+   "openalex": "W7133307450",
+   "title": "Learning pole structures of hadronic states using predictive uncertainty estimation",
+   "year": 2026,
+   "authors": [
+    "Frohnert",
+    "Sombillo",
+    "Nieuwenburg",
+    "Emonts"
+   ],
+   "venue": "Physical review. D/Physical review. D.",
+   "type": "journal",
+   "pubdate": "2026-03-03",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "[52] C. H. Lubba, S. S. Sethi, P. Knaute, S. R. Schultz, B. D. Fulcher, and N. S. Jones, Catch22: CAnonical Timeseries CHaracteristics (2019)",
+   "note": "Read from arXiv 2507.07668; Reference-list citation only (no use of catch22 in the text)"
+  },
   "doi:10.1103/qnx2-yp4c": {
    "doi": "10.1103/qnx2-yp4c",
    "openalex": "W4417210148",
@@ -1702,6 +1989,23 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1109/access.2026.3715536": {
+   "doi": "10.1109/access.2026.3715536",
+   "openalex": "W7169886878",
+   "title": "Interpretable Voltage Event Classification From Cycle-by-Cycle IEEE 1159 State Sequences in Substation Oscillograms",
+   "year": 2026,
+   "authors": [
+    "Pacheco",
+    "Pedroso"
+   ],
+   "venue": "IEEE Access",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "The second is the catch22 canonical time-series feature set [47], a modern general-purpose representation distilled from the hctsa library [48].",
+   "note": "Read in browser (IEEE Xplore); baseline"
+  },
   "doi:10.1109/access.2026.3733861": {
    "doi": "10.1109/access.2026.3733861",
    "openalex": "W7214048068",
@@ -1719,6 +2023,25 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/aciiw71585.2026.11712108": {
+   "doi": "10.1109/aciiw71585.2026.11712108",
+   "openalex": "W7215132326",
+   "title": "Subject Aware Feature Modeling for Pain Localization: Normalization as the Dominant Inductive Bias",
+   "year": 2026,
+   "authors": [
+    "Hernandez-Matamoros",
+    "Doya",
+    "Tomonaga",
+    "Mizutani"
+   ],
+   "venue": "International Conference on Affective Computing and Intelligent Interaction Workshops and Demos (ACIIW)",
+   "type": "conference",
+   "pubdate": "2026-09-01",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "We extract 208 features per segment using NeuroKit2 [13], TSFEL [14], and catch22 [15]",
+   "note": "Read in browser (IEEE Xplore); part of a 208-feature set"
   },
   "doi:10.1109/aero66936.2026.11519969": {
    "doi": "10.1109/aero66936.2026.11519969",
@@ -1805,6 +2128,43 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1109/cascon66301.2025.00061": {
+   "doi": "10.1109/cascon66301.2025.00061",
+   "openalex": "W7125630179",
+   "title": "Anomaly Detection in Time Series Data: a Comparative Study of Time-Series Clustering and Recurring Neural Networks",
+   "year": 2025,
+   "authors": [
+    "Haouari",
+    "Fokaefs",
+    "Harrison",
+    "Kharlamov"
+   ],
+   "venue": "IEEE International Conference on Collaborative Advances in Software and Computing (CASCON)",
+   "type": "conference",
+   "pubdate": "2025-11-10",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "To balance accuracy and computational cost, we also applied K-means clustering with Euclidean distance on catch22 features [15]",
+   "note": "Read in browser (IEEE Xplore); second of two clustering approaches"
+  },
+  "doi:10.1109/cec69861.2026.11727286": {
+   "doi": "10.1109/cec69861.2026.11727286",
+   "openalex": "W7223836446",
+   "title": "A Strongly Typed Genetic Programming Approach to Feature Learning in Time Series Classification",
+   "year": 2026,
+   "authors": [
+    "Yang",
+    "Xue",
+    "Zhang"
+   ],
+   "venue": "IEEE Congress on Evolutionary Computation (CEC)",
+   "type": "conference",
+   "pubdate": "2026-06-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "The first is Catch22 [9], which extracts a set of pre-defined time series characteristics.",
+   "note": "Read in browser (IEEE Xplore); baseline"
+  },
   "doi:10.1109/cscwd68734.2026.11582129": {
    "doi": "10.1109/cscwd68734.2026.11582129",
    "openalex": "W7167467700",
@@ -1821,6 +2181,25 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/docs70981.2026.11698559": {
+   "doi": "10.1109/docs70981.2026.11698559",
+   "openalex": "W7214757106",
+   "title": "Brain-Inspired Fast—Slow Fusion for Efficient Power-System Disturbance Perception",
+   "year": 2026,
+   "authors": [
+    "詹绍姬",
+    "Pan",
+    "Jin",
+    "Chen"
+   ],
+   "venue": "International Conference on Data-driven Optimization of Complex Systems (DOCS)",
+   "type": "conference",
+   "pubdate": "2026-07-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "random convolutional kernel transform (ROCKET) [6], and catch22 [7] provide useful accuracy references",
+   "note": "Read in browser (IEEE Xplore)"
   },
   "doi:10.1109/dsaa65442.2025.11247984": {
    "doi": "10.1109/dsaa65442.2025.11247984",
@@ -1872,6 +2251,25 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/icde65706.2026.00295": {
+   "doi": "10.1109/icde65706.2026.00295",
+   "openalex": "W7162346278",
+   "title": "From Benchmarks to Production: Transferring Time Series Anomaly Detection Methods for Electricity Production Monitoring",
+   "year": 2026,
+   "authors": [
+    "Vautier",
+    "Caron",
+    "Xhepi",
+    "Bizeul"
+   ],
+   "venue": "IEEE International Conference on Data Engineering (ICDE)",
+   "type": "conference",
+   "pubdate": "2026-05-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Among the most widely used are HCTSA [26], TSFRESH [21], and CATCH22 [27].",
+   "note": "catch22 features evaluated as one candidate approach"
   },
   "doi:10.1109/icdm65498.2025.00117": {
    "doi": "10.1109/icdm65498.2025.00117",
@@ -1925,6 +2323,25 @@
    "section": "🔭 Meteorology and astronomy",
    "note": "published version of doi:10.48550/arxiv.2410.00312"
   },
+  "doi:10.1109/icmla66185.2025.00131": {
+   "doi": "10.1109/icmla66185.2025.00131",
+   "openalex": "W4415331794",
+   "title": "Label-Guided Imputation via Forest-Based Proximities for Improved Time Series Classification",
+   "year": 2025,
+   "authors": [
+    "Rhodes",
+    "Rustad",
+    "Maia",
+    "Thacker"
+   ],
+   "venue": "International Conference on Machine Learning and Applications",
+   "type": "conference",
+   "pubdate": "2025-12-03",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "[14] C. H. Lubba, S. S. Sethi, P. Knaute, S. R. Schultz, B. D. Fulcher, and N. S. Jones, “catch22: Canonical time-series characteristics,”",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
   "doi:10.1109/icprs66293.2025.11302822": {
    "doi": "10.1109/icprs66293.2025.11302822",
    "openalex": "W7117486760",
@@ -1956,6 +2373,60 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1109/idap71869.2026.11728106": {
+   "doi": "10.1109/idap71869.2026.11728106",
+   "openalex": "W7223697322",
+   "title": "Feature-Based Single-Transformation Detection in Synthetic Signal and Trajectory Pairs",
+   "year": 2026,
+   "authors": [
+    "BADUR",
+    "Serin"
+   ],
+   "venue": "International Artificial Intelligence and Data Processing Symposium (IDAP)",
+   "type": "conference",
+   "pubdate": "2026-09-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Library-based features are extracted from time-series feature extraction tools such as catch22, TSFEL, and tsfresh.",
+   "note": "Read in browser (IEEE Xplore); one of three libraries"
+  },
+  "doi:10.1109/ijcnn69854.2026.11728415": {
+   "doi": "10.1109/ijcnn69854.2026.11728415",
+   "openalex": "W7222938069",
+   "title": "STENet: A Soft Translation-Equivariant Network for Time Series Forecasting",
+   "year": 2026,
+   "authors": [
+    "Liu",
+    "Zheng",
+    "Liu"
+   ],
+   "venue": "International Joint Conference on Neural Networks (IJCNN)",
+   "type": "conference",
+   "pubdate": "2026-06-01",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "No mention of catch22 in the article text on IEEE Xplore; the citation is in the reference list only.",
+   "note": "Read in browser"
+  },
+  "doi:10.1109/ijcnn69854.2026.11728597": {
+   "doi": "10.1109/ijcnn69854.2026.11728597",
+   "openalex": "W7222981622",
+   "title": "Metalearning for Enhanced Algorithm Selection in Time Series Decomposition-Based Forecasting",
+   "year": 2026,
+   "authors": [
+    "Araújo",
+    "Soares",
+    "Reis",
+    "Santos"
+   ],
+   "venue": "International Joint Conference on Neural Networks (IJCNN)",
+   "type": "conference",
+   "pubdate": "2026-06-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Comparing TSFeatures and Catch22 (Table I), TSFeatures yields better MASE and NMAE.",
+   "note": "Read in browser (IEEE Xplore); TSFeatures chosen over catch22"
   },
   "doi:10.1109/imcet69180.2026.11503639": {
    "doi": "10.1109/imcet69180.2026.11503639",
@@ -2060,6 +2531,23 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1109/ojcoms.2026.3744060": {
+   "doi": "10.1109/ojcoms.2026.3744060",
+   "openalex": "W7222502377",
+   "title": "Closed-Form Per-Channel Multichannel SNR Prediction for Broadband Power Line Communication",
+   "year": 2026,
+   "authors": [
+    "Pacheco",
+    "Pedroso"
+   ],
+   "venue": "IEEE Open Journal of the Communications Society",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "No mention of catch22 in the article text on IEEE Xplore; the citation is in the reference list only.",
+   "note": "Read in browser"
+  },
   "doi:10.1109/rams48127.2025.10935234": {
    "doi": "10.1109/rams48127.2025.10935234",
    "title": "Feature Engineering Toolkit for Predictive Analytics in Engineering and Healthcare Informatics",
@@ -2078,6 +2566,24 @@
    "section": "🖥️ Algorithms <a href=\"algs\" id=\"algs\"></a>",
    "page_line": 28,
    "note": "bootstrap: already on page"
+  },
+  "doi:10.1109/reccap69368.2026.11723782": {
+   "doi": "10.1109/reccap69368.2026.11723782",
+   "openalex": "W7223375828",
+   "title": "Noise-Reduced Time-Series Modeling of Wearable Activity Data for Neuropsychiatric Disorder Classification",
+   "year": 2026,
+   "authors": [
+    "P",
+    "Shafna",
+    "D"
+   ],
+   "venue": "IEEE International Conference on Recent Advances in Electronics, Communication, Computing, Automation and Power (RECCAP)",
+   "type": "conference",
+   "pubdate": "2026-05-01",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Lubba et al. introduced Catch22, a compact and interpretable feature-based approach derived from the Highly Comparative Time-Series Analysis (HCTSA) framework [15].",
+   "note": "Read in browser (IEEE Xplore); related work"
   },
   "doi:10.1109/sdemped53223.2025.11154288": {
    "doi": "10.1109/sdemped53223.2025.11154288",
@@ -2237,6 +2743,28 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1126/sciadv.aec2023": {
+   "doi": "10.1126/sciadv.aec2023",
+   "openalex": "W7223103133",
+   "pmid": "42905808",
+   "title": "Coordinated mosquito biting dynamics at the human skin interface",
+   "year": 2026,
+   "authors": [
+    "Konopka",
+    "Poinapen",
+    "Chitnis",
+    "Morrow"
+   ],
+   "venue": "Science Advances",
+   "type": "journal",
+   "pubdate": "2026-10-21",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "First, we used the catch22 software ( 36 ) to extract 24 features (F1 to F24)",
+   "note": "Read via Europe PMC (PMC13685975); catch24 on each biting phase",
+   "section": "Biology, physiology, neuroscience, pathology, and ecology",
+   "confidence": 0.95
+  },
   "doi:10.1126/sciadv.aee8595": {
    "doi": "10.1126/sciadv.aee8595",
    "openalex": "W7171941786",
@@ -2327,6 +2855,19 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.1145/3737412": {
+   "doi": "10.1145/3737412",
+   "openalex": "W4413308102",
+   "title": "Proceedings of the 1st workshop connecting academia and industry on Modern Integrated Database and AI Systems",
+   "year": 2025,
+   "authors": [],
+   "type": "journal",
+   "pubdate": "2025-06-22",
+   "first_seen": "2026-11-17",
+   "verdict": "U",
+   "evidence": "Full text unreachable (ACM proceedings volume front matter; no single paper identified).",
+   "note": "Proceedings of the 1st workshop on Modern Integrated Database and AI Systems"
+  },
   "doi:10.1145/3737412.3743491": {
    "doi": "10.1145/3737412.3743491",
    "openalex": "W4413307767",
@@ -2378,6 +2919,42 @@
    "verdict": "A",
    "evidence": "Title: 'Canonical Time Series Features for Pain Classification' (no abstract or full text reachable; verdict from title)"
   },
+  "doi:10.1145/3770855.3817485": {
+   "doi": "10.1145/3770855.3817485",
+   "openalex": "W7196952754",
+   "title": "TemporalBench: A Benchmark for Evaluating LLM-Based Agents on Contextual and Event-Informed Time Series Tasks",
+   "year": 2026,
+   "authors": [
+    "Weng",
+    "Cao",
+    "Yang",
+    "Sharma"
+   ],
+   "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+   "type": "conference",
+   "pubdate": "2026-08-06",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "This includes a reduced subset of interpretable catch22 features [31] capturing distributional properties, complexity, and outliers",
+   "note": "Read from arXiv 2602.13272"
+  },
+  "doi:10.1145/3770855.3817569": {
+   "doi": "10.1145/3770855.3817569",
+   "openalex": "W7166881293",
+   "title": "Benchmarking on Tasks That Matter: Dataset Selection for Preserving Model Rankings",
+   "year": 2026,
+   "authors": [
+    "Gusev",
+    "Zaytsev"
+   ],
+   "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+   "type": "conference",
+   "pubdate": "2026-08-07",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "TSFRESH / Catch22 / Summary / MiniRocket embeddings.",
+   "note": "Read from arXiv 2606.27997; one of several dataset embeddings"
+  },
   "doi:10.1145/3774906.3800486": {
    "doi": "10.1145/3774906.3800486",
    "openalex": "W7160606422",
@@ -2410,6 +2987,41 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.1145/3831996": {
+   "doi": "10.1145/3831996",
+   "openalex": "W7114773267",
+   "title": "DeepFeature: LLM-Empowered Context-aware Feature Generation for Wearable Biosignals",
+   "year": 2026,
+   "authors": [
+    "Liu",
+    "He",
+    "Yang",
+    "Yuan"
+   ],
+   "venue": "Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies",
+   "type": "conference",
+   "pubdate": "2026-09-30",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch22 [57], which extracts 22 canonical features extensively validated across 93 real-world tasks.",
+   "note": "Read from arXiv 2512.08379; baseline"
+  },
+  "doi:10.1145/3849740.3856203": {
+   "doi": "10.1145/3849740.3856203",
+   "openalex": "W7204869930",
+   "title": "Supraglacial Lake Fate Is Knowable Long Before the Season Ends",
+   "year": 2026,
+   "authors": [
+    "Hossain",
+    "Gani"
+   ],
+   "type": "journal",
+   "pubdate": "2026-11-03",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "T3, catch22 [35], tests whether the result depends on a learned representation.",
+   "note": "Read from arXiv 2608.30113; one of several representations"
   },
   "doi:10.1177/10711813251374551": {
    "doi": "10.1177/10711813251374551",
@@ -2471,6 +3083,26 @@
    "section": "🧬 Biology, physiology, neuroscience, pathology, and ecology",
    "note": "published version of doi:10.1101/2024.01.14.575365 (retitled match confirmed by Ben)"
   },
+  "doi:10.1186/s12916-026-04936-3": {
+   "doi": "10.1186/s12916-026-04936-3",
+   "openalex": "W7167607220",
+   "pmid": "42415071",
+   "title": "Complex affect dynamics offer limited incremental value for cross-sectional prediction of psychological and behavioural variables in cross-validated models",
+   "year": 2026,
+   "authors": [
+    "Shu",
+    "Levi",
+    "Tiego",
+    "Constable"
+   ],
+   "venue": "BMC Medicine",
+   "type": "journal",
+   "pubdate": "2026-07-07",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Lubba CH, Sethi SS, Knaute P, Schultz SR, Fulcher BD, Jones NS. catch22: CAnonical Time-series CHaracteristics",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
   "doi:10.1186/s12984-025-01645-5": {
    "doi": "10.1186/s12984-025-01645-5",
    "openalex": "W4410712207",
@@ -2529,6 +3161,24 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.13140/rg.2.2.16699.37924": {
+   "doi": "10.13140/rg.2.2.16699.37924",
+   "openalex": "W7143473049",
+   "title": "Reconciling Latent Variables and Networks Exploring and extending the Psychometric-Toolbox",
+   "year": 2026,
+   "authors": [
+    "Kistermann",
+    "Andriamiarana",
+    "Kelava"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-03-27",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Lubba, C. H., Sethi, S. S., Knaute, P., Schultz, S. R., Fulcher, B. D., & Jones, N. S. (2019). Catch22",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
   },
   "doi:10.1364/boe.466005": {
    "doi": "10.1364/boe.466005",
@@ -2742,6 +3392,63 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.14778/3749646.3749705": {
+   "doi": "10.14778/3749646.3749705",
+   "openalex": "W4414003986",
+   "title": "DIM-SUM: Dynamic IMputation for Smart Utility Management",
+   "year": 2025,
+   "authors": [
+    "Hildebrant",
+    "Bhope",
+    "Mehrotra",
+    "Tull"
+   ],
+   "venue": "Proceedings of the VLDB Endowment",
+   "type": "conference",
+   "pubdate": "2025-07-01",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "[30] Carl H Lubba, Sarab S Sethi, Philip Knaute, Simon R Schultz, Ben D Fulcher, and Nick S Jones. 2019. catch22",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.14802/jmd.26080": {
+   "doi": "10.14802/jmd.26080",
+   "openalex": "W7213985327",
+   "pmid": "42768794",
+   "title": "Quantitative Assessment of Facial Expression Asymmetry in Parkinson’s Disease",
+   "year": 2026,
+   "authors": [
+    "Irani",
+    "Park",
+    "Sedaghati",
+    "Grundy"
+   ],
+   "venue": "Journal of Movement Disorders",
+   "type": "journal",
+   "pubdate": "2026-09-22",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "In addition, we incorporated time-series features from the CATCH22 feature set,19 a collection of 22 canonical time-series descriptors",
+   "note": "Best model: Dynamic (basic+CATCH22), 90.1% accuracy",
+   "section": "Physiological and other sensors",
+   "confidence": 0.85
+  },
+  "doi:10.14989/doctor.k26993": {
+   "doi": "10.14989/doctor.k26993",
+   "openalex": "W7223233850",
+   "title": "部分系列に着目した時系列解析の高度化手法に関する研究 ―区分的類似度測定、共変量拡張、ゲノム配列符号化モデルの構築―",
+   "year": 2026,
+   "authors": [
+    "Yu"
+   ],
+   "venue": "Institutional Repositories DataBase (IRDB)",
+   "type": "journal",
+   "pubdate": "2026-07-23",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Here, we introduce three transformation methods, including hctsa [23], catch22 [24], and ROCKET [25]",
+   "note": "Kyoto thesis; background"
+  },
   "doi:10.1590/0101-7438.2026.046.00302988": {
    "doi": "10.1590/0101-7438.2026.046.00302988",
    "openalex": "W7172007517",
@@ -2779,6 +3486,27 @@
    "page_line": 38,
    "note": "bootstrap: already on page",
    "published_as": "10.2196/70938"
+  },
+  "doi:10.21203/rs.3.rs-8609227/v1": {
+   "doi": "10.21203/rs.3.rs-8609227/v1",
+   "openalex": "W7124418721",
+   "title": "A framework for decomposing process noise in fineblanking",
+   "year": 2026,
+   "authors": [
+    "Unterberg",
+    "Becker",
+    "Schweinshaupt",
+    "Niemietz"
+   ],
+   "venue": "Research Square",
+   "type": "preprint",
+   "pubdate": "2026-01-16",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "Subsequently, the Python library catch22 [20] was used to extract features from each shearing phase due to its fast feature calculation and minimal between-feature correlation [21].",
+   "note": "",
+   "section": "Industry, energy and chemistry",
+   "confidence": 0.85
   },
   "doi:10.21203/rs.3.rs-9189120/v1": {
    "doi": "10.21203/rs.3.rs-9189120/v1",
@@ -2873,6 +3601,46 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.2208/jscejj.26-17229": {
+   "doi": "10.2208/jscejj.26-17229",
+   "openalex": "W7225052432",
+   "title": "CLASSIFICATION OF SHORELINE TIME SERIES AT FOUR PACIFIC COAST SITES USING CATCH22 FEATURES",
+   "year": 2026,
+   "authors": [
+    "Chizaki",
+    "山田",
+    "YAGISAWA",
+    "Tanaka"
+   ],
+   "venue": "Japanese Journal of JSCE",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "本研究では，catch22を汀線時系列に適用しUMAP-HDBSCANで変動パターンを分類する手法を提案する．",
+   "note": "Judged from the J-STAGE abstract (full text needs a subscription); title: classification of shoreline time series using catch22 features. Closed access",
+   "section": "General",
+   "confidence": 0.9
+  },
+  "doi:10.2298/csis250303077b": {
+   "doi": "10.2298/csis250303077b",
+   "openalex": "W4417041744",
+   "title": "Towards explainable sequential learning",
+   "year": 2025,
+   "authors": [
+    "Bergami",
+    "Packer",
+    "Scott",
+    "Del‐Din"
+   ],
+   "venue": "Computer Science and Information Systems",
+   "type": "journal",
+   "pubdate": "2025-12-05",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "we extend each constituent having DT activity labels, once represented as a dataless durative constituent, with Catch22 features as data payloads for the mined durative constituents.",
+   "note": "Read from arXiv 2505.23624; catch22 summaries attached to mined temporal patterns inside a larger explainable-learning method"
+  },
   "doi:10.23919/spa61993.2024.10715636": {
    "doi": "10.23919/spa61993.2024.10715636",
    "title": "Sound Analysis of Drop Characteristics by Evaluation of Impact on Water Pool",
@@ -2890,6 +3658,76 @@
    "section": "🏭 Industry, energy and chemistry",
    "page_line": 65,
    "note": "bootstrap: already on page"
+  },
+  "doi:10.24963/ijcai.2026/464": {
+   "doi": "10.24963/ijcai.2026/464",
+   "openalex": "W7166139358",
+   "title": "Speaking Numbers to LLMs: Multi-Wavelet Number Embeddings for Time Series Forecasting",
+   "year": 2026,
+   "authors": [
+    "Cao",
+    "Lei",
+    "Weng",
+    "Sun"
+   ],
+   "venue": "International Joint Conference on Artificial Intelligence",
+   "type": "conference",
+   "pubdate": "2026-09-01",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "Similarity is assessed using Catch22 statistical descriptors",
+   "note": "catch22 descriptors used to retrieve context for an LLM forecaster; an ablated component"
+  },
+  "doi:10.3233/faia251162": {
+   "doi": "10.3233/faia251162",
+   "openalex": "W4415428434",
+   "title": "A Contrastive Diffusion-Based Network (CDNet) for Time Series Classification",
+   "year": 2025,
+   "authors": [
+    "Zhang",
+    "Lee"
+   ],
+   "venue": "Frontiers in artificial intelligence and applications",
+   "type": "journal",
+   "pubdate": "2025-10-21",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "We evaluate the proposed model against variants based on different loss functions, as well as with SOTA time series classification algorithms, including ShapeDTW (SDTW) [2], Catch22 [3], cBOSS [4]",
+   "note": "Read from arXiv 2507.21357"
+  },
+  "doi:10.32614/rj-2025-023": {
+   "doi": "10.32614/rj-2025-023",
+   "openalex": "W4416977331",
+   "title": "Feature-Based Time-Series Analysis in R using the Theft Ecosystem",
+   "year": 2025,
+   "authors": [
+    "Henderson",
+    "Fulcher"
+   ],
+   "venue": "The R Journal",
+   "type": "journal",
+   "pubdate": "2025-10-21",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Many open-source software packages for computing sets of time-series features exist across multiple programming languages, including ‘catch22’ (22 features: Matlab, R, Python, Julia)",
+   "note": "theft paper: catch22 is one of six feature sets wrapped"
+  },
+  "doi:10.33232/001c.157585": {
+   "doi": "10.33232/001c.157585",
+   "openalex": "W4416437240",
+   "title": "Derivative-Aligned Anticipation of Forbush Decreases from Entropy and Fractal Markers",
+   "year": 2026,
+   "authors": [
+    "Perez-Navarro",
+    "Sierra-Porta"
+   ],
+   "venue": "The Open Journal of Astrophysics",
+   "type": "journal",
+   "pubdate": "2026-02-11",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "large libraries of features such as hctsa and the reduced canonical subset catch22 offer standardized, interpretable implementations",
+   "note": "Read from arXiv 2511.01506; background"
   },
   "doi:10.3389/fncom.2025.1525785": {
    "doi": "10.3389/fncom.2025.1525785",
@@ -2918,6 +3756,27 @@
    "section": "⌚ Physiological and other sensors",
    "page_line": 38,
    "note": "bootstrap: already on page"
+  },
+  "doi:10.3389/fneur.2026.1954245": {
+   "doi": "10.3389/fneur.2026.1954245",
+   "openalex": "W7225716009",
+   "title": "Multi-dimensional signal exploration on the effect of tremor interventions",
+   "year": 2026,
+   "authors": [
+    "Köhler",
+    "Müller",
+    "Chen",
+    "Selzam"
+   ],
+   "venue": "Frontiers in Neurology",
+   "type": "journal",
+   "pubdate": "2026-11-10",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "Due to the limited sample size and subsequent risk to overfitting, we chose the catch22 framework",
+   "note": "",
+   "section": "Physiological and other sensors",
+   "confidence": 0.95
   },
   "doi:10.3389/fnhum.2025.1571106": {
    "doi": "10.3389/fnhum.2025.1571106",
@@ -2995,6 +3854,25 @@
    "verdict": "D",
    "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
   },
+  "doi:10.3389/frobt.2026.1827739": {
+   "doi": "10.3389/frobt.2026.1827739",
+   "openalex": "W7171699293",
+   "pmid": "42591158",
+   "title": "Learning faults in time: sequential behavioural modelling for complex fault detection in multi-robot systems",
+   "year": 2026,
+   "authors": [
+    "Mazloum",
+    "Portugal",
+    "Couceiro"
+   ],
+   "venue": "Frontiers in Robotics and AI",
+   "type": "journal",
+   "pubdate": "2026-07-29",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "domain-agnostic aggregates or statistical features (e.g., tsfresh (Christ et al., 2018), catch22 (Lubba et al., 2019), rolling mean)",
+   "note": "Related work"
+  },
   "doi:10.3389/frsip.2026.1715921": {
    "doi": "10.3389/frsip.2026.1715921",
    "openalex": "W7140178725",
@@ -3049,6 +3927,23 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.3390/app162010185": {
+   "doi": "10.3390/app162010185",
+   "openalex": "W7221811373",
+   "title": "A Controlled Synthetic Benchmark for Multi-Label Transformation Detection in Signal and Trajectory Pairs",
+   "year": 2026,
+   "authors": [
+    "BADUR",
+    "Serin"
+   ],
+   "venue": "Applied Sciences",
+   "type": "journal",
+   "pubdate": "2026-10-14",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Library descriptors are extracted separately from original and transformed sequences using catch22 (implemented using pycatch22), TSFEL, and tsfresh.",
+   "note": "Read in browser (MDPI); one of three libraries"
   },
   "doi:10.3390/bdcc10070201": {
    "doi": "10.3390/bdcc10070201",
@@ -3135,6 +4030,24 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.3390/math14111788": {
+   "doi": "10.3390/math14111788",
+   "openalex": "W7162091405",
+   "title": "Time-Series Forecasting by Statistical State-Dependent Reconstruction of Coefficients of Itô-Type Processes",
+   "year": 2026,
+   "authors": [
+    "Ivanov",
+    "Korolev",
+    "Vakshin"
+   ],
+   "venue": "Mathematics",
+   "type": "journal",
+   "pubdate": "2026-05-22",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "The usual approach, as discussed, for example, in [1,2,3,4], is as follows.",
+   "note": "Read in browser (MDPI); catch22 is ref [3]"
+  },
   "doi:10.3390/mi17070840": {
    "doi": "10.3390/mi17070840",
    "openalex": "W7168988237",
@@ -3212,6 +4125,47 @@
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
   },
+  "doi:10.3390/s26206424": {
+   "doi": "10.3390/s26206424",
+   "openalex": "W7221513143",
+   "pmid": "42944287",
+   "title": "Handcrafted Features Versus Learned Representations for IMU-Based Goat Behavior Classification: Accuracy, Validation Design, and Computational Cost",
+   "year": 2026,
+   "authors": [
+    "Jin",
+    "Kim",
+    "Lee",
+    "Choi"
+   ],
+   "venue": "Sensors",
+   "type": "journal",
+   "pubdate": "2026-10-11",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Lubba, C.H.; Sethi, S.S.; Knaute, P.; Schultz, S.R.; Fulcher, B.D.; Jones, N.S. catch22: CAnonical Time-series CHaracteristics.",
+   "note": "Read in browser (MDPI); Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.37537/rev.elektron.10.1.227.2026": {
+   "doi": "10.37537/rev.elektron.10.1.227.2026",
+   "openalex": "W7164838264",
+   "title": "Clasificación acústica de cangrejos con modelos neuronales compactos",
+   "year": 2026,
+   "authors": [
+    "Cebedio",
+    "Lorusso",
+    "Arnone",
+    "Rabioglio"
+   ],
+   "venue": "Elektron",
+   "type": "journal",
+   "pubdate": "2026-06-15",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "A partir de los segmentos filtrados se extraen características temporales mediante el extractor catch22 [17], obteniendo vectores de 22 atributos para cada fragmento.",
+   "note": "",
+   "section": "Biology, physiology, neuroscience, pathology, and ecology",
+   "confidence": 0.9
+  },
   "doi:10.3997/2214-4609.202210042": {
    "doi": "10.3997/2214-4609.202210042",
    "openalex": "W4285251184",
@@ -3277,6 +4231,138 @@
   "doi:10.48550/arxiv.2410.00312": {
    "published_as": "10.1109/icmla61862.2024.00163"
   },
+  "doi:10.48550/arxiv.2505.21160": {
+   "doi": "10.48550/arxiv.2505.21160",
+   "openalex": "W4415036953",
+   "title": "STEB: In Search of the Best Evaluation Approach for Synthetic Time Series",
+   "year": 2025,
+   "authors": [
+    "Stenger",
+    "Leppich",
+    "Bauer",
+    "Kounev"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-05-27",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Alternatively, it features a non-DL-based embedder called Catch22 [33] and the trivial concatenation of feature channels referred to as Concat",
+   "note": "One of three embedders"
+  },
+  "doi:10.48550/arxiv.2506.06482": {
+   "doi": "10.48550/arxiv.2506.06482",
+   "openalex": "W4417118528",
+   "pmid": "42621651",
+   "title": "TimeRecipe: A Time-Series Forecasting Recipe via Benchmarking Module Level Effectiveness",
+   "year": 2025,
+   "authors": [
+    "Zhao",
+    "Ni",
+    "Xu",
+    "Liu"
+   ],
+   "venue": "PubMed",
+   "type": "preprint",
+   "pubdate": "2025-06-06",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "F ← Catch22(X)",
+   "note": "catch22 features used only to compute a dataset-correlation characteristic for benchmarking"
+  },
+  "doi:10.48550/arxiv.2507.15119": {
+   "doi": "10.48550/arxiv.2507.15119",
+   "openalex": "W4415330388",
+   "title": "U-Cast: Learning Hierarchical Structures for High-Dimensional Time Series Forecasting",
+   "year": 2025,
+   "authors": [
+    "Ni",
+    "Wang",
+    "Liu",
+    "Shi"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-07-20",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "To quantify this, we extract 22 features per channel using Catch22 (Lubba et al., 2019).",
+   "note": "Used only to characterise channel correlation in datasets"
+  },
+  "doi:10.48550/arxiv.2507.23767": {
+   "doi": "10.48550/arxiv.2507.23767",
+   "openalex": "W4414922371",
+   "title": "Closed-Form Beta Distribution Estimation from Sparse Statistics with Random Forest Implicit Regularization",
+   "year": 2025,
+   "authors": [
+    "Landers"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-07-31",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Feature toolkits such as TSFresh (Christ et al., 2018) and Catch22 (Lubba et al., 2019) extract broad or minimal sets of interpretable statistics; our approach instead learns a bounded-support distribution",
+   "note": "Related work"
+  },
+  "doi:10.48550/arxiv.2508.14667": {
+   "doi": "10.48550/arxiv.2508.14667",
+   "openalex": "W4415240438",
+   "title": "ELATE: Evolutionary Language model for Automated Time-series Engineering",
+   "year": 2025,
+   "authors": [
+    "Murray",
+    "Dervovic",
+    "Cashmore"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-08-20",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "[35] C. H. Lubba, S. S. Sethi, P. Knaute, et al. CATCH22: CAnonical Time-series CHaracteristics",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.48550/arxiv.2509.11789": {
+   "doi": "10.48550/arxiv.2509.11789",
+   "openalex": "W4415088990",
+   "title": "costream: A Streaming Evaluation Protocol for Wearable Fall Detection",
+   "year": 2025,
+   "authors": [
+    "Aderinola",
+    "D’Ascanio",
+    "Palmerini",
+    "Chiari"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-09-15",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "QUANT, Catch22, and ExtraTrees have ratios close to one and are scored similarly by both protocols",
+   "note": "One of five classifiers evaluated"
+  },
+  "doi:10.48550/arxiv.2510.26910": {
+   "doi": "10.48550/arxiv.2510.26910",
+   "openalex": "W4415913009",
+   "title": "Discovering EV Charging Site Archetypes Through Few Shot Forecasting: The First U.S.-Wide Study",
+   "year": 2025,
+   "authors": [
+    "Nikhal",
+    "Ackerknecht",
+    "Riggan",
+    "Stahlfeld"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-10-30",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "In addition, we extract a set of canonical features (e.g., distributional characteristics, autocorrelation structure, and outlier dynamics), summarizing key statistical properties of each time series [21].",
+   "note": "[21] is catch22; features plus weekly profiles are clustered with k-means into site archetypes. Lower confidence: catch22 is not named in the text",
+   "section": "Industry, energy and chemistry",
+   "confidence": 0.7
+  },
   "doi:10.48550/arxiv.2511.11629": {
    "doi": "10.48550/arxiv.2511.11629",
    "openalex": "W7106025283",
@@ -3294,6 +4380,788 @@
    "first_seen": "2026-09-30",
    "verdict": "D",
    "evidence": "catch22 cited (or mentioned only as CIF/related-work context); not used in the paper's analysis"
+  },
+  "doi:10.48550/arxiv.2511.22959": {
+   "doi": "10.48550/arxiv.2511.22959",
+   "openalex": "W4416975760",
+   "title": "A Trainable Centrality Framework for Modern Data",
+   "year": 2025,
+   "authors": [
+    "Vu",
+    "Liu",
+    "Zhou"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-11-28",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "We represent each series using 22-dimensional catch22 features (Lubba et al., 2019), which preserve essential temporal characteristics while enabling efficient distance computation.",
+   "note": "One of several example datasets (FordA)"
+  },
+  "doi:10.48550/arxiv.2512.08859": {
+   "doi": "10.48550/arxiv.2512.08859",
+   "openalex": "W7114809785",
+   "title": "Refining Diffusion Models for Motion Synthesis with an Acceleration Loss to Generate Realistic IMU Data",
+   "year": 2025,
+   "authors": [
+    "Häusler",
+    "Uhlenberg",
+    "Köber",
+    "Salimova"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-12-09",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "We computed 22 time-series features for each of the three axes of the first IMU (Head) using the catch22 feature set [33].",
+   "note": "Used for a t-SNE check of synthetic vs real data"
+  },
+  "doi:10.48550/arxiv.2512.20319": {
+   "doi": "10.48550/arxiv.2512.20319",
+   "openalex": "W7117241318",
+   "title": "Deep Learning Classification of EEG Responses to Multi-Dimensional Transcranial Electrical Stimulation",
+   "year": 2025,
+   "authors": [
+    "Pastor",
+    "Violante",
+    "Scott"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2025-12-23",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "and 22 features from the catch22 package23—high-performance measures selected for their ability to capture structural information of time series data",
+   "note": "catch22 is one part of a hand-built feature dataset that is compared with deep learning on raw time series"
+  },
+  "doi:10.48550/arxiv.2601.02037": {
+   "doi": "10.48550/arxiv.2601.02037",
+   "openalex": "W7118746926",
+   "title": "Multivariate Time-series Anomaly Detection via Dynamic Model Pool & Ensembling",
+   "year": 2026,
+   "authors": [
+    "Hu",
+    "Yu",
+    "Xu"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-01-05",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "The representative features involves multiple features from Catch22 [4], stationary, seasonal, and anomaly information",
+   "note": "Meta-features for model selection"
+  },
+  "doi:10.48550/arxiv.2601.05711": {
+   "doi": "10.48550/arxiv.2601.05711",
+   "openalex": "W7123244383",
+   "title": "Conditional Cauchy-Schwarz Divergence for Time Series Analysis: Kernelized Estimation and Applications in Clustering and Fraud Detection",
+   "year": 2026,
+   "authors": [
+    "Wang"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-01-09",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Toolkits such as tsfresh and catch22 provide broad libraries of interpretable statistics",
+   "note": "Related work"
+  },
+  "doi:10.48550/arxiv.2601.06792": {
+   "doi": "10.48550/arxiv.2601.06792",
+   "openalex": "W7123927755",
+   "title": "Cross-Modal Computational Model of Brain-Heart Interactions via HRV and EEG Feature",
+   "year": 2026,
+   "authors": [
+    "Pradeep",
+    "Sasi",
+    "Farrukh",
+    "Venugopal"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-01-11",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "HRV features (meanNN, SDNN, RMSSD, SD1, SD2) and Catch22 features were extracted from the ECG",
+   "note": "catch22 computed on both ECG and EEG as a core part of the cross-modal features",
+   "section": "Physiological and other sensors",
+   "confidence": 0.8
+  },
+  "doi:10.48550/arxiv.2601.21752": {
+   "doi": "10.48550/arxiv.2601.21752",
+   "openalex": "W7126220911",
+   "title": "Synthesizing Epileptic Seizures: Gaussian Processes for EEG Generation",
+   "year": 2026,
+   "authors": [
+    "Moutonnet",
+    "Corneck",
+    "Tobar",
+    "Mandic"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-01-29",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "The first is Catch22, a standardised collection of 22 canonical time-series features",
+   "note": "Used to compare real and synthetic EEG"
+  },
+  "doi:10.48550/arxiv.2602.10614": {
+   "doi": "10.48550/arxiv.2602.10614",
+   "openalex": "W7128731762",
+   "title": "Pupillometry and Brain Dynamics for Cognitive Load in Working Memory",
+   "year": 2026,
+   "authors": [
+    "Farrukh",
+    "Pradeep",
+    "Sasi",
+    "Venugopal"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-02-11",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "To obtain compact and interpretable representations, we extracted Catch-22 (Canonical Time-series Characteristics) features from both EEG and pupillometry signals.",
+   "note": "",
+   "section": "Physiological and other sensors",
+   "confidence": 0.9
+  },
+  "doi:10.48550/arxiv.2602.12147": {
+   "doi": "10.48550/arxiv.2602.12147",
+   "openalex": "W7128792599",
+   "title": "It's TIME: Towards the Next Generation of Time Series Forecasting Benchmarks",
+   "year": 2026,
+   "authors": [
+    "Qiao",
+    "Pan",
+    "Wang",
+    "Zhukova"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-02-12",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Lubba, C. H., Sethi, S. S., Knaute, P., Schultz, S. R., Fulcher, B. D., and Jones, N. S. catch22",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.48550/arxiv.2602.17868": {
+   "doi": "10.48550/arxiv.2602.17868",
+   "openalex": "W7131111072",
+   "title": "MantisV2: Closing the Zero-Shot Gap in Time Series Classification with Synthetic Data and Test-Time Strategies",
+   "year": 2026,
+   "authors": [
+    "Feofanov",
+    "Wen",
+    "Zhang",
+    "Pan"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-02-19",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "We name this modification as Catch22+ and refer to Appendix A.3 for more details and the corresponding ablation study.",
+   "note": "Baseline (pycatch22 0.4.5)"
+  },
+  "doi:10.48550/arxiv.2603.19315": {
+   "doi": "10.48550/arxiv.2603.19315",
+   "openalex": "W7140111652",
+   "title": "MRMS-Net and LMRMS-Net: Scalable Multi-Representation Multi-Scale Networks for Time Series Classification",
+   "year": 2026,
+   "authors": [
+    "Alagöz",
+    "Kurnaz",
+    "Aadil"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-03-14",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "[12] C. H. Lubba, S. S. Sethi, P. Knaute, S. R. Schultz, B. D. Fulcher, and N. S. Jones, “catch22: Canonical time-series characteristics",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.48550/arxiv.2603.20352": {
+   "doi": "10.48550/arxiv.2603.20352",
+   "openalex": "W7140221819",
+   "title": "The Multiverse of Time Series Machine Learning: an Archive for Multivariate Time Series Classification",
+   "year": 2026,
+   "authors": [
+    "Middlehurst",
+    "Rushbrooke",
+    "Ismail-Fawaz",
+    "Devanne"
+   ],
+   "venue": "ePrints Soton (University of Southampton)",
+   "type": "preprint",
+   "pubdate": "2026-03-20",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch22 [49] provides a compact set of 22 features distilled from the much larger hctsa library [26]",
+   "note": "One classifier in the bake-off"
+  },
+  "doi:10.48550/arxiv.2604.25499": {
+   "doi": "10.48550/arxiv.2604.25499",
+   "openalex": "W7158303993",
+   "title": "EvoTSC: Evolving Feature Learning Models for Time Series Classification via Genetic Programming",
+   "year": 2026,
+   "authors": [
+    "Yang",
+    "Xue",
+    "Zhang"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-04-28",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "EvoTSC shows a clear advantage over the hand-crafted feature extraction method catch22, with 68 wins and only six losses",
+   "note": "Baseline"
+  },
+  "doi:10.48550/arxiv.2605.00218": {
+   "doi": "10.48550/arxiv.2605.00218",
+   "openalex": "W7160031437",
+   "title": "Selfie-Capture Dynamics as an Auxiliary Signal Against Deepfakes and Injection Attacks for Mobile Identity Verification",
+   "year": 2026,
+   "authors": [
+    "Rantahalvari",
+    "Sílven",
+    "Boulkenafet",
+    "Casado"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-04-30",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "compact feature methods such as catch22 [24]",
+   "note": "One of seven classifiers"
+  },
+  "doi:10.48550/arxiv.2605.04902": {
+   "doi": "10.48550/arxiv.2605.04902",
+   "openalex": "W7160563479",
+   "title": "AegisTS: A Hierarchical Agentic AI System with Reinforcement Learning for Multivariate Time Series Data Cleaning",
+   "year": 2026,
+   "authors": [
+    "Shi",
+    "Yao",
+    "Chen",
+    "Khayati"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-05-06",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch22Clusterer [26] for clustering as lightweight proxy models",
+   "note": "Proxy model for the clustering task"
+  },
+  "doi:10.48550/arxiv.2605.17282": {
+   "doi": "10.48550/arxiv.2605.17282",
+   "openalex": "W7161707331",
+   "title": "FEG-Pro: Forecast-Error Growth Profiling for Finite-Horizon Instability Analysis of Nonlinear Time Series",
+   "year": 2026,
+   "authors": [
+    "Velichko",
+    "N'Gbo",
+    "Carpentieri",
+    "Shams"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-05-17",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Modern libraries such as hctsa, catch22, tsfresh, and theft extract hundreds or thousands of descriptors from a signal",
+   "note": "Related work"
+  },
+  "doi:10.48550/arxiv.2605.18268": {
+   "doi": "10.48550/arxiv.2605.18268",
+   "openalex": "W7161698676",
+   "title": "Time Series Extrinsic Regression of Ion Cyclotron Emission Spectra Trained on Particle-In-Cell Simulations",
+   "year": 2026,
+   "authors": [
+    "Attwood",
+    "Cook",
+    "Hill"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-05-18",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Our pipeline was run on 13 extrinsic regression algorithms available in Aeon: Catch22 [44], Hydra [45]",
+   "note": "One of 13 regressors"
+  },
+  "doi:10.48550/arxiv.2606.03136": {
+   "doi": "10.48550/arxiv.2606.03136",
+   "openalex": "W7163336783",
+   "title": "PsychoPass: Geometric Profiling of Multi-Turn Adversarial LLM Conversations",
+   "year": 2026,
+   "authors": [
+    "Ozmen",
+    "Majumdar"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-06-02",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "We adapt this method to capture higher-order temporal structure in our attack trajectories.",
+   "note": "A few adapted catch22 features"
+  },
+  "doi:10.48550/arxiv.2606.09912": {
+   "doi": "10.48550/arxiv.2606.09912",
+   "openalex": "W7164129011",
+   "title": "Mix, Don't Pick: Why Synthetic Corpus Composition Matters for Time Series Foundation Model Pretraining",
+   "year": 2026,
+   "authors": [
+    "Nagpal",
+    "Sanyal",
+    "Mandal",
+    "Kumar"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-06-06",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Lubba, C. H., Sethi, S. S., Knaute, P., Schultz, S. R., Fulcher, B. D., and Jones, N. S. catch22: CAnonical time-series CHaracteristics.",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.48550/arxiv.2606.12836": {
+   "doi": "10.48550/arxiv.2606.12836",
+   "openalex": "W7164560014",
+   "title": "Interpretable model-free inference of parametric variation across time-series data through large-scale feature extraction",
+   "year": 2026,
+   "authors": [
+    "Fulcher",
+    "Lubba",
+    "Gilestro",
+    "Schultz"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-06-11",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "repeating the analysis using the smaller catch22 feature set [61] was unable to capture a meaningful circadian component",
+   "note": "Fulcher et al.: catch22 is a robustness comparison against hctsa"
+  },
+  "doi:10.48550/arxiv.2607.03585": {
+   "doi": "10.48550/arxiv.2607.03585",
+   "openalex": "W7167631162",
+   "title": "Modular Foundation Models for Time-Series Perception in Digital Twins",
+   "year": 2026,
+   "authors": [
+    "Pham",
+    "Zemouri",
+    "Gagnon",
+    "Vouligny"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-07-03",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Carl H. Lubba, Sarab S. Sethi, Philip Knaute, Simon R. Schultz, Ben D. Fulcher, and Nick S. Jones. catch22: CAnonical Time-series CHaracteristics.",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.48550/arxiv.2607.13006": {
+   "doi": "10.48550/arxiv.2607.13006",
+   "openalex": "W7168373609",
+   "title": "The Spectrum Is Not Enough: When Context Helps Time-Series Forecasting",
+   "year": 2026,
+   "authors": [
+    "Cakiroglu",
+    "Dalkilic",
+    "Kurban"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-07-14",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "a catch22 gradient-boosting stack",
+   "note": "One of several comparison predictors"
+  },
+  "doi:10.48550/arxiv.2607.20323": {
+   "doi": "10.48550/arxiv.2607.20323",
+   "openalex": "W7170162435",
+   "title": "Multi-modal transformer for signal classification in nanopore blockade experiments",
+   "year": 2026,
+   "authors": [
+    "Kuppel",
+    "Hoßbach",
+    "Tovey",
+    "Holm"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-07-22",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "Each extracted event is then transformed into two additional modalities (Fig. 1C): an image representation obtained by a wavelet transformation and a feature vector computed from the catch22 statistical descriptors [20].",
+   "note": "catch22 vector is one of three modalities; follows Hoßbach et al., already on the page",
+   "section": "Biology, physiology, neuroscience, pathology, and ecology",
+   "confidence": 0.8
+  },
+  "doi:10.48550/arxiv.2608.01241": {
+   "doi": "10.48550/arxiv.2608.01241",
+   "openalex": "W7172446711",
+   "title": "Physics-Informed Feature Fusion and Structural Metadata Integration for Transferable Post-Earthquake Damage Classification: Experimental Evaluation and Community-Recovery Implications",
+   "year": 2026,
+   "authors": [
+    "Liang",
+    "Zhang",
+    "Shan",
+    "Chatzi"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-08-02",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "a suite of physics-informed DSFs is formulated and systematically compared against Catch22 statistical descriptors and convolutional kernel-based MiniRocket representations",
+   "note": "Comparison representation"
+  },
+  "doi:10.48550/arxiv.2608.01586": {
+   "doi": "10.48550/arxiv.2608.01586",
+   "openalex": "W7172384994",
+   "title": "Statistical comparisons of time-series feature sets on classification tasks",
+   "year": 2026,
+   "authors": [
+    "Henderson",
+    "Fulcher"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-08-03",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Time-series features for all six feature sets were extracted using the theft package for R, Version 0.9.0 [17].",
+   "note": "Henderson & Fulcher: catch22 is one of six feature sets compared"
+  },
+  "doi:10.48550/arxiv.2608.20861": {
+   "doi": "10.48550/arxiv.2608.20861",
+   "openalex": "W7204140398",
+   "title": "Beyond Mean Frametime: Time-Series Signatures for XR Timing Analysis",
+   "year": 2026,
+   "authors": [
+    "Thäns",
+    "Latoschik"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-08-21",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "We instantiate the timing-signature representation with 22 canonical time-series characteristics from catch22, a compact and interpretable subset derived from the hctsa feature library [10, 17].",
+   "note": "pycatch22 0.4.5; catch24 too",
+   "section": "General",
+   "confidence": 0.95
+  },
+  "doi:10.48550/arxiv.2609.13956": {
+   "doi": "10.48550/arxiv.2609.13956",
+   "openalex": "W7213334461",
+   "title": "Tabby: An Open Pretraining Recipe for Time Series Foundation Models",
+   "year": 2026,
+   "authors": [
+    "Xie",
+    "Abdessalem",
+    "Xiao",
+    "Hili"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-09-12",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch22+",
+   "note": "Baseline column in the UCR accuracy table"
+  },
+  "doi:10.48550/arxiv.2609.15859": {
+   "doi": "10.48550/arxiv.2609.15859",
+   "openalex": "W7213350188",
+   "title": "LongAgent: History-Guided Agentic Search for Longitudinal Outcome Prediction",
+   "year": 2026,
+   "authors": [
+    "Wang",
+    "Guitton",
+    "Fu",
+    "Tao"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-09-14",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Lubba, C.H., Sethi, S.S., Knaute, P., Schultz, S.R., Fulcher, B.D., Jones, N.S.: catch22: CAnonical time-series CHaracteristics.",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.48550/arxiv.2609.20156": {
+   "doi": "10.48550/arxiv.2609.20156",
+   "openalex": "W7213607766",
+   "title": "QUALS: Corpus Equilibrium for Universal Forecasting via Pattern Quantization and Learnability Synchronization",
+   "year": 2026,
+   "authors": [
+    "Li",
+    "Shao",
+    "Yu",
+    "Fu"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-09-17",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch22 uses catch22 features in the BLAST-style pipeline [42]",
+   "note": "Baseline"
+  },
+  "doi:10.48550/arxiv.2609.21801": {
+   "doi": "10.48550/arxiv.2609.21801",
+   "openalex": "W7213893293",
+   "title": "LLM-Generated Feature Pools for Time Series Anomaly Detection",
+   "year": 2026,
+   "authors": [
+    "Hili",
+    "Tiomoko",
+    "Ancourt"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-09-18",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "The catch22 source uses the 22 features of the catch22 library [16], a strong static representative curated across thousands of candidates, as an off-the-shelf pool.",
+   "note": "Comparison feature pool"
+  },
+  "doi:10.48550/arxiv.2609.35167": {
+   "doi": "10.48550/arxiv.2609.35167",
+   "openalex": "W7214739233",
+   "title": "EdgeCraft: Automated Model Crafting for Edge IoT",
+   "year": 2026,
+   "authors": [
+    "Wang",
+    "Liu",
+    "Zeng",
+    "Yin"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-09-28",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch22+RF uses 22 compact, diverse time-series characteristics [64].",
+   "note": "Baseline"
+  },
+  "doi:10.48550/arxiv.2610.01168": {
+   "doi": "10.48550/arxiv.2610.01168",
+   "openalex": "W7216491928",
+   "title": "Detect, Explain, Interpret: An End-to-End Benchmark for Time Series Anomaly Detection, Explainability and Interpretability",
+   "year": 2026,
+   "authors": [
+    "Stanzione",
+    "Barbe",
+    "Parrino",
+    "Fourmann"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "The only exception was Grok (especially with the Catch22 representation)",
+   "note": "One of several representations given to LLMs"
+  },
+  "doi:10.48550/arxiv.2610.01223": {
+   "doi": "10.48550/arxiv.2610.01223",
+   "openalex": "W7215908064",
+   "title": "Have an LLM Write Your Anomaly Detector: Autonomous Discovery of Compact, Interpretable Detectors for Time Series",
+   "year": 2026,
+   "authors": [
+    "Berghaus"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "catch22 [19], the canonical interpretable time-series feature set, which we use in two forms.",
+   "note": "Baselines"
+  },
+  "doi:10.48550/arxiv.2610.05051": {
+   "doi": "10.48550/arxiv.2610.05051",
+   "openalex": "W7220706791",
+   "title": "LogSig-SSM: Time-Series Modelling with Multi-Scale Log-Signature Compression for State-Space Models",
+   "year": 2026,
+   "authors": [
+    "Oury",
+    "Peiro",
+    "Tanaka"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-04",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch24-Mamba: Catch24 statistical summaries per window, i.e. the 22 catch22 features [22] together with the mean and standard deviation of the window",
+   "note": "Ablation baseline"
+  },
+  "doi:10.48550/arxiv.2610.07438": {
+   "doi": "10.48550/arxiv.2610.07438",
+   "openalex": "W7221041180",
+   "title": "Artifact removal improves electrodermal waveforms but not downstream classification in a virtual-reality balance task",
+   "year": 2026,
+   "authors": [
+    "Chai",
+    "Zhu",
+    "Li",
+    "Jiang"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-05",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Five published classifier families were used without modification: catch22 features with a random forest [18], ROCKET [19], MiniRocket [20], MultiRocket [21] and HYDRA [22].",
+   "note": "One of five classifiers"
+  },
+  "doi:10.48550/arxiv.2610.09574": {
+   "doi": "10.48550/arxiv.2610.09574",
+   "openalex": "W7220935681",
+   "title": "A General Capacity Frontier of Complex Networks",
+   "year": 2026,
+   "authors": [
+    "Kunz",
+    "Gao"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-07",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "[115] Carl H. Lubba et al. catch22: Canonical time-series characteristics.",
+   "note": "Reference-list citation only (no use of catch22 in the text)"
+  },
+  "doi:10.48550/arxiv.2610.20243": {
+   "doi": "10.48550/arxiv.2610.20243",
+   "openalex": "W7222117920",
+   "title": "Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection",
+   "year": 2026,
+   "authors": [
+    "Panourgias",
+    "Stanzione",
+    "Petralia",
+    "Palpanas"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-14",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "features (Catch 22 [36] and TSFresh [16])",
+   "note": "catch22 extraction belongs to the compared meta-learners"
+  },
+  "doi:10.48550/arxiv.2610.26002": {
+   "doi": "10.48550/arxiv.2610.26002",
+   "openalex": "W7223001053",
+   "title": "TimesJev: Thinking Fast on Time Series with System 1 Sufficiency",
+   "year": 2026,
+   "authors": [
+    "Liu",
+    "Fan",
+    "Han",
+    "Wang"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-19",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "catch24",
+   "note": "One feature group in a larger feature library"
+  },
+  "doi:10.48550/arxiv.2610.28602": {
+   "doi": "10.48550/arxiv.2610.28602",
+   "openalex": "W7223118646",
+   "title": "Turning TS2Vec into a Foundation Model for Time Series Classification",
+   "year": 2026,
+   "authors": [
+    "Feofanov",
+    "Tai",
+    "Ermakov",
+    "Rish"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-20",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch22+ statistics",
+   "note": "Baseline row"
+  },
+  "doi:10.48550/arxiv.2610.30965": {
+   "doi": "10.48550/arxiv.2610.30965",
+   "openalex": "W7223280718",
+   "title": "Energy and Latency First: How Deployment Constraints Reverse Time-Series Model Selection",
+   "year": 2026,
+   "authors": [
+    "Bothe",
+    "Saffar",
+    "Varshney"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-22",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "MiniRocket and catch22 are domain-agnostic cheap baselines",
+   "note": "Baseline"
+  },
+  "doi:10.48550/arxiv.2610.33354": {
+   "doi": "10.48550/arxiv.2610.33354",
+   "openalex": "W7223996953",
+   "title": "The Clustering Occupation Kernel (CLOCK) Method for Time Series Arising from Dynamical Systems",
+   "year": 2026,
+   "authors": [
+    "Wells",
+    "Lahouel",
+    "Rielly",
+    "Jedynak"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-10-23",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Catch22: The Catch22 method [16] extracts 22 specially-chosen features from each time series",
+   "note": "One of several clustering baselines (pycatch22 0.4.5)"
+  },
+  "doi:10.48550/arxiv.2611.12955": {
+   "doi": "10.48550/arxiv.2611.12955",
+   "openalex": "W7225790253",
+   "title": "Predictive Surprise as Self-Grounding Concept Bottleneck for Interpretable Time Series",
+   "year": 2026,
+   "authors": [
+    "Abeywickrama",
+    "Eldele",
+    "Wu",
+    "Li"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-11-07",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "Interpretable methods: catch22 [38], ProSeNet [43], VQShape [59], TOTEM [55].",
+   "note": "Baseline"
   },
   "doi:10.5194/bg-18-4059-2021": {
    "doi": "10.5194/bg-18-4059-2021",
@@ -3369,6 +5237,22 @@
    "page_line": 46,
    "note": "bootstrap: already on page"
   },
+  "doi:10.5526/err-00043303": {
+   "doi": "10.5526/err-00043303",
+   "openalex": "W7162439400",
+   "title": "Explainability and Efficiency in Fuzzy Logic Systems: Frameworks for Temporal Classification, Monotonicity, and Hybrid Predictive Modeling",
+   "year": 2026,
+   "authors": [
+    "Bhatia"
+   ],
+   "venue": "Open Access at Essex (University of Essex)",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Extensions like COCALITE (COmmon CAuse LInear TErm) [145], combining Catch22 (Canonical Time-series CHaracteristics (22 selected features)) [146] features with lightweight networks",
+   "note": "Literature review"
+  },
   "doi:10.5753/sbbd.2025.247033": {
    "doi": "10.5753/sbbd.2025.247033",
    "openalex": "W4415378646",
@@ -3402,6 +5286,27 @@
    "first_seen": "2026-09-30",
    "verdict": "A",
    "evidence": "'We extract time series features from the segments with the Catch22 toolbox'"
+  },
+  "doi:10.64898/2026.02.04.26345559": {
+   "doi": "10.64898/2026.02.04.26345559",
+   "openalex": "W7127996085",
+   "title": "Predictive Modeling of COVID-19 Variant Peak Prevalence and Duration Using GISAID Data Across 15 Countries",
+   "year": 2026,
+   "authors": [
+    "Zhang",
+    "Rob",
+    "Chen",
+    "Overton"
+   ],
+   "venue": "medRxiv",
+   "type": "preprint",
+   "pubdate": "2026-02-05",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "The second set was drawn from the catch22 library [17], accessed via the Rcatch22 package, which provides 22 minimally redundant descriptors of time-series structure",
+   "note": "Handcrafted growth indicators plus catch22",
+   "section": "Biology, physiology, neuroscience, pathology, and ecology",
+   "confidence": 0.85
   },
   "doi:10.64898/2026.02.06.704323": {
    "doi": "10.64898/2026.02.06.704323",
@@ -3440,6 +5345,25 @@
    "verdict": "B",
    "evidence": "'we used Catch22 as the featurization approach' in one experiment among several"
   },
+  "doi:10.64898/2026.04.10.717365": {
+   "doi": "10.64898/2026.04.10.717365",
+   "openalex": "W7154282608",
+   "title": "An EEG-fMRI Jointly Constrained Digital Twin Brain and Its Application in Alzheimer’s Disease",
+   "year": 2026,
+   "authors": [
+    "Yue",
+    "Guo",
+    "Xu",
+    "Chen"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2026-04-14",
+   "first_seen": "2026-11-17",
+   "verdict": "U",
+   "evidence": "Full text unreachable (bioRxiv; not in Europe PMC full text).",
+   "note": ""
+  },
   "doi:10.64898/2026.05.19.726067": {
    "doi": "10.64898/2026.05.19.726067",
    "openalex": "W7161985172",
@@ -3457,6 +5381,25 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.64898/2026.05.21.26353792": {
+   "doi": "10.64898/2026.05.21.26353792",
+   "openalex": "W7162243790",
+   "title": "Causal Network Mapping of sEEG Identifies Compact Epileptogenic Targets Concordant with Seizure Freedom: A Multicenter Study of 97 Patients",
+   "year": 2026,
+   "authors": [
+    "Ailion",
+    "Rockhill",
+    "Farzaneh",
+    "Kaplun"
+   ],
+   "venue": "medRxiv",
+   "type": "preprint",
+   "pubdate": "2026-05-24",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "Waveform-shape features were computed using the catch22 canonical time-series feature set [39].",
+   "note": "One feature family beside network-centrality features"
   },
   "doi:10.64898/2026.05.28.728582": {
    "doi": "10.64898/2026.05.28.728582",
@@ -3476,6 +5419,45 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "doi:10.64898/2026.07.03.26357228": {
+   "doi": "10.64898/2026.07.03.26357228",
+   "openalex": "W7167488769",
+   "pmid": "42465885",
+   "title": "Generative embedding of sparse data with a tabular foundation model for dengue anticipatory action: a machine learning approach",
+   "year": 2026,
+   "authors": [
+    "Pelitro",
+    "Manzano",
+    "Matavia",
+    "Soriano"
+   ],
+   "venue": "medRxiv",
+   "type": "preprint",
+   "pubdate": "2026-07-06",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "benchmarked against raw data columns and catch22",
+   "note": "Generic-shape control"
+  },
+  "doi:10.64898/2026.07.28.741219": {
+   "doi": "10.64898/2026.07.28.741219",
+   "openalex": "W7171934662",
+   "title": "The Lifespan Architecture of Human EEG",
+   "year": 2026,
+   "authors": [
+    "Kasab",
+    "Allouch",
+    "Ebadi",
+    "Bonnardot"
+   ],
+   "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "type": "preprint",
+   "pubdate": "2026-07-31",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "To extend beyond conventional EEG features, we incorporated features from the catch22 toolbox",
+   "note": "A few catch22 features within a large EEG feature set"
   },
   "doi:10.64898/2026.08.04.742735": {
    "doi": "10.64898/2026.08.04.742735",
@@ -3567,6 +5549,200 @@
    "first_seen": "2026-09-30",
    "verdict": "U",
    "evidence": "Full text unreachable by script; OpenAlex abstract does not mention catch22, so its role is unknown"
+  },
+  "openalex:W7110659704": {
+   "openalex": "W7110659704",
+   "title": "Explaining Satellite Anomalies--Causal Inference for Space Operations",
+   "year": 2025,
+   "authors": [
+    "Schefels",
+    "Ben Salem",
+    "Gerhardus",
+    "Helmsauer"
+   ],
+   "venue": "elib (German Aerospace Center)",
+   "type": "journal",
+   "pubdate": "2025-05-28",
+   "first_seen": "2026-11-17",
+   "verdict": "C",
+   "evidence": "For GANF and MST-VAE however, we derive features for the individual ground station contacts using the Catch22 feature extraction technique, as described in Lubba et al. [24].",
+   "note": "Input features for two of the compared anomaly detectors"
+  },
+  "openalex:W7125356972": {
+   "openalex": "W7125356972",
+   "title": "Evaluating feature extraction on wearable sensor data for outdoor sports activity recognition",
+   "year": 2025,
+   "authors": [
+    "Kassem"
+   ],
+   "venue": "Aaltodoc (Aalto University)",
+   "type": "journal",
+   "pubdate": "2025-12-28",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "The results demonstrate that the CATCH22 feature set, when combined with RFE and the XGB classifier, achieved the best overall classification performance",
+   "note": "Aalto thesis comparing four feature libraries; catch22 came out best. Ben may want this on the page"
+  },
+  "openalex:W7132996438": {
+   "openalex": "W7132996438",
+   "title": "Optimizing an Electrode Interface and Methods for Arterial Blood Pressure Estimation",
+   "year": 2025,
+   "authors": [
+    "Wijendran"
+   ],
+   "venue": "TSpace (University of Toronto)",
+   "type": "journal",
+   "pubdate": "2025-10-01",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "Using Catch22 features extracted from EVG recordings as input to tree-based machine learning models, BP was predicted with high accuracy (<5 mmHg error).",
+   "note": "University of Toronto thesis; catch24 implementation",
+   "section": "Physiological and other sensors",
+   "confidence": 0.9
+  },
+  "openalex:W7164471795": {
+   "openalex": "W7164471795",
+   "title": "Compositional Vector Representations for Similarity-Based Monitoring of Heterogeneous Multivariate Telemetry",
+   "year": 2026,
+   "authors": [
+    "Thelin"
+   ],
+   "venue": "Diva portal (Dalarna University Library)",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "In this thesis, statistical descriptors are computed using the catch22 feature set, a compact set of interpretable time-series features derived from highly comparative time-series analysis [5, 4].",
+   "note": "Dalarna thesis: catch22 is one descriptor family among several composed representations; residual monitoring is the strongest. Borderline A"
+  },
+  "openalex:W7166275958": {
+   "openalex": "W7166275958",
+   "title": "Efficient Processing of Time Series from Smart Devices",
+   "year": 2026,
+   "authors": [
+    "Hofman"
+   ],
+   "venue": "Brno University of Technology Digital Library (Brno University of Technology)",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "[34] Lubba, C. H.; Sethi, S. S.; Knaute, P.; Schultz, S. R.; Fulcher, B. D. et al. Catch22",
+   "note": "Brno thesis; Reference-list citation only (no use of catch22 in the text)"
+  },
+  "openalex:W7199677242": {
+   "openalex": "W7199677242",
+   "title": "Uncovering Artificial Engagement on Social Media with Supervised and Unsupervised Learning: A Telegram Case Study.",
+   "year": 2026,
+   "authors": [
+    "USOVA"
+   ],
+   "venue": "Electronic Theses and Dissertations Repository (University of Pisa)",
+   "type": "journal",
+   "pubdate": "2026-05-24",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "The main tool used here is catch22, a canonical set of 22 time series features selected for strong classification performance and low redundancy.",
+   "note": "University of Pisa thesis; 33-dimensional vector = catch22 + custom + distributional features",
+   "section": "General",
+   "confidence": 0.85
+  },
+  "openalex:W7204607240": {
+   "openalex": "W7204607240",
+   "title": "On the warp and woof of pattern discovery in geographic time series : a methodological framework for unsupervised learning with dynamic time warping in a geospatial context",
+   "year": 2026,
+   "authors": [
+    "Sloover"
+   ],
+   "venue": "Ghent University Academic Bibliography (Ghent University)",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "U",
+   "evidence": "Full text unreachable (Ghent University thesis; the repository returned a web page instead of the PDF).",
+   "note": ""
+  },
+  "openalex:W7208794437": {
+   "openalex": "W7208794437",
+   "title": "Parameter inference from a non-stationary unknown process using statistical feature-based slow feature analysis",
+   "year": 2026,
+   "authors": [
+    "Owens",
+    "Tamaki",
+    "Fulcher"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-08-31",
+   "first_seen": "2026-11-17",
+   "verdict": "A",
+   "evidence": "We chose the catch24 feature set because it is concise, interpretable, computationally efficient",
+   "note": "Owens, Tamaki & Fulcher (arXiv 2609.01651)",
+   "section": "General",
+   "confidence": 0.95
+  },
+  "openalex:W7213675630": {
+   "openalex": "W7213675630",
+   "title": "When Does Retrieval Help Time-Series Forecasting?",
+   "year": 2026,
+   "authors": [
+    "Cakiroglu",
+    "Buxton",
+    "Dalkilic",
+    "Kurban"
+   ],
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "pubdate": "2026-07-29",
+   "first_seen": "2026-11-17",
+   "verdict": "B",
+   "evidence": "catch22 + XGBoost (22 features) 0.57",
+   "note": "One of several predictors"
+  },
+  "openalex:W7215252960": {
+   "openalex": "W7215252960",
+   "title": "The impact of feature selection on the performance of short-term household electricity consumption forecasting",
+   "year": 2026,
+   "authors": [
+    "Pal"
+   ],
+   "venue": "Repository of the University of Ljubljana (University of Ljubljana)",
+   "type": "journal",
+   "pubdate": "2026-09-26",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "Primer je nabor catch22 (angl. 22 CAnonical Time-series CHaracteristics), ki vsebuje 22 reprezentativnih značilk",
+   "note": "Ljubljana thesis; uses tsfresh instead"
+  },
+  "openalex:W7217198134": {
+   "openalex": "W7217198134",
+   "title": "On Mining Time Series Data with Random Forest Models: Perspectives from Classification, Anomaly Detection, and Distance Measures",
+   "year": 2026,
+   "authors": [
+    "Azzari"
+   ],
+   "venue": "PORTO@Iris",
+   "type": "journal",
+   "pubdate": "2026-04-22",
+   "first_seen": "2026-11-17",
+   "verdict": "U",
+   "evidence": "Full text unreachable (Politecnico di Torino thesis; the repository returned a web page instead of the PDF).",
+   "note": ""
+  },
+  "openalex:W7225484804": {
+   "openalex": "W7225484804",
+   "title": "Comparing Model-Based, Feature-Based, and Deep Learning Approaches to Time-Series Clustering for Intensive Longitudinal Data: Monte Carlo Studies and an Empirical Demonstration",
+   "year": 2026,
+   "authors": [
+    "Meyer"
+   ],
+   "venue": "SHAREOK (University of Oklahoma; Oklahoma State University; Central Oklahoma University)",
+   "type": "journal",
+   "pubdate": "2026-01-01",
+   "first_seen": "2026-11-17",
+   "verdict": "D",
+   "evidence": "The comparisons therefore concern these implementations and their scaling and reduction steps, not catch22, hctsa, or the workflow of Kreienkamp et al. (2025).",
+   "note": "Thesis; explicitly not using catch22"
   },
   "url:https://arxiv.org/abs/2303.16117": {
    "url": "https://arxiv.org/abs/2303.16117",
